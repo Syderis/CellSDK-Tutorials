@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labels", "Labels\Labels\Labels.csproj", "{60B4E7A6-33EF-4687-B6AE-D727E885A65D}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "LabelsContent", "Labels\LabelsContent\LabelsContent.contentproj", "{6A3CA723-02CD-442D-88FC-33CBB380FF69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60B4E7A6-33EF-4687-B6AE-D727E885A65D}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{60B4E7A6-33EF-4687-B6AE-D727E885A65D}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{60B4E7A6-33EF-4687-B6AE-D727E885A65D}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{60B4E7A6-33EF-4687-B6AE-D727E885A65D}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{60B4E7A6-33EF-4687-B6AE-D727E885A65D}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{60B4E7A6-33EF-4687-B6AE-D727E885A65D}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{6A3CA723-02CD-442D-88FC-33CBB380FF69}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{6A3CA723-02CD-442D-88FC-33CBB380FF69}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,2 @@
+D:\tmp\Sounds\Sounds\SoundsContent\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+D:\tmp\Music & Audio\Sounds\Sounds\SoundsContent\obj\Windows Phone\Debug\ResolveAssemblyReference.cache

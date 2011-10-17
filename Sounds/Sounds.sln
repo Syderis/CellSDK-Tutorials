@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sounds", "Sounds\Sounds\Sounds.csproj", "{27FBA731-E5C3-43B1-AA02-B14FDC904E25}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "SoundsContent", "Sounds\SoundsContent\SoundsContent.contentproj", "{D0E0BF59-2432-48F6-BDB0-1B9E8F8A933F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstanceLovelySound", "InstanceLovelySound\InstanceLovelySound\InstanceLovelySound.csproj", "{80426373-9DEF-45DC-8B16-01F016448E11}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "InstanceLovelySoundContent", "InstanceLovelySound\InstanceLovelySoundContent\InstanceLovelySoundContent.contentproj", "{A8698B65-F03F-406D-938B-289DD3876A35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27FBA731-E5C3-43B1-AA02-B14FDC904E25}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{27FBA731-E5C3-43B1-AA02-B14FDC904E25}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{27FBA731-E5C3-43B1-AA02-B14FDC904E25}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{27FBA731-E5C3-43B1-AA02-B14FDC904E25}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{27FBA731-E5C3-43B1-AA02-B14FDC904E25}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{27FBA731-E5C3-43B1-AA02-B14FDC904E25}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{D0E0BF59-2432-48F6-BDB0-1B9E8F8A933F}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{D0E0BF59-2432-48F6-BDB0-1B9E8F8A933F}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{80426373-9DEF-45DC-8B16-01F016448E11}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{80426373-9DEF-45DC-8B16-01F016448E11}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{80426373-9DEF-45DC-8B16-01F016448E11}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{80426373-9DEF-45DC-8B16-01F016448E11}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{80426373-9DEF-45DC-8B16-01F016448E11}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{80426373-9DEF-45DC-8B16-01F016448E11}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{A8698B65-F03F-406D-938B-289DD3876A35}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{A8698B65-F03F-406D-938B-289DD3876A35}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
