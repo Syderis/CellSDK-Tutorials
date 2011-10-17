@@ -1,0 +1,2 @@
+D:\tmp\Basics\Basics\BasicsContent\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+D:\tmp\Sources\Basics\BasicsContent\obj\Windows Phone\Debug\ResolveAssemblyReference.cache

@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basics", "Basics\Basics\Basics.csproj", "{5045CD7D-1CC4-408A-B39D-6889588A3B7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicsContent", "Basics\BasicsContent\BasicsContent.contentproj", "{9B75A281-B53C-4DF4-A8E8-5C312F35715C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zBuffering", "zBuffering\zBuffering\zBuffering.csproj", "{FFC4AB96-6926-4203-B9BE-20B4DE717D8A}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "zBufferingContent", "zBuffering\zBufferingContent\zBufferingContent.contentproj", "{730DBC10-AE51-47A4-A60B-526947F4F827}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToPivot", "ToPivot\ToPivot\ToPivot.csproj", "{78023061-5B9C-4D9C-A757-BEA0BDDB05AA}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "ToPivotContent", "ToPivot\ToPivotContent\ToPivotContent.contentproj", "{B5706CA1-B814-49BD-9FB3-D711942228EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5045CD7D-1CC4-408A-B39D-6889588A3B7F}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{5045CD7D-1CC4-408A-B39D-6889588A3B7F}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{5045CD7D-1CC4-408A-B39D-6889588A3B7F}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{5045CD7D-1CC4-408A-B39D-6889588A3B7F}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{5045CD7D-1CC4-408A-B39D-6889588A3B7F}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{5045CD7D-1CC4-408A-B39D-6889588A3B7F}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{9B75A281-B53C-4DF4-A8E8-5C312F35715C}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{9B75A281-B53C-4DF4-A8E8-5C312F35715C}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{FFC4AB96-6926-4203-B9BE-20B4DE717D8A}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{FFC4AB96-6926-4203-B9BE-20B4DE717D8A}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{FFC4AB96-6926-4203-B9BE-20B4DE717D8A}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{FFC4AB96-6926-4203-B9BE-20B4DE717D8A}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{FFC4AB96-6926-4203-B9BE-20B4DE717D8A}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{FFC4AB96-6926-4203-B9BE-20B4DE717D8A}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{730DBC10-AE51-47A4-A60B-526947F4F827}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{730DBC10-AE51-47A4-A60B-526947F4F827}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{78023061-5B9C-4D9C-A757-BEA0BDDB05AA}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{78023061-5B9C-4D9C-A757-BEA0BDDB05AA}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{78023061-5B9C-4D9C-A757-BEA0BDDB05AA}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{78023061-5B9C-4D9C-A757-BEA0BDDB05AA}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{78023061-5B9C-4D9C-A757-BEA0BDDB05AA}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{78023061-5B9C-4D9C-A757-BEA0BDDB05AA}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{B5706CA1-B814-49BD-9FB3-D711942228EB}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{B5706CA1-B814-49BD-9FB3-D711942228EB}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
