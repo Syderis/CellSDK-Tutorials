@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syderis.CellSDK.WindowsPhone.Launcher</name>
+    </assembly>
+    <members>
+        <member name="T:Syderis.CellSDK.WindowsPhone.Launcher.Kernel">
+            <summary>
+            This is the main type for your game
+            </summary>
+        </member>
+        <member name="M:Syderis.CellSDK.WindowsPhone.Launcher.Kernel.#ctor">
+            <summary>
+            Initializes a new Kernel instance.
+            </summary>
+        </member>
+        <member name="M:Syderis.CellSDK.WindowsPhone.Launcher.Kernel.KernelExit">
+            <summary>
+            Exit the app.
+            </summary>
+        </member>
+        <member name="M:Syderis.CellSDK.WindowsPhone.Launcher.Kernel.Initialize">
+            <summary>
+            Allows the game to perform any initialization it needs to before starting to run.
+            This is where it can query for any required services and load any non-graphic
+            related content.  Calling base.Initialize will enumerate through any components
+            and initialize them as well.
+            </summary>
+        </member>
+        <member name="M:Syderis.CellSDK.WindowsPhone.Launcher.Kernel.LoadContent">
+            <summary>
+            LoadContent will be called once per game and is the place to load
+            all of your content.
+            </summary>
+        </member>
+        <member name="M:Syderis.CellSDK.WindowsPhone.Launcher.Kernel.UnloadContent">
+            <summary>
+            UnloadContent will be called once per game and is the place to unload
+            all content.
+            </summary>
+        </member>
+        <member name="M:Syderis.CellSDK.WindowsPhone.Launcher.Kernel.OnExiting(System.Object,System.EventArgs)">
+            <summary>
+            Raised when the app is exiting.
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syderis.CellSDK.WindowsPhone.Launcher.Kernel.OnActivated(System.Object,System.EventArgs)">
+            <summary>
+            Raised when the app gains focus.
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syderis.CellSDK.WindowsPhone.Launcher.Kernel.OnDeactivated(System.Object,System.EventArgs)">
+            <summary>
+            Raised when the app loses focus.
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syderis.CellSDK.WindowsPhone.Launcher.Kernel.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Allows the game to run logic such as updating the world,
+            checking for collisions, gathering input, and playing audio.
+            </summary>
+            <param name="gameTime">Provides a snapshot of timing values.</param>
+        </member>
+        <member name="M:Syderis.CellSDK.WindowsPhone.Launcher.Kernel.Draw(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            This is called when the game should draw itself.
+            </summary>
+            <param name="gameTime">Provides a snapshot of timing values.</param>
+        </member>
+        <member name="P:Syderis.CellSDK.WindowsPhone.Launcher.Kernel.Instance">
+            <summary>
+            Instance.
+            </summary>
+        </member>
+        <member name="P:Syderis.CellSDK.WindowsPhone.Launcher.Kernel.TouchSystem">
+            <summary>
+            Gets or sets the TouchSystem
+            </summary>
+        </member>
+        <member name="P:Syderis.CellSDK.WindowsPhone.Launcher.Kernel.Application">
+            <summary>
+            Gets application object.
+            </summary>
+        </member>
+        <member name="T:Syderis.CellSDK.WindowsPhone.Launcher.Kernel.MultitouchKernerState">
+            <summary>
+            Multitouch Kernel State Enum.
+            </summary>
+        </member>
+    </members>
+</doc>

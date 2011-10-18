@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slider Sample", "Slider Sample\Slider Sample\Slider Sample.csproj", "{9669B9E4-6307-4E17-99FD-64AF868E85B0}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Slider SampleContent", "Slider Sample\Slider SampleContent\Slider SampleContent.contentproj", "{1B69515B-6F7C-4AC8-9D82-B6B4F8F751EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9669B9E4-6307-4E17-99FD-64AF868E85B0}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{9669B9E4-6307-4E17-99FD-64AF868E85B0}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{9669B9E4-6307-4E17-99FD-64AF868E85B0}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{9669B9E4-6307-4E17-99FD-64AF868E85B0}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{9669B9E4-6307-4E17-99FD-64AF868E85B0}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{9669B9E4-6307-4E17-99FD-64AF868E85B0}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{1B69515B-6F7C-4AC8-9D82-B6B4F8F751EE}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{1B69515B-6F7C-4AC8-9D82-B6B4F8F751EE}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

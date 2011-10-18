@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleListBox", "SampleListBox\SampleListBox\SampleListBox.csproj", "{A5E414CF-F219-4F18-842B-825D7C22C3C6}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "SampleListBoxContent", "SampleListBox\SampleListBoxContent\SampleListBoxContent.contentproj", "{F18C2B2D-0C14-4EE8-808F-091509195508}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5E414CF-F219-4F18-842B-825D7C22C3C6}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{A5E414CF-F219-4F18-842B-825D7C22C3C6}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{A5E414CF-F219-4F18-842B-825D7C22C3C6}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{A5E414CF-F219-4F18-842B-825D7C22C3C6}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{A5E414CF-F219-4F18-842B-825D7C22C3C6}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{A5E414CF-F219-4F18-842B-825D7C22C3C6}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{F18C2B2D-0C14-4EE8-808F-091509195508}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{F18C2B2D-0C14-4EE8-808F-091509195508}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
