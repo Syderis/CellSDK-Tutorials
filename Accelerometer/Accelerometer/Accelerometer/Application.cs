@@ -59,22 +59,22 @@ namespace Accelerometer
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
-            //foreach (Label lbl in labels)
-            //{
-            //    if (lbl.Position.X >= 0 && lbl.Position.X <= maxX && lbl.Position.Y >= 0 && lbl.Position.Y <= maxY)
-            //    {
-            //        actualPosition.X += AccelerometerSensor.Instance.Data2.X * (accelfactor);
-            //        actualPosition.Y -= AccelerometerSensor.Instance.Data2.Y * (accelfactor);
+            foreach (Label lbl in labels)
+            {
+                if (lbl.Position.X >= 0 && lbl.Position.X <= maxX && lbl.Position.Y >= 0 && lbl.Position.Y <= maxY)
+                {
+                    actualPosition.X += AccelerometerSensor.Instance.Data2.X * (accelfactor);
+                    actualPosition.Y -= AccelerometerSensor.Instance.Data2.Y * (accelfactor);
 
-            //        lbl.Position = actualPosition;
-            //    }
-            //    else
-            //    {
-            //        Vector2 pos;
-            //        lbl.InitLocalWorld.GetPosition(out pos);
-            //        lbl.Position= pos;
-            //    }
-            //}
+                    lbl.Position = actualPosition;
+                }
+                else
+                {
+                    Vector2 pos;
+                    lbl.InitLocalWorld.GetPosition(out pos);
+                    lbl.Position = pos;
+                }
+            }
         }
 
     }
