@@ -57,7 +57,7 @@ namespace AnimatedImages
 
         void play_Released(Component source)
         {
-            img.Play(false);
+            img.Play(true);
         }
 
         void stop_Released(Component source)
