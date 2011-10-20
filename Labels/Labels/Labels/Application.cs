@@ -18,7 +18,7 @@ namespace Labels
             base.Initialize();
 
             // TODO: Replace these comments with your own poetry, and enjoy!
-            AddComponent(new Label("Hello, World!"), 0, 0);
+            AddComponent(new Label("Text . . ."), 0, 0);
             
         }
     }
