@@ -1,1 +1,0 @@
-c:\temp\ProgressBarSample\ProgressBarSample\ProgressBarSampleContent\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
