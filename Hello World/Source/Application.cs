@@ -21,20 +21,14 @@ namespace CellSDKApp
         {
             base.Initialize();
 
+            SetBackground(Color.Gray);
+
             clickLabel = new Label("Click Count");
             clickButton = new Button("Click me!!!");
-            clickButton.Released += delegate { clickLabel.Text = string.Format("{0} Clicks!.", ++count); };
+            clickButton.Released += delegate { clickLabel.Text = string.Format("{0} Clicks!.", ++count); };   
 
-            clickLabel.Pivot = Vector2.One / 2;
-            clickLabel.Align = Label.AlignType.MIDDLECENTER;
-            clickButton.Pivot = Vector2.One / 2;
-            clickButton.Align = Label.AlignType.MIDDLECENTER;
-
-            AddComponent(clickLabel, Width / 2, Height / 2);
-            AddComponent(clickButton, Width / 2, Height / 2 - 100);
-
-            // TODO: Replace these comments with your own poetry, and enjoy!
-            //AddComponent(new Label("Hello, World!"), 0, 0);
+            AddComponent(clickLabel, Width / 2 - clickLabel.Size.X/2, Height / 2);
+            AddComponent(clickButton, Width / 2 - clickButton.Size.X/2, Height / 2 - 100);            
         }
     }
 }

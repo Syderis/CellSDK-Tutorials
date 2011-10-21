@@ -38,22 +38,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FarseerPhysics.Android">
-      <HintPath>$(CellSDK)v0.8\Android\Lib\FarseerPhysics.Android.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Syderis\CellSDK.framework\Versions\0.8\Android\Libraries\FarseerPhysics.Android.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="MonoGame.Framework">
-      <HintPath>$(CellSDK)v0.8\Android\Lib\MonoGame.Framework.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Syderis\CellSDK.framework\Versions\0.8\Android\Libraries\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="OpenTK" />
     <Reference Include="mscorlib" />
     <Reference Include="Syderis.CellSDK.Android.Common">
-      <HintPath>$(CellSDK)v0.8\Android\Lib\Syderis.CellSDK.Android.Common.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Syderis\CellSDK.framework\Versions\0.8\Android\Libraries\Syderis.CellSDK.Android.Common.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.Android.Core">
-      <HintPath>$(CellSDK)v0.8\Android\Lib\Syderis.CellSDK.Android.Core.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Syderis\CellSDK.framework\Versions\0.8\Android\Libraries\Syderis.CellSDK.Android.Core.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.Android.Launcher">
-      <HintPath>$(CellSDK)v0.8\Android\Lib\Syderis.CellSDK.Android.Launcher.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Syderis\CellSDK.framework\Versions\0.8\Android\Libraries\Syderis.CellSDK.Android.Launcher.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -61,7 +61,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application.cs" />
+    <Compile Include="..\..\Source\Application.cs">
+      <Link>Application.cs</Link>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
