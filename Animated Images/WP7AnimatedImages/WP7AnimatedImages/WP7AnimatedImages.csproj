@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{08E4370F-FE5D-45EE-9216-32F8F5FD89C7}</ProjectGuid>
+    <ProjectGuid>{F6CA66D6-34A1-4303-9344-0D26E754051C}</ProjectGuid>
     <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">Windows Phone</Platform>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AnimatedImages</RootNamespace>
-    <AssemblyName>AnimatedImages</AssemblyName>
+    <RootNamespace>WP7AnimatedImages</RootNamespace>
+    <AssemblyName>WP7AnimatedImages</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
@@ -20,7 +20,7 @@
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
     <XnaWindowsPhoneManifestTemplate>Properties\WMAppManifest.xml</XnaWindowsPhoneManifestTemplate>
     <TileImage>Background.png</TileImage>
-    <TileTitle>AnimatedImages</TileTitle>
+    <TileTitle>WP7AnimatedImages</TileTitle>
     <SupportedCultures>
     </SupportedCultures>
     <Thumbnail>GameThumbnail.png</Thumbnail>
@@ -49,9 +49,6 @@
     <XnaCompressContent>false</XnaCompressContent>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FarseerPhysics.WindowsPhone">
-      <HintPath>$(CellSDK)Versions\0.8\WindowsPhone\Libraries\FarseerPhysics.WindowsPhone.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Xna.Framework">
       <Private>False</Private>
     </Reference>
@@ -70,15 +67,6 @@
     <Reference Include="mscorlib">
       <Private>False</Private>
     </Reference>
-    <Reference Include="Syderis.CellSDK.WindowsPhone.Common">
-      <HintPath>$(CellSDK)Versions\0.8\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Syderis.CellSDK.WindowsPhone.Core">
-      <HintPath>$(CellSDK)Versions\0.8\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Syderis.CellSDK.WindowsPhone.Launcher">
-      <HintPath>$(CellSDK)Versions\0.8\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Launcher.dll</HintPath>
-    </Reference>
     <Reference Include="System">
       <Private>False</Private>
     </Reference>
@@ -94,8 +82,27 @@
     <Reference Include="System.Net">
       <Private>False</Private>
     </Reference>
+    <Reference Include="FarseerPhysics.WindowsPhone">
+      <HintPath>$(CellSDK)Versions\0.8\WindowsPhone\Libraries\FarseerPhysics.WindowsPhone.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syderis.CellSDK.WindowsPhone.Common">
+      <HintPath>$(CellSDK)Versions\0.8\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syderis.CellSDK.WindowsPhone.Core">
+      <HintPath>$(CellSDK)Versions\0.8\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syderis.CellSDK.WindowsPhone.Launcher">
+      <HintPath>$(CellSDK)Versions\0.8\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Launcher.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\Sources\MyApplication.cs">
+      <Link>MyApplication.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Properties\AppManifest.xml">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
@@ -104,7 +111,6 @@
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </None>
     <Compile Include="Program.cs" />
-    <Compile Include="Application.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="GameThumbnail.png" />
@@ -113,8 +119,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AnimatedImagesContent\AnimatedImagesContent.contentproj">
-      <Name>AnimatedImagesContent</Name>
+    <ProjectReference Include="..\WP7AnimatedImagesContent\WP7AnimatedImagesContent.contentproj">
+      <Name>WP7AnimatedImagesContent</Name>
       <XnaReferenceType>Content</XnaReferenceType>
     </ProjectReference>
   </ItemGroup>

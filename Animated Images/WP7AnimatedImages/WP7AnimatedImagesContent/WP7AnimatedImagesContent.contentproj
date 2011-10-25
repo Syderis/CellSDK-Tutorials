@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{BC8916E4-03CD-42C2-BAE2-4BD54367828B}</ProjectGuid>
+    <ProjectGuid>{33E6F28D-345C-4D29-88E5-0AC944744D80}</ProjectGuid>
     <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -19,7 +19,7 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup>
-    <RootNamespace>AnimatedImagesContent</RootNamespace>
+    <RootNamespace>WP7AnimatedImagesContent</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
@@ -52,6 +52,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+    <Content Include="$(CellSDK)Versions\0.8\Common\Skins\Default\Skin.xml">
+      <Link>Skin\Skin.xml</Link>
+      <Name>Skin</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(CellSDK)Versions\0.8\Common\Skins\Default\Arial_Black.spritefont">
@@ -125,19 +132,6 @@
     <Compile Include="$(CellSDK)Versions\0.8\Common\Skins\Default\RadioButtonUnchecked.png">
       <Link>Skin\RadioButtonUnchecked.png</Link>
       <Name>RadioButtonUnchecked</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Content Include="$(CellSDK)Versions\0.8\Common\Skins\Default\Skin.xml">
-      <Link>Skin\Skin.xml</Link>
-      <Name>Skin</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Compile Include="$(CellSDK)Versions\0.8\Common\Skins\Default\skin_wp7.png">
-      <Link>Skin\skin_wp7.png</Link>
-      <Name>skin_wp7</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

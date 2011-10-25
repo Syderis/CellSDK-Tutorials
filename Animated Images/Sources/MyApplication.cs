@@ -10,7 +10,7 @@ using Syderis.CellSDK.Core.Graphics;
 
 namespace AnimatedImages
 {
-    class Application : MultitouchApplication
+    class MyApplication : MultitouchApplication
     {
         private AnimatedImage img;
         int numberPlayed;

@@ -1,8 +1,9 @@
 using System;
 
 using Syderis.CellSDK.WindowsPhone.Launcher;
+using AnimatedImages;
 
-namespace AnimatedImages
+namespace WP7AnimatedImages
 {
     public class Program : Kernel
     {
@@ -11,7 +12,7 @@ namespace AnimatedImages
         /// </summary>
         protected override void Initialize()
         {
-            Application application = new Application();
+            MyApplication application = new MyApplication();
             base.Application = application;
             base.Initialize();
         }
