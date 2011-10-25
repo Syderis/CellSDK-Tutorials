@@ -1,24 +1,56 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Images", "Images\Images\Images.csproj", "{CF883A42-C286-4C13-8FD2-BD4472B81874}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidImages", "AndroidImages\AndroidImages.csproj", "{F723C97D-D286-47CA-AACE-1F9EE1D9EBE8}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "ImagesContent", "Images\ImagesContent\ImagesContent.contentproj", "{B2DE44D8-4DC3-4FF2-87E7-DC730443E8E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Images", "WP7Images\WP7Images\WP7Images.csproj", "{15E9091E-5F94-47C3-8F6E-F668673158A6}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "WP7ImagesContent", "WP7Images\WP7ImagesContent\WP7ImagesContent.contentproj", "{FC3EFC86-F52E-4EAB-A9EA-277F28AC84E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|Windows Phone = Debug|Windows Phone
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|Windows Phone = Release|Windows Phone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CF883A42-C286-4C13-8FD2-BD4472B81874}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
-		{CF883A42-C286-4C13-8FD2-BD4472B81874}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
-		{CF883A42-C286-4C13-8FD2-BD4472B81874}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
-		{CF883A42-C286-4C13-8FD2-BD4472B81874}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
-		{CF883A42-C286-4C13-8FD2-BD4472B81874}.Release|Windows Phone.Build.0 = Release|Windows Phone
-		{CF883A42-C286-4C13-8FD2-BD4472B81874}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
-		{B2DE44D8-4DC3-4FF2-87E7-DC730443E8E7}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
-		{B2DE44D8-4DC3-4FF2-87E7-DC730443E8E7}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{F723C97D-D286-47CA-AACE-1F9EE1D9EBE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F723C97D-D286-47CA-AACE-1F9EE1D9EBE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F723C97D-D286-47CA-AACE-1F9EE1D9EBE8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F723C97D-D286-47CA-AACE-1F9EE1D9EBE8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F723C97D-D286-47CA-AACE-1F9EE1D9EBE8}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F723C97D-D286-47CA-AACE-1F9EE1D9EBE8}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
+		{F723C97D-D286-47CA-AACE-1F9EE1D9EBE8}.Debug|Windows Phone.ActiveCfg = Debug|Any CPU
+		{F723C97D-D286-47CA-AACE-1F9EE1D9EBE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F723C97D-D286-47CA-AACE-1F9EE1D9EBE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F723C97D-D286-47CA-AACE-1F9EE1D9EBE8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F723C97D-D286-47CA-AACE-1F9EE1D9EBE8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F723C97D-D286-47CA-AACE-1F9EE1D9EBE8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F723C97D-D286-47CA-AACE-1F9EE1D9EBE8}.Release|Mixed Platforms.Deploy.0 = Release|Any CPU
+		{F723C97D-D286-47CA-AACE-1F9EE1D9EBE8}.Release|Windows Phone.ActiveCfg = Release|Any CPU
+		{15E9091E-5F94-47C3-8F6E-F668673158A6}.Debug|Any CPU.ActiveCfg = Debug|Windows Phone
+		{15E9091E-5F94-47C3-8F6E-F668673158A6}.Debug|Mixed Platforms.ActiveCfg = Debug|Windows Phone
+		{15E9091E-5F94-47C3-8F6E-F668673158A6}.Debug|Mixed Platforms.Build.0 = Debug|Windows Phone
+		{15E9091E-5F94-47C3-8F6E-F668673158A6}.Debug|Mixed Platforms.Deploy.0 = Debug|Windows Phone
+		{15E9091E-5F94-47C3-8F6E-F668673158A6}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{15E9091E-5F94-47C3-8F6E-F668673158A6}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{15E9091E-5F94-47C3-8F6E-F668673158A6}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{15E9091E-5F94-47C3-8F6E-F668673158A6}.Release|Any CPU.ActiveCfg = Release|Windows Phone
+		{15E9091E-5F94-47C3-8F6E-F668673158A6}.Release|Mixed Platforms.ActiveCfg = Release|Windows Phone
+		{15E9091E-5F94-47C3-8F6E-F668673158A6}.Release|Mixed Platforms.Build.0 = Release|Windows Phone
+		{15E9091E-5F94-47C3-8F6E-F668673158A6}.Release|Mixed Platforms.Deploy.0 = Release|Windows Phone
+		{15E9091E-5F94-47C3-8F6E-F668673158A6}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{15E9091E-5F94-47C3-8F6E-F668673158A6}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{15E9091E-5F94-47C3-8F6E-F668673158A6}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{FC3EFC86-F52E-4EAB-A9EA-277F28AC84E4}.Debug|Any CPU.ActiveCfg = Debug|Windows Phone
+		{FC3EFC86-F52E-4EAB-A9EA-277F28AC84E4}.Debug|Mixed Platforms.ActiveCfg = Debug|Windows Phone
+		{FC3EFC86-F52E-4EAB-A9EA-277F28AC84E4}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{FC3EFC86-F52E-4EAB-A9EA-277F28AC84E4}.Release|Any CPU.ActiveCfg = Release|Windows Phone
+		{FC3EFC86-F52E-4EAB-A9EA-277F28AC84E4}.Release|Mixed Platforms.ActiveCfg = Release|Windows Phone
+		{FC3EFC86-F52E-4EAB-A9EA-277F28AC84E4}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
