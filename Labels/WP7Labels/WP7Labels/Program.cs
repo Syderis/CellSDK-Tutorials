@@ -1,8 +1,8 @@
 using System;
 
 using Syderis.CellSDK.WindowsPhone.Launcher;
-
-namespace Labels
+using Labels;
+namespace WP7Labels
 {
     public class Program : Kernel
     {
@@ -11,7 +11,7 @@ namespace Labels
         /// </summary>
         protected override void Initialize()
         {
-            Application application = new Application();
+            MyApplication application = new MyApplication();
             base.Application = application;
             base.Initialize();
         }
