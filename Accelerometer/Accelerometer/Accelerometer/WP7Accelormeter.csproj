@@ -99,6 +99,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\Sources\Application.cs">
+      <Link>Application.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Properties\AppManifest.xml">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
@@ -108,7 +111,6 @@
       <SubType>Designer</SubType>
     </None>
     <Compile Include="Program.cs" />
-    <Compile Include="Application.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="GameThumbnail.png" />
@@ -117,9 +119,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AccelerometerContent\AccelerometerContent.contentproj">
-      <Name>AccelerometerContent</Name>
+    <ProjectReference Include="..\AccelerometerContent\WP7AccelormeterContent.contentproj">
+      <Name>WP7AccelormeterContent %28Content%29</Name>
       <XnaReferenceType>Content</XnaReferenceType>
+      <Project>{03FB58AF-6E7D-4796-821C-D9780E9D4966}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

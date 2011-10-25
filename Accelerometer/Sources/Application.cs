@@ -11,7 +11,7 @@ using Syderis.CellSDK.Core.Graphics;
 
 namespace Accelerometer
 {
-    class Application : MultitouchApplication
+    class MyApplication : MultitouchApplication
     {
 
         int accelfactor = 10;
