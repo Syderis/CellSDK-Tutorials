@@ -1,8 +1,9 @@
 using System;
 
 using Syderis.CellSDK.WindowsPhone.Launcher;
+using Buttons;
 
-namespace Buttons
+namespace WP7Buttons
 {
     public class Program : Kernel
     {
@@ -11,7 +12,7 @@ namespace Buttons
         /// </summary>
         protected override void Initialize()
         {
-            Application application = new Application();
+            MyApplication application = new MyApplication();
             base.Application = application;
             base.Initialize();
         }
