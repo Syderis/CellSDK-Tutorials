@@ -1,1 +1,0 @@
-D:\Proyectos\Github\CellSDK-Tutorials\Basics\WP7ToPivot\WP7ToPivotContent\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
