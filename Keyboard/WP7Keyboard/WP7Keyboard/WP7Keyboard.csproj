@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{787010F0-81B7-493D-85F7-FC7530FD0073}</ProjectGuid>
+    <ProjectGuid>{728BA652-443E-4E62-B639-AD4D1368432A}</ProjectGuid>
     <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">Windows Phone</Platform>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TextAreaSample</RootNamespace>
-    <AssemblyName>TextAreaSample</AssemblyName>
+    <RootNamespace>WP7Keyboard</RootNamespace>
+    <AssemblyName>WP7Keyboard</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
@@ -20,7 +20,7 @@
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
     <XnaWindowsPhoneManifestTemplate>Properties\WMAppManifest.xml</XnaWindowsPhoneManifestTemplate>
     <TileImage>Background.png</TileImage>
-    <TileTitle>TextAreaSample</TileTitle>
+    <TileTitle>WP7Keyboard</TileTitle>
     <SupportedCultures>
     </SupportedCultures>
     <Thumbnail>GameThumbnail.png</Thumbnail>
@@ -49,9 +49,6 @@
     <XnaCompressContent>false</XnaCompressContent>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FarseerPhysics.WindowsPhone">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Syderis\CellSDK.framework\Versions\0.8\WindowsPhone\Libraries\FarseerPhysics.WindowsPhone.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Xna.Framework">
       <Private>False</Private>
     </Reference>
@@ -70,15 +67,6 @@
     <Reference Include="mscorlib">
       <Private>False</Private>
     </Reference>
-    <Reference Include="Syderis.CellSDK.WindowsPhone.Common">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Syderis\CellSDK.framework\Versions\0.8\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Syderis.CellSDK.WindowsPhone.Core">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Syderis\CellSDK.framework\Versions\0.8\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Syderis.CellSDK.WindowsPhone.Launcher">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Syderis\CellSDK.framework\Versions\0.8\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Launcher.dll</HintPath>
-    </Reference>
     <Reference Include="System">
       <Private>False</Private>
     </Reference>
@@ -94,8 +82,27 @@
     <Reference Include="System.Net">
       <Private>False</Private>
     </Reference>
+    <Reference Include="FarseerPhysics.WindowsPhone">
+      <HintPath>$(CellSDK)Versions\0.8\WindowsPhone\Libraries\FarseerPhysics.WindowsPhone.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syderis.CellSDK.WindowsPhone.Common">
+      <HintPath>$(CellSDK)Versions\0.8\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syderis.CellSDK.WindowsPhone.Core">
+      <HintPath>$(CellSDK)Versions\0.8\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syderis.CellSDK.WindowsPhone.Launcher">
+      <HintPath>$(CellSDK)Versions\0.8\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Launcher.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\Sources\MyApplication.cs">
+      <Link>MyApplication.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Properties\AppManifest.xml">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
@@ -104,7 +111,6 @@
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </None>
     <Compile Include="Program.cs" />
-    <Compile Include="Application.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="GameThumbnail.png" />
@@ -113,8 +119,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TextAreaSampleContent\TextAreaSampleContent.contentproj">
-      <Name>TextAreaSampleContent</Name>
+    <ProjectReference Include="..\WP7KeyboardContent\WP7KeyboardContent.contentproj">
+      <Name>WP7KeyboardContent</Name>
       <XnaReferenceType>Content</XnaReferenceType>
     </ProjectReference>
   </ItemGroup>

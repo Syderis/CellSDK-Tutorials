@@ -8,7 +8,7 @@ using Syderis.CellSDK.Core.Controls;
 
 namespace TextAreaSample
 {
-    class Application : MultitouchApplication
+    class MyApplication : MultitouchApplication
     {
         TextArea textArea;
         /// <summary>
