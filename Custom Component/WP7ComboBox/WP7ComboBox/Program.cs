@@ -1,8 +1,9 @@
 using System;
 
 using Syderis.CellSDK.WindowsPhone.Launcher;
+using ComboBo;
 
-namespace ComboBo
+namespace WP7ComboBox
 {
     public class Program : Kernel
     {
@@ -11,7 +12,7 @@ namespace ComboBo
         /// </summary>
         protected override void Initialize()
         {
-            Application application = new Application();
+            MyApplication application = new MyApplication();
             base.Application = application;
             base.Initialize();
         }

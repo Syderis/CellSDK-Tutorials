@@ -8,7 +8,7 @@ using Syderis.CellSDK.Core.Controls;
 
 namespace ComboBo
 {
-    class Application : MultitouchApplication
+    class MyApplication : MultitouchApplication
     {
         ComboBox combo;
         /// <summary>
