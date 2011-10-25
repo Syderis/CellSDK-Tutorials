@@ -11,7 +11,7 @@ using Syderis.CellSDK.Core.Animations;
 
 namespace Animations
 {
-    class Application : MultitouchApplication
+    class MyApplication : MultitouchApplication
     {
         private Label lbl;
         private Animation anim;
