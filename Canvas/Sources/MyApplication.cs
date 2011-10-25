@@ -6,7 +6,7 @@ using Syderis.CellSDK.Core.Graphics;
 
 namespace CanvasSample
 {
-    class Application : MultitouchApplication
+    class MyApplication : MultitouchApplication
     {
         List<Label> colors;
         MyCanvas canv;
