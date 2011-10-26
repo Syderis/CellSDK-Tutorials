@@ -6,7 +6,7 @@ using Syderis.CellSDK.Core.Graphics;
 
 namespace CanvasSample
 {
-    class MyApplication : MultitouchApplication
+    class Application : MultitouchApplication
     {
         List<Label> colors;
         MyCanvas canv;
@@ -49,6 +49,9 @@ namespace CanvasSample
             canv.PaintColor = ((Label)source).Image.Color;
         }
 
-   
+         public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
+        }
     }
 }

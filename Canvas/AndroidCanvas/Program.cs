@@ -9,13 +9,16 @@ using Android.Widget;
 
 using Syderis.CellSDK.Android.Launcher;
 using Syderis.CellSDK.Core;
-using CanvasSample;
 
-namespace AndroidCanvas
+
+namespace CanvasSample
 {
     [Activity(Label = "AndroidCanvas", MainLauncher = true, Icon = "@drawable/icon")]
     public class Program : Activity
     {
+          public static Program Instance;
+        Kernel view;
+
         /// <summary>
         /// The main method which loads Application.
         /// </summary>
@@ -28,9 +31,17 @@ namespace AndroidCanvas
 
             MultitouchStaticContent.SkinXMLFileStream = Assets.Open("Content/Skin/Skin.xml");
 
-            MyApplication application = new MyApplication();
+            Application application = new Application();
             view.Application = application;
             view.Run();
+        }
+         public void Exit()
+        {
+            if (view != null)
+            {
+                view.Exit();
+                this.Finish();
+            }
         }
     }
 }

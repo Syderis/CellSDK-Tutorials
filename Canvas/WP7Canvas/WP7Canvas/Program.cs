@@ -1,9 +1,9 @@
 using System;
 
 using Syderis.CellSDK.WindowsPhone.Launcher;
-using CanvasSample;
 
-namespace WP7Canvas
+
+namespace CanvasSample
 {
     public class Program : Kernel
     {
@@ -12,7 +12,7 @@ namespace WP7Canvas
         /// </summary>
         protected override void Initialize()
         {
-            MyApplication application = new MyApplication();
+            Application application = new Application();
             base.Application = application;
             base.Initialize();
         }
