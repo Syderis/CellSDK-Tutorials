@@ -31,7 +31,7 @@ namespace zBuffering
 
             MultitouchStaticContent.SkinXMLFileStream = Assets.Open("Content/Skin/Skin.xml");
 
-            Application application = new AApplication();
+            Application application = new Application();
             view.Application = application;
             view.Run();
         }

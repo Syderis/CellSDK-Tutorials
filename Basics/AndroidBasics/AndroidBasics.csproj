@@ -93,7 +93,7 @@
     <AndroidAsset Include="Assets\Content\Skin\WhitePixel.png" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Content\Background.jpg" />
+    <AndroidAsset Include="Assets\Content\Background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
