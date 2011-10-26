@@ -10,7 +10,7 @@ using Syderis.CellSDK.Core.Graphics;
 
 namespace SelectOptions
 {
-    class Application : MultitouchApplication
+    class MyApplication : MultitouchApplication
     {
         Label lbl,lblBlue,lblRed;
         RadioButton rbBlue,rbRed;
