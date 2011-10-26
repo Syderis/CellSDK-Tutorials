@@ -11,7 +11,7 @@ using Syderis.CellSDK.Core.Storage;
 
 namespace StorageSample
 {
-    class Application : MultitouchApplication
+    class MyApplication : MultitouchApplication
     {
         Button btGetNotice;
 
