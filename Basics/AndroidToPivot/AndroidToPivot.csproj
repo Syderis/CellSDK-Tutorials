@@ -93,13 +93,13 @@
     <AndroidAsset Include="Assets\Content\Skin\WhitePixel.png" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Content\cell1.png" />
+    <AndroidAsset Include="Assets\Content\cell1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Content\cell3.png" />
+    <AndroidAsset Include="Assets\Content\cell3.png" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Content\cell2.png" />
+    <AndroidAsset Include="Assets\Content\cell2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
