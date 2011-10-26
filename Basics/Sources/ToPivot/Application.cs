@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework;
 
 namespace ToPivot
 {
-    class MyApplication : MultitouchApplication
+    class Application : MultitouchApplication
     {
         private Label lbl1, lbl2, lbl3;
         /// <summary>
@@ -48,6 +48,9 @@ namespace ToPivot
         }
 
 
-        
+         public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
+        }
     }
 }

@@ -1,9 +1,9 @@
 using System;
 
 using Syderis.CellSDK.WindowsPhone.Launcher;
-using ToPivot;
 
-namespace WP7ToPivot
+
+namespace ToPivot
 {
     public class Program : Kernel
     {
@@ -12,7 +12,7 @@ namespace WP7ToPivot
         /// </summary>
         protected override void Initialize()
         {
-            MyApplication application = new MyApplication();
+            Application application = new Application();
             base.Application = application;
             base.Initialize();
         }

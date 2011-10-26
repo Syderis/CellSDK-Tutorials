@@ -61,8 +61,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Sources\ToPivot\MyApplication.cs">
-      <Link>MyApplication.cs</Link>
+    <Compile Include="..\Sources\ToPivot\Application.cs">
+      <Link>Application.cs</Link>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

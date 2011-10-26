@@ -9,7 +9,7 @@ using Syderis.CellSDK.Core.Graphics;
 
 namespace Basics
 {
-    class MyApplication : MultitouchApplication
+    class Application : MultitouchApplication
     {
         public override void Initialize()
         {
@@ -17,6 +17,10 @@ namespace Basics
 
             // Replace this comment with your own poetry, and enjoy!
             SetBackground(Image.CreateImage("Background"), true);
+        }
+         public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
         }
     }
 }

@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework;
 
 namespace zBuffering
 {
-    class MyApplication : MultitouchApplication
+    class Application : MultitouchApplication
     {
         /// <summary>
         /// The main method for loading controls and resources.
@@ -35,6 +35,11 @@ namespace zBuffering
             AddComponent(yellow, 100, 100);
 
 
+        }
+
+         public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
         }
     }
 }
