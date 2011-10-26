@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework;
 
 namespace ParticlesSample
 {
-    class Application : MultitouchApplication
+    class MyApplication : MultitouchApplication
     {
         private ParticleSystem particle1, particle2;
         private Button btnPush;
