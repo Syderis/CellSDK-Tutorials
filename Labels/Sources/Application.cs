@@ -8,7 +8,7 @@ using Syderis.CellSDK.Core.Controls;
 
 namespace Labels
 {
-    class MyApplication : MultitouchApplication
+    class Application : MultitouchApplication
     {
         /// <summary>
         /// The main method for loading controls and resources.
@@ -20,6 +20,11 @@ namespace Labels
             // TODO: Replace these comments with your own poetry, and enjoy!
             AddComponent(new Label("Text . . ."), 0, 0);
             
+        }
+
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
         }
     }
 }
