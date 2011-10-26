@@ -10,7 +10,7 @@ using Syderis.CellSDK.Core.Graphics;
 
 namespace Buttons
 {
-    class MyApplication : MultitouchApplication
+    class Application : MultitouchApplication
     {
         private Button ball,secondball;
 
@@ -53,7 +53,10 @@ namespace Buttons
                 secondball.Draggable = true;
             }
         }
-
+         public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
+        }
 
     }
 }
