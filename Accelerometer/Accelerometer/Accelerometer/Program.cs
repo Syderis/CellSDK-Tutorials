@@ -11,10 +11,12 @@ namespace Accelerometer
         /// </summary>
         protected override void Initialize()
         {
-            MyApplication application = new MyApplication();
+            Application application = new Application();
             base.Application = application;
             base.Initialize();
         }
+
+        
     }
 }
 

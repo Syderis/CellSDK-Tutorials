@@ -8,10 +8,11 @@ using Syderis.CellSDK.Core.Controls;
 using Microsoft.Xna.Framework;
 using Syderis.CellSDK.IO.AccelerometerSystem;
 using Syderis.CellSDK.Core.Graphics;
+//using AndroidAccelerometer;
 
 namespace Accelerometer
 {
-    class MyApplication : MultitouchApplication
+    class Application : MultitouchApplication
     {
 
         int accelfactor = 10;
@@ -77,5 +78,9 @@ namespace Accelerometer
             }
         }
 
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
+        }
     }
 }
