@@ -11,7 +11,7 @@ using Syderis.CellSDK.Core.Animations;
 
 namespace Animations
 {
-    class MyApplication : MultitouchApplication
+    class Application : MultitouchApplication
     {
         private Label lbl;
         private Animation anim;
@@ -80,6 +80,9 @@ namespace Animations
             
         }
 
-
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
+        }
     }
 }
