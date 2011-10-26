@@ -1,8 +1,9 @@
 using System;
 
 using Syderis.CellSDK.WindowsPhone.Launcher;
+using Slider_Sample;
 
-namespace Slider_Sample
+namespace WP7Slider
 {
     public class Program : Kernel
     {
@@ -11,7 +12,7 @@ namespace Slider_Sample
         /// </summary>
         protected override void Initialize()
         {
-            Application application = new Application();
+            MyApplication application = new MyApplication();
             base.Application = application;
             base.Initialize();
         }

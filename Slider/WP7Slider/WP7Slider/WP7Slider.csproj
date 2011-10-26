@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{9669B9E4-6307-4E17-99FD-64AF868E85B0}</ProjectGuid>
+    <ProjectGuid>{09162327-FFDD-445B-A71A-81DCF361E4C2}</ProjectGuid>
     <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">Windows Phone</Platform>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Slider_Sample</RootNamespace>
-    <AssemblyName>Slider Sample</AssemblyName>
+    <RootNamespace>WP7Slider</RootNamespace>
+    <AssemblyName>WP7Slider</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
@@ -20,7 +20,7 @@
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
     <XnaWindowsPhoneManifestTemplate>Properties\WMAppManifest.xml</XnaWindowsPhoneManifestTemplate>
     <TileImage>Background.png</TileImage>
-    <TileTitle>Slider_Sample</TileTitle>
+    <TileTitle>WP7Slider</TileTitle>
     <SupportedCultures>
     </SupportedCultures>
     <Thumbnail>GameThumbnail.png</Thumbnail>
@@ -100,6 +100,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\Sources\MyApplication.cs">
+      <Link>MyApplication.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Properties\AppManifest.xml">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
@@ -108,7 +111,6 @@
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </None>
     <Compile Include="Program.cs" />
-    <Compile Include="Application.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="GameThumbnail.png" />
@@ -117,9 +119,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Slider SampleContent\Slider SampleContent.contentproj">
-      <Project>{1B69515B-6F7C-4AC8-9D82-B6B4F8F751EE}</Project>
-      <Name>Slider SampleContent %28Content%29</Name>
+    <ProjectReference Include="..\WP7SliderContent\WP7SliderContent.contentproj">
+      <Name>WP7SliderContent</Name>
       <XnaReferenceType>Content</XnaReferenceType>
     </ProjectReference>
   </ItemGroup>

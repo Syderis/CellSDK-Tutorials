@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework;
 
 namespace Slider_Sample
 {
-    class Application : MultitouchApplication
+    class MyApplication : MultitouchApplication
     {
         private Slider slider;
 
