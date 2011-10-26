@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{A5E414CF-F219-4F18-842B-825D7C22C3C6}</ProjectGuid>
+    <ProjectGuid>{0F410474-CAF9-4009-8E33-3336E91FB7CF}</ProjectGuid>
     <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">Windows Phone</Platform>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SampleListBox</RootNamespace>
-    <AssemblyName>SampleListBox</AssemblyName>
+    <RootNamespace>WP7ListBox</RootNamespace>
+    <AssemblyName>WP7ListBox</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
@@ -20,7 +20,7 @@
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
     <XnaWindowsPhoneManifestTemplate>Properties\WMAppManifest.xml</XnaWindowsPhoneManifestTemplate>
     <TileImage>Background.png</TileImage>
-    <TileTitle>SampleListBox</TileTitle>
+    <TileTitle>WP7ListBox</TileTitle>
     <SupportedCultures>
     </SupportedCultures>
     <Thumbnail>GameThumbnail.png</Thumbnail>
@@ -100,6 +100,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\Sources\MyApplication.cs">
+      <Link>MyApplication.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Properties\AppManifest.xml">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
@@ -117,8 +120,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SampleListBoxContent\SampleListBoxContent.contentproj">
-      <Name>SampleListBoxContent</Name>
+    <ProjectReference Include="..\WP7ListBoxContent\WP7ListBoxContent.contentproj">
+      <Name>WP7ListBoxContent</Name>
       <XnaReferenceType>Content</XnaReferenceType>
     </ProjectReference>
   </ItemGroup>
