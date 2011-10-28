@@ -101,8 +101,8 @@
     <Reference Include="System.Xml.Serialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\Sources\MyApplication.cs">
-      <Link>MyApplication.cs</Link>
+    <Compile Include="..\..\Sources\Application.cs">
+      <Link>Application.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Properties\AppManifest.xml">
