@@ -3,7 +3,7 @@ using System;
 using Syderis.CellSDK.WindowsPhone.Launcher;
 using ProgressBarSample;
 
-namespace WP7ProgressBar
+namespace ProgressBarSample
 {
     public class Program : Kernel
     {
@@ -12,7 +12,7 @@ namespace WP7ProgressBar
         /// </summary>
         protected override void Initialize()
         {
-            MyApplication application = new MyApplication();
+            Application application = new Application();
             base.Application = application;
             base.Initialize();
         }
