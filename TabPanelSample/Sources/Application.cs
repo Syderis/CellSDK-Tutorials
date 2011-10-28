@@ -9,7 +9,7 @@ using Syderis.CellSDK.Core.Graphics;
 
 namespace TabPanelSample
 {
-    class MyApplication : MultitouchApplication
+    class Application : MultitouchApplication
     {
         /// <summary>
         /// The main method for loading controls and resources.
