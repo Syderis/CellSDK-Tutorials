@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSParticles", "IOSParticles.csproj", "{D480E40C-1F16-41A6-AD57-1CEE02D4263F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D480E40C-1F16-41A6-AD57-1CEE02D4263F}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{D480E40C-1F16-41A6-AD57-1CEE02D4263F}.Debug|iPhone.Build.0 = Debug|iPhone
+		{D480E40C-1F16-41A6-AD57-1CEE02D4263F}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{D480E40C-1F16-41A6-AD57-1CEE02D4263F}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{D480E40C-1F16-41A6-AD57-1CEE02D4263F}.Release|iPhone.ActiveCfg = Release|iPhone
+		{D480E40C-1F16-41A6-AD57-1CEE02D4263F}.Release|iPhone.Build.0 = Release|iPhone
+		{D480E40C-1F16-41A6-AD57-1CEE02D4263F}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{D480E40C-1F16-41A6-AD57-1CEE02D4263F}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IOSParticles.csproj
+	EndGlobalSection
+EndGlobal
