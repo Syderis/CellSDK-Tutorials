@@ -9,7 +9,7 @@ using Syderis.CellSDK.Core.Sounds;
 
 namespace Sounds
 {
-    class MyApplication : MultitouchApplication
+    class Application : MultitouchApplication
     {
 
         private Sound lovelySound;
