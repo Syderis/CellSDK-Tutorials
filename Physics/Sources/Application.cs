@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework;
 
 namespace Physics
 {
-    class MyApplication : MultitouchApplication
+    class Application : MultitouchApplication
     {
         Label lbl1k, lbl2k, staticLabel;
         /// <summary>

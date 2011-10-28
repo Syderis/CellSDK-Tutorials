@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSPhysics", "IOSPhysics.csproj", "{561F9DE7-11DA-4971-9BF6-411391B06707}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{561F9DE7-11DA-4971-9BF6-411391B06707}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{561F9DE7-11DA-4971-9BF6-411391B06707}.Debug|iPhone.Build.0 = Debug|iPhone
+		{561F9DE7-11DA-4971-9BF6-411391B06707}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{561F9DE7-11DA-4971-9BF6-411391B06707}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{561F9DE7-11DA-4971-9BF6-411391B06707}.Release|iPhone.ActiveCfg = Release|iPhone
+		{561F9DE7-11DA-4971-9BF6-411391B06707}.Release|iPhone.Build.0 = Release|iPhone
+		{561F9DE7-11DA-4971-9BF6-411391B06707}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{561F9DE7-11DA-4971-9BF6-411391B06707}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IOSPhysics.csproj
+	EndGlobalSection
+EndGlobal
