@@ -30,7 +30,7 @@ namespace TabPanelSample
 
             MultitouchStaticContent.SkinXMLFileStream = Assets.Open("Content/Skin/Skin.xml");
 
-            MyApplication application = new MyApplication();
+            Application application = new Application();
             view.Application = application;
             view.Run();
         }
