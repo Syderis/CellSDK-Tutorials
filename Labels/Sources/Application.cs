@@ -6,7 +6,7 @@ using System.Text;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
 
-namespace WP7ListBox
+namespace Labels
 {
     class Application : MultitouchApplication
     {
@@ -18,7 +18,13 @@ namespace WP7ListBox
             base.Initialize();
 
             // TODO: Replace these comments with your own poetry, and enjoy!
-            //AddComponent(new Label("Hello, World!"), 0, 0);
+            AddComponent(new Label("Text . . ."), 0, 0);
+            
+        }
+
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
         }
     }
 }

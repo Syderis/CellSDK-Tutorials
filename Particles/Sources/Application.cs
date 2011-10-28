@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework;
 
 namespace ParticlesSample
 {
-    class MyApplication : MultitouchApplication
+    class Application : MultitouchApplication
     {
         private ParticleSystem particle1, particle2;
         private Button btnPush;
@@ -49,6 +49,11 @@ namespace ParticlesSample
 
             particle2.Play();
 
+        }
+
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
         }
     }
 }

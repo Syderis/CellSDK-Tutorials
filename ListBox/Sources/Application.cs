@@ -9,7 +9,7 @@ using Syderis.CellSDK.Core.Interfaces;
 
 namespace SampleListBox
 {
-    class MyApplication : MultitouchApplication
+    class Application : MultitouchApplication
     {
         /// <summary>
         /// The main method for loading controls and resources.
@@ -36,7 +36,13 @@ namespace SampleListBox
 
             AddComponent(descriptions, 0, 0);
         }
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
+        }
     }
+
+
 
     internal class ListItem : IListBoxObject
     {

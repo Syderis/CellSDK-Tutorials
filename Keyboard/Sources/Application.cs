@@ -8,7 +8,7 @@ using Syderis.CellSDK.Core.Controls;
 
 namespace TextAreaSample
 {
-    class MyApplication : MultitouchApplication
+    class Application : MultitouchApplication
     {
         TextArea textArea;
         /// <summary>
@@ -25,6 +25,11 @@ namespace TextAreaSample
             AddComponent(loveletter, 20, 200);
 
 
+        }
+
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
         }
     }
 }
