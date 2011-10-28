@@ -47,5 +47,10 @@ namespace ProgressBarSample
                 pbCharger.Value++;
 
         }
+
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
+        }
     }
 }

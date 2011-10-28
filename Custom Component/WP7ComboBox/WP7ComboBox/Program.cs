@@ -3,7 +3,7 @@ using System;
 using Syderis.CellSDK.WindowsPhone.Launcher;
 
 
-namespace ComboBo
+namespace ComboBox
 {
     public class Program : Kernel
     {

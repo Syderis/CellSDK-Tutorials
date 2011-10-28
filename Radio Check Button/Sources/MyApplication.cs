@@ -81,7 +81,9 @@ namespace SelectOptions
             lblWhiteRabbit.Visible = check.Selected;
         }
 
-
-
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
+        }
     }
 }

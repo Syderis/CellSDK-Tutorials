@@ -82,5 +82,9 @@ namespace InstanceLovelySound
             base.Update(gameTime);
         }
 
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
+        }
     }
 }

@@ -105,7 +105,11 @@ namespace StorageSample
             lblNotice.Text = not.News;
 
         }
-        
+
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
+        }
     }
 
 

@@ -30,5 +30,10 @@ namespace CellSDKApp
             AddComponent(clickLabel, Width / 2 - clickLabel.Size.X/2, Height / 2);
             AddComponent(clickButton, Width / 2 - clickButton.Size.X/2, Height / 2 - 100);            
         }
+
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
+        }
     }
 }

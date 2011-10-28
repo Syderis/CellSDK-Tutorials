@@ -49,12 +49,12 @@
       <Processor>PassThroughProcessor</Processor>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Compile Include="MyDir\Image2.jpg">
+    <Compile Include="MyDir\Image2.png">
       <Name>Image2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Image.jpg">
+    <Compile Include="Image.png">
       <Name>Image</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>

@@ -60,5 +60,9 @@ namespace Physics
             lbl2k.ComponentPhysics.ComponentFixture.Body.ApplyLinearImpulse(ref velocity);
         }
 
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
+        }
     }
 }

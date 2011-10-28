@@ -28,5 +28,10 @@ namespace TabPanelSample
 
             AddComponent(tab, 0, 0);
         }
+
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
+        }
     }
 }

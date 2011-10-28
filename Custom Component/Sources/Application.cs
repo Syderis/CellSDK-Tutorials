@@ -6,7 +6,7 @@ using System.Text;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
 
-namespace ComboBo
+namespace ComboBox
 {
     class Application : MultitouchApplication
     {

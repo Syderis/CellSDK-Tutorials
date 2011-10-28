@@ -34,5 +34,9 @@ namespace Sounds
             lovelySound.Play();
         }
 
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
+        }
     }
 }

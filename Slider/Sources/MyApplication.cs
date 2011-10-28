@@ -39,5 +39,10 @@ namespace Slider_Sample
             value.Text = slider.Value.ToString();
 
         }
+
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
+        }
     }
 }

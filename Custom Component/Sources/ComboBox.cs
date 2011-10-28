@@ -7,7 +7,7 @@ using Syderis.CellSDK.Core.Layouts;
 using Syderis.CellSDK.Core.Interfaces;
 using Microsoft.Xna.Framework;
 
-namespace ComboBo
+namespace ComboBox
 {
     class ComboBox: Container<CoordLayout>
     {
