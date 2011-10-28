@@ -3,7 +3,7 @@ using System;
 using Syderis.CellSDK.WindowsPhone.Launcher;
 using Physics;
 
-namespace WP7Physics
+namespace Physics
 {
     public class Program : Kernel
     {
@@ -12,7 +12,7 @@ namespace WP7Physics
         /// </summary>
         protected override void Initialize()
         {
-            MyApplication application = new MyApplication();
+            Application application = new Application();
             base.Application = application;
             base.Initialize();
         }
