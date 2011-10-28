@@ -3,7 +3,7 @@ using System;
 using Syderis.CellSDK.WindowsPhone.Launcher;
 using InstanceLovelySound;
 
-namespace WP7InstanceLovelySound
+namespace InstanceLovelySound
 {
     public class Program : Kernel
     {
@@ -12,7 +12,7 @@ namespace WP7InstanceLovelySound
         /// </summary>
         protected override void Initialize()
         {
-            MyApplication application = new MyApplication();
+            Application application = new Application();
             base.Application = application;
             base.Initialize();
         }

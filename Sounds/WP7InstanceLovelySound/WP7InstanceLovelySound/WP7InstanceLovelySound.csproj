@@ -100,8 +100,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\Sources\InstanceLovelySound\MyApplication.cs">
-      <Link>MyApplication.cs</Link>
+    <Compile Include="..\..\Sources\InstanceLovelySound\Application.cs">
+      <Link>Application.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Properties\AppManifest.xml">
