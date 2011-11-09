@@ -41,6 +41,6 @@ Global
 		{ADD47B4F-8192-4FE8-8BCC-B8AD463AE32F}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = IOSBasics.csproj
+		StartupItem = ..\IOSzBuffering\IOSzBuffering.csproj
 	EndGlobalSection
 EndGlobal

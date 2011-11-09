@@ -89,6 +89,7 @@
     <Content Include="Content\cell2.png" />
     <Content Include="Content\cell3.png" />
     <Content Include="Content\cell4.png" />
+    <Content Include="Content\bg_mobile.jpg" />
     <Content Include="/Library\Frameworks\CellSDK.framework\Versions\0.8\Skins\Default\blobcursor.png">
       <Link>Content\Skin\blobcursor.png</Link>
     </Content>
@@ -146,7 +147,10 @@
     <Content Include="/Library\Frameworks\CellSDK.framework\Versions\0.8\Skins\Default\Skin.xml">
       <Link>Content\Skin\Skin.xml</Link>
     </Content>
-    <Content Include="Content\bg_mobile.jpg" />
+    <Content Include="icono_Apple_3_57x57.png" />
+    <Content Include="icono_Apple_3_72x72.png" />
+    <Content Include="icono_Apple_3_114x114.png" />
+    <Content Include="icono_Apple_3_512x512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

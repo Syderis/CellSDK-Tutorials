@@ -104,6 +104,10 @@
     <Content Include="Content\1kg.png" />
     <Content Include="Content\2kg.png" />
     <Content Include="Content\Background.jpg" />
+    <Content Include="icono_Apple_3_57x57.png" />
+    <Content Include="icono_Apple_3_72x72.png" />
+    <Content Include="icono_Apple_3_114x114.png" />
+    <Content Include="icono_Apple_3_512x512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

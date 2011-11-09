@@ -104,6 +104,10 @@
     <Content Include="Content\Skin\TextAreaBackground.png" />
     <Content Include="Content\Skin\WhitePixel.png" />
     <Content Include="Content\Skin\blobcursor.png" />
+    <Content Include="icono_Apple_3_57x57.png" />
+    <Content Include="icono_Apple_3_72x72.png" />
+    <Content Include="icono_Apple_3_114x114.png" />
+    <Content Include="icono_Apple_3_512x512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

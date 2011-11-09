@@ -107,6 +107,10 @@
     <Content Include="..\WP7Buttons\WP7ButtonsContent\ballpressed.png">
       <Link>Content\ballpressed.png</Link>
     </Content>
+    <Content Include="icono_Apple_3_57x57.png" />
+    <Content Include="icono_Apple_3_72x72.png" />
+    <Content Include="icono_Apple_3_114x114.png" />
+    <Content Include="icono_Apple_3_512x512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
