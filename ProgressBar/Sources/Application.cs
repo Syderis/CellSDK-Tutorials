@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework;
 
 namespace ProgressBarSample
 {
-    class Application : MultitouchApplication
+    class Application : MobileApplication
     {
 
         private ProgressBar pbCharger;
