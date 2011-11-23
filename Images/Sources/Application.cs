@@ -9,7 +9,7 @@ using Syderis.CellSDK.Core.Graphics;
 
 namespace Images
 {
-    class Application : MultitouchApplication
+    class Application : MobileApplication
     {
         /// <summary>
         /// The main method for loading controls and resources.
