@@ -6,10 +6,11 @@ using System.Text;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
 using Syderis.CellSDK.Core.Graphics;
+using Syderis.CellSDK.Common;
 
 namespace TabPanelSample
 {
-    class Application : MultitouchApplication
+    class Application : MobileApplication
     {
         /// <summary>
         /// The main method for loading controls and resources.
@@ -20,7 +21,7 @@ namespace TabPanelSample
 
             // TODO: Replace these comments with your own poetry, and enjoy!
             TabPanel tab;
-            tab = new TabPanel(MultitouchStaticContent.Width, MultitouchStaticContent.Height);
+            tab = new TabPanel(Preferences.Width, Preferences.Height);
 
 
             tab.AddTab("mytab1", new Label(Image.CreateImage("cell_jekyll")));
