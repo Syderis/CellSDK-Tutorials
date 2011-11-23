@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidLabels", "AndroidLab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Labels", "WP7Labels\WP7Labels\WP7Labels.csproj", "{900E2849-996E-4B5E-BF55-B2568EF89CA0}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "WP7LabelsContent", "WP7Labels\WP7LabelsContent\WP7LabelsContent.contentproj", "{05A5AA3E-83C5-4E4C-9A0D-5A89E5FE15A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7LabelsContent", "WP7Labels\WP7LabelsContent\WP7LabelsContent.contentproj", "{05A5AA3E-83C5-4E4C-9A0D-5A89E5FE15A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +21,6 @@ Global
 		{8BB1F12A-474E-4F30-B758-A27BAEF2E01B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BB1F12A-474E-4F30-B758-A27BAEF2E01B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{8BB1F12A-474E-4F30-B758-A27BAEF2E01B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{8BB1F12A-474E-4F30-B758-A27BAEF2E01B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{8BB1F12A-474E-4F30-B758-A27BAEF2E01B}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
 		{8BB1F12A-474E-4F30-B758-A27BAEF2E01B}.Debug|Windows Phone.ActiveCfg = Debug|Any CPU
 		{8BB1F12A-474E-4F30-B758-A27BAEF2E01B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BB1F12A-474E-4F30-B758-A27BAEF2E01B}.Release|Any CPU.Build.0 = Release|Any CPU

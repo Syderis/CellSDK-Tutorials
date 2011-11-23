@@ -8,7 +8,7 @@ using Syderis.CellSDK.Core.Controls;
 
 namespace Labels
 {
-    class Application : MultitouchApplication
+    class Application : MobileApplication
     {
         /// <summary>
         /// The main method for loading controls and resources.
