@@ -9,7 +9,7 @@ using Syderis.CellSDK.Core.Interfaces;
 
 namespace SampleListBox
 {
-    class Application : MultitouchApplication
+    class Application : MobileApplication
     {
         /// <summary>
         /// The main method for loading controls and resources.
@@ -19,7 +19,7 @@ namespace SampleListBox
             base.Initialize();
 
             // TODO: Replace these comments with your own poetry, and enjoy!
-            ListBox descriptions = new ListBox(MultitouchStaticContent.Width, 200);
+            ListBox descriptions = new ListBox(Width, 200);
             descriptions.AddItem(new ListItem("Electronic Gadget"));
 
             descriptions.AddItem(new ListItem("Plastic Guy"));
