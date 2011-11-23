@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
+using Syderis.CellSDK.Common;
 
 namespace CanvasSample
 {
@@ -18,10 +19,10 @@ namespace CanvasSample
         public MyCanvas(int weidth, int heigh)
             : base(weidth, heigh)
         {
-            drawing = new RenderTarget2D(MultitouchStaticContent.SpriteBatch.GraphicsDevice, weidth,
+            drawing = new RenderTarget2D(StaticContent.SpriteBatch.GraphicsDevice, weidth,
                       heigh, false, SurfaceFormat.Color,
                       DepthFormat.Depth24, 0, RenderTargetUsage.PreserveContents);
-            brush = MultitouchStaticContent.Content.Load<Texture2D>("brush");
+            brush = StaticContent.Content.Load<Texture2D>("brush");
             middleoffset = new Vector2(brush.Width / 2, brush.Height / 2);
         }
 
@@ -30,22 +31,22 @@ namespace CanvasSample
             base.CanvasDraw();
 
             SetRenderTarget(drawing);
-            MultitouchStaticContent.SpriteBatch.Begin();
+            StaticContent.SpriteBatch.Begin();
             if (actualPosition!=Vector2.Zero)
             {
-                MultitouchStaticContent.SpriteBatch.Draw(brush, actualPosition - middleoffset, PaintColor);
+                StaticContent.SpriteBatch.Draw(brush, actualPosition - middleoffset, PaintColor);
             }
-            MultitouchStaticContent.SpriteBatch.End();
+            StaticContent.SpriteBatch.End();
 
             SetRenderTarget(null);
 
-            MultitouchStaticContent.SpriteBatch.GraphicsDevice.Clear(Color.Transparent);
+            StaticContent.SpriteBatch.GraphicsDevice.Clear(Color.Transparent);
             
-            MultitouchStaticContent.SpriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
+            StaticContent.SpriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
 
-            MultitouchStaticContent.SpriteBatch.Draw(drawing, Vector2.Zero, Color.White);
+            StaticContent.SpriteBatch.Draw(drawing, Vector2.Zero, Color.White);
 
-            MultitouchStaticContent.SpriteBatch.End();
+            StaticContent.SpriteBatch.End();
         }
 
         public override void CanvasTouchMoved(List<Syderis.CellSDK.Common.IBlob> blobs)

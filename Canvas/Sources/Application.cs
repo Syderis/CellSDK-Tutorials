@@ -3,19 +3,20 @@ using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
 using Syderis.CellSDK.Core.Graphics;
+using Syderis.CellSDK.Common;
 
 namespace CanvasSample
 {
-    class Application : MultitouchApplication
+    class Application : MobileApplication
     {
         List<Label> colors;
         MyCanvas canv;
         public override void Initialize()
         {
 
-            SetBackground(Image.CreateImage("Background"), false);
+            SetBackground(Image.CreateImage("Background"), Adjustment.NONE);
 
-            canv = new MyCanvas(MultitouchStaticContent.Width, MultitouchStaticContent.Height);
+            canv = new MyCanvas(Preferences.Width, Preferences.Height);
             canv.BringToFront = false;
             AddComponent(canv, 0, 0);
 
@@ -36,7 +37,7 @@ namespace CanvasSample
 
             for (int i = 0; i < colors.Count; i++)
             {
-                AddComponent(colors[i], i * colors[i].Size.X, MultitouchStaticContent.Height - colors[i].Size.Y);
+                AddComponent(colors[i], i * colors[i].Size.X, Preferences.Height - colors[i].Size.Y);
                 colors[i].Released -= Application_Released;
                 colors[i].Released += new Component.ComponentEventHandler(Application_Released);
 
