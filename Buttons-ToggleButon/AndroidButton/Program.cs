@@ -9,6 +9,7 @@ using Android.Widget;
 
 using Syderis.CellSDK.Android.Launcher;
 using Syderis.CellSDK.Core;
+using Syderis.CellSDK.Common;
 
 
 namespace Buttons
@@ -17,8 +18,8 @@ namespace Buttons
     public class Program : Activity
     {
 
-          public static Program Instance;
-        Kernel view;
+        public static Program Instance;
+
         /// <summary>
         /// The main method which loads Application.
         /// </summary>
@@ -26,10 +27,12 @@ namespace Buttons
         {
             base.OnCreate(savedInstanceState);
 
-            view = new Kernel(this);
+            Kernel view = new Kernel(this);
             SetContentView(view.Window);
 
-            MultitouchStaticContent.SkinXMLFileStream = Assets.Open("Content/Skin/Skin.xml");
+            Instance = this;
+            Preferences.SkinXMLFileStream = Assets.Open("Content/Skin/Skin.xml");
+            Preferences.ApplicationActivity = this;
 
             Application application = new Application();
             view.Application = application;
@@ -38,11 +41,7 @@ namespace Buttons
 
          public void Exit()
         {
-            if (view != null)
-            {
-                view.Exit();
-                this.Finish();
-            }
+            this.Finish();
         }
     }
 }

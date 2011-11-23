@@ -10,7 +10,7 @@ using Syderis.CellSDK.Core.Graphics;
 
 namespace Buttons
 {
-    class Application : MultitouchApplication
+    class Application : MobileApplication
     {
         private Button ball,secondball;
 
