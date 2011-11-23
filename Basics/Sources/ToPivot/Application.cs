@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework;
 
 namespace ToPivot
 {
-    class Application : MultitouchApplication
+    class Application : MobileApplication
     {
         private Label lbl1, lbl2, lbl3;
         /// <summary>

@@ -8,11 +8,12 @@ using Syderis.CellSDK.Core.Controls;
 using Microsoft.Xna.Framework;
 using Syderis.CellSDK.IO.AccelerometerSystem;
 using Syderis.CellSDK.Core.Graphics;
+using Syderis.CellSDK.Common;
 //using AndroidAccelerometer;
 
 namespace Accelerometer
 {
-    class Application : MultitouchApplication
+    class Application : MobileApplication
     {
 
         int accelfactor = 10;
@@ -30,7 +31,7 @@ namespace Accelerometer
         {
             base.Initialize();
 
-            SetBackground(Image.CreateImage("bg_mobile"),false);
+            SetBackground(Image.CreateImage("bg_mobile"), Adjustment.CENTER);
 
             AccelerometerSensor.Instance.Start();
 
@@ -39,9 +40,9 @@ namespace Accelerometer
             labels.Add( new Label(Image.CreateImage("cell3")));
             labels.Add( new Label(Image.CreateImage("cell4")));
 
-            actualPosition = centerposition = new Vector2(MultitouchStaticContent.Width / 2 - labels[0].Size.X / 2, MultitouchStaticContent.Height / 2 - labels[0].Size.Y / 2);
-            maxX = MultitouchStaticContent.Width - labels[0].Size.X;
-            maxY = MultitouchStaticContent.Height - labels[0].Size.Y;
+            actualPosition = centerposition = new Vector2(Preferences.Width / 2 - labels[0].Size.X / 2, Preferences.Height / 2 - labels[0].Size.Y / 2);
+            maxX = Preferences.Width - labels[0].Size.X;
+            maxY = Preferences.Height - labels[0].Size.Y;
 
             AddComponent(labels[0], 10, 10);
             AddComponent(labels[1], 250, 10);

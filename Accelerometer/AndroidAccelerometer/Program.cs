@@ -8,16 +8,14 @@ using Android.Views;
 using Android.Widget;
 
 using Syderis.CellSDK.Android.Launcher;
-using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Common;
+using Syderis.CellSDK.Core;
 
-
-namespace Animations
+namespace Accelerometer
 {
-    [Activity(Label = "AndroidAnimations", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "AndroidAccelerometer", MainLauncher = true, Icon = "@drawable/icon")]
     public class Program : Activity
     {
-
         public static Program Instance;
 
         /// <summary>
@@ -39,9 +37,12 @@ namespace Animations
             view.Run();
         }
 
+        /// <summary>
+        /// Exit Method.
+        /// </summary>
         public void Exit()
         {
-            this.Finish();
+            Finish();
         }
     }
 }

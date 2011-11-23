@@ -11,7 +11,7 @@ using Syderis.CellSDK.Core.Animations;
 
 namespace Animations
 {
-    class Application : MultitouchApplication
+    class Application : MobileApplication
     {
         private Label lbl;
         private Animation anim;
@@ -23,7 +23,7 @@ namespace Animations
         public override void Initialize()
         {
             base.Initialize();
-            SetBackground(Image.CreateImage("bg_mobile"),true);
+            SetBackground(Image.CreateImage("bg_mobile"), Adjustment.CENTER);
             // TODO: Replace these comments with your own poetry, and enjoy!
             lbl = new Label(Image.CreateImage("cell_car"));
             AddComponent(lbl, Width / 2, Height / 2);

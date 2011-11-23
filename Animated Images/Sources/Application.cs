@@ -10,7 +10,7 @@ using Syderis.CellSDK.Core.Graphics;
 
 namespace AnimatedImages
 {
-    class Application : MultitouchApplication
+    class Application : MobileApplication
     {
         private AnimatedImage img;
         int numberPlayed;
@@ -23,7 +23,7 @@ namespace AnimatedImages
         public override void Initialize()
         {
             base.Initialize();
-            SetBackground(Image.CreateImage("bg_mobile"), false);
+            SetBackground(Image.CreateImage("bg_mobile"), Adjustment.CENTER);
             // TODO: Replace these comments with your own poetry, and enjoy!
             StripAnimation animation = new StripAnimation(1020,868,204, 217, 19);
             animation.FramesPerSecond = 40;
