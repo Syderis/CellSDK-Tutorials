@@ -58,9 +58,6 @@
     <XnaCompressContent>true</XnaCompressContent>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FarseerPhysics.Windows">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files\Syderis\CellSDK.framework\Versions\0.8\Windows\Libraries\FarseerPhysics.Windows.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
       <Private>False</Private>
     </Reference>
@@ -92,13 +89,13 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Syderis.CellSDK.Windows.Common">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files\Syderis\CellSDK.framework\Versions\0.8\Windows\Libraries\Syderis.CellSDK.Windows.Common.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.0-alpha\Windows\Libraries\Syderis.CellSDK.Windows.Common.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.Windows.Core">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files\Syderis\CellSDK.framework\Versions\0.8\Windows\Libraries\Syderis.CellSDK.Windows.Core.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.0-alpha\Windows\Libraries\Syderis.CellSDK.Windows.Core.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.Windows.Launcher">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files\Syderis\CellSDK.framework\Versions\0.8\Windows\Libraries\Syderis.CellSDK.Windows.Launcher.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.0-alpha\Windows\Libraries\Syderis.CellSDK.Windows.Launcher.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Private>False</Private>

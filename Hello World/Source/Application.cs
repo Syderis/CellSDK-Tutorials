@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework;
 
 namespace CellSDKApp
 {
-    class Application : MultitouchApplication
+    class Application : MobileApplication
     {
         int count = 0;
         Label clickLabel;
