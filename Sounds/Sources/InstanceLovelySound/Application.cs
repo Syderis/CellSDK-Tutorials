@@ -10,7 +10,7 @@ using Syderis.CellSDK.Core.Graphics;
 
 namespace InstanceLovelySound
 {
-    class Application : MultitouchApplication
+    class Application : MobileApplication
     {
         private SoundInstance lovelyInstance;
          Button playStop ;
