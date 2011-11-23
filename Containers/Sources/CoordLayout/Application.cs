@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework;
 
 namespace CoordLayoutSample
 {
-    class Application : MultitouchApplication
+    class Application : MobileApplication
     {
         /// <summary>
         /// The main method for loading controls and resources.

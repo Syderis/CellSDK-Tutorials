@@ -10,7 +10,7 @@ using Syderis.CellSDK.Core.Layouts;
 
 namespace BorderLayoutSample
 {
-    class Application : MultitouchApplication
+    class Application : MobileApplication
     {
         /// <summary>
         /// The main method for loading controls and resources.
