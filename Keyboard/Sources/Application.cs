@@ -8,7 +8,7 @@ using Syderis.CellSDK.Core.Controls;
 
 namespace TextAreaSample
 {
-    class Application : MultitouchApplication
+    class Application : MobileApplication
     {
         TextArea textArea;
         /// <summary>
@@ -21,7 +21,7 @@ namespace TextAreaSample
             // TODO: Replace these comments with your own poetry, and enjoy!
             //AddComponent(new Label("Hello, World!"), 0, 0);
 
-            TextArea loveletter = new TextArea("", 1, 20);
+            TextArea loveletter = new TextArea("Hello, World!", 1, 20);
             AddComponent(loveletter, 20, 200);
 
 
