@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F4728888-118E-4D60-8078-1757F7B5B9C9}</ProjectGuid>
+    <ProjectGuid>{6FC185F9-5D16-4F35-B6A9-6722B35A5968}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>IOSProgressBar</RootNamespace>
-    <AssemblyName>IOSProgressBar</AssemblyName>
+    <RootNamespace>IOSRadioCheckButton</RootNamespace>
+    <AssemblyName>IOSRadioCheckButton</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -74,12 +74,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="..\Sources\Application.cs">
+    <Compile Include="..\..\Sources\Application.cs">
       <Link>Application.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Skin\Skin.xml" />
+    <Content Include="Content\whiteRabbit.jpg" />
     <Content Include="Content\Skin\skin_standart.png" />
     <Content Include="Content\Skin\StandardFont.xnb" />
     <Content Include="App_Icon_114x114.png" />
