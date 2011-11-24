@@ -58,10 +58,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Sources\Application.cs">
+    <Compile Include="..\..\Sources\Application.cs">
       <Link>Application.cs</Link>
     </Compile>
-    <Compile Include="..\Sources\ComboBox.cs">
+    <Compile Include="..\..\Sources\ComboBox.cs">
       <Link>ComboBox.cs</Link>
     </Compile>
     <Compile Include="Program.cs" />
