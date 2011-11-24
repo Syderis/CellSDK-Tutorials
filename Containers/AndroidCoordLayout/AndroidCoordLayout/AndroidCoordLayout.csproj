@@ -58,7 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Sources\CoordLayout\Application.cs">
+    <Compile Include="..\..\Sources\CoordLayout\Application.cs">
       <Link>Application.cs</Link>
     </Compile>
     <Compile Include="Program.cs" />
