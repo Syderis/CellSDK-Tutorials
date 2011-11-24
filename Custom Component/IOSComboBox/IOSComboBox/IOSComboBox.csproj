@@ -74,11 +74,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="..\Sources\Application.cs">
-      <Link>Application.cs</Link>
-    </Compile>
-    <Compile Include="..\Sources\ComboBox.cs">
+    <Compile Include="..\..\Sources\ComboBox.cs">
       <Link>ComboBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Sources\Application.cs">
+      <Link>Application.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7ProgressBar", "WP7ProgressBar\WP7ProgressBar.csproj", "{D631055D-4528-49BE-894A-EA60A51BC806}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7ProgressBarContent", "WP7ProgressBarContent\WP7ProgressBarContent.contentproj", "{681F368E-6E82-473F-995F-DD47829D7E38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D631055D-4528-49BE-894A-EA60A51BC806}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{D631055D-4528-49BE-894A-EA60A51BC806}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{D631055D-4528-49BE-894A-EA60A51BC806}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{D631055D-4528-49BE-894A-EA60A51BC806}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{D631055D-4528-49BE-894A-EA60A51BC806}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{D631055D-4528-49BE-894A-EA60A51BC806}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{681F368E-6E82-473F-995F-DD47829D7E38}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{681F368E-6E82-473F-995F-DD47829D7E38}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
