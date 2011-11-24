@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSAcelerometer", "IOSAcelerometer.csproj", "{CFDD3ABE-3094-446E-BE33-A7464550AEEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSAcelerometer", "IOSAccelerometer\IOSAcelerometer.csproj", "{CFDD3ABE-3094-446E-BE33-A7464550AEEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +21,6 @@ Global
 		{CFDD3ABE-3094-446E-BE33-A7464550AEEB}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = IOSAcelerometer.csproj
+		StartupItem = IOSAccelerometer\IOSAcelerometer.csproj
 	EndGlobalSection
 EndGlobal
