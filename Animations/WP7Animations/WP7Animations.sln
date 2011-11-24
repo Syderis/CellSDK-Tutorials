@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Animations", "WP7Animations\WP7Animations.csproj", "{F53205F8-4772-4784-8DCA-EA842C424242}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7AnimationsContent", "WP7AnimationsContent\WP7AnimationsContent.contentproj", "{D1F00E4B-F327-4377-BAA4-8E7AF50FD1F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F53205F8-4772-4784-8DCA-EA842C424242}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{F53205F8-4772-4784-8DCA-EA842C424242}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{F53205F8-4772-4784-8DCA-EA842C424242}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{F53205F8-4772-4784-8DCA-EA842C424242}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{F53205F8-4772-4784-8DCA-EA842C424242}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{F53205F8-4772-4784-8DCA-EA842C424242}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{D1F00E4B-F327-4377-BAA4-8E7AF50FD1F1}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{D1F00E4B-F327-4377-BAA4-8E7AF50FD1F1}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
