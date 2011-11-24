@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Keyboard", "WP7Keyboard\WP7Keyboard.csproj", "{728BA652-443E-4E62-B639-AD4D1368432A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7KeyboardContent", "WP7KeyboardContent\WP7KeyboardContent.contentproj", "{39741E93-63DC-4053-AE34-E9EBBFAE4F7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{728BA652-443E-4E62-B639-AD4D1368432A}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{728BA652-443E-4E62-B639-AD4D1368432A}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{728BA652-443E-4E62-B639-AD4D1368432A}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{728BA652-443E-4E62-B639-AD4D1368432A}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{728BA652-443E-4E62-B639-AD4D1368432A}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{728BA652-443E-4E62-B639-AD4D1368432A}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{39741E93-63DC-4053-AE34-E9EBBFAE4F7C}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{39741E93-63DC-4053-AE34-E9EBBFAE4F7C}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
