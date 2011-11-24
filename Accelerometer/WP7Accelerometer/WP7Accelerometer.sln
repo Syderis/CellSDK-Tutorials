@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Accelormeter", "Accelerometer\WP7Accelormeter.csproj", "{FB0197A9-7348-42DE-94B8-8F3807612AF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7AccelormeterContent", "AccelerometerContent\WP7AccelormeterContent.contentproj", "{03FB58AF-6E7D-4796-821C-D9780E9D4966}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB0197A9-7348-42DE-94B8-8F3807612AF3}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{FB0197A9-7348-42DE-94B8-8F3807612AF3}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{FB0197A9-7348-42DE-94B8-8F3807612AF3}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{FB0197A9-7348-42DE-94B8-8F3807612AF3}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{FB0197A9-7348-42DE-94B8-8F3807612AF3}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{FB0197A9-7348-42DE-94B8-8F3807612AF3}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{03FB58AF-6E7D-4796-821C-D9780E9D4966}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{03FB58AF-6E7D-4796-821C-D9780E9D4966}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
