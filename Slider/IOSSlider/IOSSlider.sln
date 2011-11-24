@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSSlider", "IOSSlider.csproj", "{3B3A7793-272F-41B6-B0A4-E901DBACBCF6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSSlider", "IOSSlider\IOSSlider.csproj", "{3B3A7793-272F-41B6-B0A4-E901DBACBCF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +21,6 @@ Global
 		{3B3A7793-272F-41B6-B0A4-E901DBACBCF6}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = IOSSlider.csproj
+		StartupItem = IOSSlider\IOSSlider.csproj
 	EndGlobalSection
 EndGlobal
