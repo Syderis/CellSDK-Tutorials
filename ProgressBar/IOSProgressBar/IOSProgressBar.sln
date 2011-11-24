@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSProgressBar", "IOSProgressBar.csproj", "{F4728888-118E-4D60-8078-1757F7B5B9C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSProgressBar", "IOSProgressBar\IOSProgressBar.csproj", "{F4728888-118E-4D60-8078-1757F7B5B9C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +21,6 @@ Global
 		{F4728888-118E-4D60-8078-1757F7B5B9C9}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = IOSProgressBar.csproj
+		StartupItem = IOSProgressBar\IOSProgressBar.csproj
 	EndGlobalSection
 EndGlobal
