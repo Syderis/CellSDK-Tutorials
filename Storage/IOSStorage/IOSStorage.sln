@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSStorage", "IOSStorage.csproj", "{A20E1600-D67B-4EB1-9AA4-DC7BBE628898}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSStorage", "IOSStorage\IOSStorage.csproj", "{A20E1600-D67B-4EB1-9AA4-DC7BBE628898}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +21,6 @@ Global
 		{A20E1600-D67B-4EB1-9AA4-DC7BBE628898}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = IOSStorage.csproj
+		StartupItem = IOSStorage\IOSStorage.csproj
 	EndGlobalSection
 EndGlobal
