@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSPhysics", "IOSPhysics.csproj", "{561F9DE7-11DA-4971-9BF6-411391B06707}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSPhysics", "IOSPhysics\IOSPhysics.csproj", "{561F9DE7-11DA-4971-9BF6-411391B06707}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +21,6 @@ Global
 		{561F9DE7-11DA-4971-9BF6-411391B06707}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = IOSPhysics.csproj
+		StartupItem = IOSPhysics\IOSPhysics.csproj
 	EndGlobalSection
 EndGlobal

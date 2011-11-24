@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{41CB62BD-BF5A-489C-BB09-CF467D0E6027}</ProjectGuid>
+    <ProjectGuid>{8BB1F12A-474E-4F30-B758-A27BAEF2E01B}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AndroidParticles</RootNamespace>
-    <AssemblyName>AndroidParticles</AssemblyName>
+    <RootNamespace>AndroidLabels</RootNamespace>
+    <AssemblyName>AndroidLabels</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
@@ -37,9 +37,6 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FarseerPhysics.Android">
-      <HintPath>$(CellSDK)Versions\1.0-alpha\Android\Libraries\FarseerPhysics.Android.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="MonoGame.Framework">
       <HintPath>$(CellSDK)Versions\1.0-alpha\Android\Libraries\MonoGame.Framework.dll</HintPath>
@@ -61,7 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Sources\Application.cs">
+    <Compile Include="..\..\Sources\Application.cs">
       <Link>Application.cs</Link>
     </Compile>
     <Compile Include="Program.cs" />
@@ -70,9 +67,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Drawable\Icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Content\star.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\Content\Skin\Skin.xml" />
