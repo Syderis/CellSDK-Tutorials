@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSListBox", "IOSListBox.csproj", "{106C10ED-0A67-45BC-90F3-D5C6385FAF30}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSListBox", "IOSListBox\IOSListBox.csproj", "{106C10ED-0A67-45BC-90F3-D5C6385FAF30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +21,6 @@ Global
 		{106C10ED-0A67-45BC-90F3-D5C6385FAF30}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = IOSListBox.csproj
+		StartupItem = IOSListBox\IOSListBox.csproj
 	EndGlobalSection
 EndGlobal

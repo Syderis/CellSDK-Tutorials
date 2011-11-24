@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{106C10ED-0A67-45BC-90F3-D5C6385FAF30}</ProjectGuid>
+    <ProjectGuid>{292C28DD-1879-4C53-9D7B-D0B3E63C4638}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>IOSListBox</RootNamespace>
-    <AssemblyName>IOSListBox</AssemblyName>
+    <RootNamespace>IOSLabels</RootNamespace>
+    <AssemblyName>IOSLabels</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -74,7 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="..\Sources\Application.cs">
+    <Compile Include="..\..\Sources\Application.cs">
       <Link>Application.cs</Link>
     </Compile>
   </ItemGroup>
@@ -83,14 +83,14 @@
     <None Include="Info.plist" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\" />
+    <Folder Include="Content\Skin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Skin\skin_standart.png" />
+    <Content Include="Content\Skin\Skin.xml" />
+    <Content Include="Content\Skin\StandardFont.xnb" />
     <Content Include="App_Icon_114x114.png" />
     <Content Include="App_Icon_57x57.png" />
     <Content Include="App_Icon_72x72.png" />
-    <Content Include="Content\Skin\StandardFont.xnb" />
-    <Content Include="Content\Skin\Skin.xml" />
   </ItemGroup>
 </Project>
