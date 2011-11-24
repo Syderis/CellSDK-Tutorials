@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{635485C2-080B-40E7-854E-5FD00EEECE51}</ProjectGuid>
+    <ProjectGuid>{9FAA07A4-2AF7-4018-8AD4-13945BACA03C}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>IOSBorderLayout</RootNamespace>
-    <AssemblyName>IOSBorderLayout</AssemblyName>
+    <RootNamespace>IOSCoordLayout</RootNamespace>
+    <AssemblyName>IOSCoordLayout</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -74,17 +74,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="..\Sources\BorderLayout\Application.cs">
+    <Compile Include="..\..\Sources\CoordLayout\Application.cs">
       <Link>Application.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Skin\Skin.xml" />
+    <Content Include="Content\Skin\skin_standart.png" />
+    <Content Include="Content\Skin\StandardFont.xnb" />
     <Content Include="App_Icon_114x114.png" />
     <Content Include="App_Icon_57x57.png" />
     <Content Include="App_Icon_72x72.png" />
-    <Content Include="Content\Skin\skin_standart.png" />
-    <Content Include="Content\Skin\StandardFont.xnb" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
