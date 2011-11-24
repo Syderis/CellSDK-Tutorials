@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7TabPanel", "WP7TabPanel\WP7TabPanel.csproj", "{5881B6B5-019E-470E-AFC0-2858E76323A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7TabPanelContent", "WP7TabPanelContent\WP7TabPanelContent.contentproj", "{9D0ADC00-07C9-44A5-98D8-0C4039F81890}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5881B6B5-019E-470E-AFC0-2858E76323A8}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{5881B6B5-019E-470E-AFC0-2858E76323A8}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{5881B6B5-019E-470E-AFC0-2858E76323A8}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{5881B6B5-019E-470E-AFC0-2858E76323A8}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{5881B6B5-019E-470E-AFC0-2858E76323A8}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{5881B6B5-019E-470E-AFC0-2858E76323A8}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{9D0ADC00-07C9-44A5-98D8-0C4039F81890}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{9D0ADC00-07C9-44A5-98D8-0C4039F81890}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

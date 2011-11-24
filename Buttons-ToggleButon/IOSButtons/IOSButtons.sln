@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSButtons", "IOSButtons.csproj", "{DE372E24-AEFC-4686-8969-0537C8756B3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSButtons", "IOSButtons\IOSButtons.csproj", "{DE372E24-AEFC-4686-8969-0537C8756B3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +21,6 @@ Global
 		{DE372E24-AEFC-4686-8969-0537C8756B3C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = IOSButtons.csproj
+		StartupItem = IOSButtons\IOSButtons.csproj
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7RadioCheckButton", "WP7RadioCheckButton\WP7RadioCheckButton.csproj", "{65FD21D1-A9AA-453C-8FC5-590257318292}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7RadioCheckButtonContent", "WP7RadioCheckButtonContent\WP7RadioCheckButtonContent.contentproj", "{E17E699D-1FAA-4917-B44F-A8518A2C0C32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65FD21D1-A9AA-453C-8FC5-590257318292}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{65FD21D1-A9AA-453C-8FC5-590257318292}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{65FD21D1-A9AA-453C-8FC5-590257318292}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{65FD21D1-A9AA-453C-8FC5-590257318292}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{65FD21D1-A9AA-453C-8FC5-590257318292}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{65FD21D1-A9AA-453C-8FC5-590257318292}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{E17E699D-1FAA-4917-B44F-A8518A2C0C32}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{E17E699D-1FAA-4917-B44F-A8518A2C0C32}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
