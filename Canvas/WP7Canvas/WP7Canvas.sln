@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Canvas", "WP7Canvas\WP7Canvas.csproj", "{D5BE4B55-60DF-48CE-8FD8-340084A31076}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7CanvasContent", "WP7CanvasContent\WP7CanvasContent.contentproj", "{8E2D99AB-6A08-475D-97BB-A1567225B4EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5BE4B55-60DF-48CE-8FD8-340084A31076}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{D5BE4B55-60DF-48CE-8FD8-340084A31076}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{D5BE4B55-60DF-48CE-8FD8-340084A31076}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{D5BE4B55-60DF-48CE-8FD8-340084A31076}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{D5BE4B55-60DF-48CE-8FD8-340084A31076}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{D5BE4B55-60DF-48CE-8FD8-340084A31076}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{8E2D99AB-6A08-475D-97BB-A1567225B4EC}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{8E2D99AB-6A08-475D-97BB-A1567225B4EC}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
