@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7GridLayout", "WP7GridLayout\WP7GridLayout.csproj", "{5EF8C0B5-7F5C-4638-A9D4-E650D40089F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7GridLayoutContent", "WP7GridLayoutContent\WP7GridLayoutContent.contentproj", "{9886BE96-8375-4643-BEB4-832C5D8D0234}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EF8C0B5-7F5C-4638-A9D4-E650D40089F6}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{5EF8C0B5-7F5C-4638-A9D4-E650D40089F6}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{5EF8C0B5-7F5C-4638-A9D4-E650D40089F6}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{5EF8C0B5-7F5C-4638-A9D4-E650D40089F6}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{5EF8C0B5-7F5C-4638-A9D4-E650D40089F6}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{5EF8C0B5-7F5C-4638-A9D4-E650D40089F6}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{9886BE96-8375-4643-BEB4-832C5D8D0234}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{9886BE96-8375-4643-BEB4-832C5D8D0234}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
