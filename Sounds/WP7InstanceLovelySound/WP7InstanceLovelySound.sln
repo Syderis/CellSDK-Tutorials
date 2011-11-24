@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7InstanceLovelySound", "WP7InstanceLovelySound\WP7InstanceLovelySound.csproj", "{60B58D82-C45D-4A36-85FA-5692768541AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7InstanceLovelySoundContent", "WP7InstanceLovelySoundContent\WP7InstanceLovelySoundContent.contentproj", "{6CF657A5-1847-46E9-9303-BF4CF0BDE236}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60B58D82-C45D-4A36-85FA-5692768541AC}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{60B58D82-C45D-4A36-85FA-5692768541AC}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{60B58D82-C45D-4A36-85FA-5692768541AC}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{60B58D82-C45D-4A36-85FA-5692768541AC}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{60B58D82-C45D-4A36-85FA-5692768541AC}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{60B58D82-C45D-4A36-85FA-5692768541AC}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{6CF657A5-1847-46E9-9303-BF4CF0BDE236}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{6CF657A5-1847-46E9-9303-BF4CF0BDE236}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
