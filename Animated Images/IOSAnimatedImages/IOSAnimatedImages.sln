@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSAnimatedImages", "IOSAnimatedImages.csproj", "{9D5C5C79-F2D2-465F-91BC-CC22C5D9BA7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSAnimatedImages", "IOSAnimatedImages\IOSAnimatedImages.csproj", "{9D5C5C79-F2D2-465F-91BC-CC22C5D9BA7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +21,6 @@ Global
 		{9D5C5C79-F2D2-465F-91BC-CC22C5D9BA7B}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = IOSAnimatedImages.csproj
+		StartupItem = IOSAnimatedImages\IOSAnimatedImages.csproj
 	EndGlobalSection
 EndGlobal

@@ -1,11 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSBasics", "IOSBasics.csproj", "{5B9FD9A2-8638-4944-8E27-76A0AC1790BD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSzBuffering", "..\IOSzBuffering\IOSzBuffering.csproj", "{ADD47B4F-8192-4FE8-8BCC-B8AD463AE32F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSToPivot", "..\IOSToPivot\IOSToPivot.csproj", "{85461568-9617-4729-B9DA-A71B1EE83298}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSBasics", "IOSBasics\IOSBasics.csproj", "{5B9FD9A2-8638-4944-8E27-76A0AC1790BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,24 +19,8 @@ Global
 		{5B9FD9A2-8638-4944-8E27-76A0AC1790BD}.Release|iPhone.Build.0 = Release|iPhone
 		{5B9FD9A2-8638-4944-8E27-76A0AC1790BD}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{5B9FD9A2-8638-4944-8E27-76A0AC1790BD}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
-		{85461568-9617-4729-B9DA-A71B1EE83298}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{85461568-9617-4729-B9DA-A71B1EE83298}.Debug|iPhone.Build.0 = Debug|iPhone
-		{85461568-9617-4729-B9DA-A71B1EE83298}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{85461568-9617-4729-B9DA-A71B1EE83298}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{85461568-9617-4729-B9DA-A71B1EE83298}.Release|iPhone.ActiveCfg = Release|iPhone
-		{85461568-9617-4729-B9DA-A71B1EE83298}.Release|iPhone.Build.0 = Release|iPhone
-		{85461568-9617-4729-B9DA-A71B1EE83298}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{85461568-9617-4729-B9DA-A71B1EE83298}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
-		{ADD47B4F-8192-4FE8-8BCC-B8AD463AE32F}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{ADD47B4F-8192-4FE8-8BCC-B8AD463AE32F}.Debug|iPhone.Build.0 = Debug|iPhone
-		{ADD47B4F-8192-4FE8-8BCC-B8AD463AE32F}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{ADD47B4F-8192-4FE8-8BCC-B8AD463AE32F}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{ADD47B4F-8192-4FE8-8BCC-B8AD463AE32F}.Release|iPhone.ActiveCfg = Release|iPhone
-		{ADD47B4F-8192-4FE8-8BCC-B8AD463AE32F}.Release|iPhone.Build.0 = Release|iPhone
-		{ADD47B4F-8192-4FE8-8BCC-B8AD463AE32F}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{ADD47B4F-8192-4FE8-8BCC-B8AD463AE32F}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = ..\IOSzBuffering\IOSzBuffering.csproj
+		StartupItem = IOSBasics\IOSBasics.csproj
 	EndGlobalSection
 EndGlobal
