@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7ComboBox", "WP7ComboBox\WP7ComboBox.csproj", "{F3048CC2-5726-45E0-8FF6-9E7EB8B9324B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7ComboBoxContent", "WP7ComboBoxContent\WP7ComboBoxContent.contentproj", "{5D55A10E-5D11-42B0-89E7-1E893FEB021A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3048CC2-5726-45E0-8FF6-9E7EB8B9324B}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{F3048CC2-5726-45E0-8FF6-9E7EB8B9324B}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{F3048CC2-5726-45E0-8FF6-9E7EB8B9324B}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{F3048CC2-5726-45E0-8FF6-9E7EB8B9324B}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{F3048CC2-5726-45E0-8FF6-9E7EB8B9324B}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{F3048CC2-5726-45E0-8FF6-9E7EB8B9324B}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{5D55A10E-5D11-42B0-89E7-1E893FEB021A}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{5D55A10E-5D11-42B0-89E7-1E893FEB021A}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
