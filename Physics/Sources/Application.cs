@@ -24,20 +24,44 @@ namespace Physics
             // TODO: Replace these comments with your own poetry, and enjoy!
             SetBackground(Image.CreateImage("background"), Adjustment.STRETCH);
 
-            CreatePhysicWorld(new Vector2(0, -10), true, false, Vector2.Zero);            
+            CreatePhysicWorld(new Vector2(0, -10), true, true, Vector2.Zero);
+
+            //First tutorial
+            //Label lbl = new Label("Hello God!");
+            
+            //AddComponent(lbl, 200, 100, BodyShape.SQUARE, BodyType.DYNAMIC, Category.Cat1);
+
+            //Label staticLabel = new Label("I am a static label");
+
+            //AddComponent(staticLabel, 200, 500, BodyShape.SQUARE, BodyType.STATIC, Category.Cat1);
+            //staticLabel.Rotation = MathHelper.ToRadians(45f);
+
+
+            //SecondTutorial
+            //lbl1k = new Label(Image.CreateImage("1kg"));
+            //AddComponent(lbl1k, 50, 0, BodyShape.SQUARE, BodyType.DYNAMIC, Category.Cat1);            
+            //lbl1k.PhysicBody.Mass = 1f;
+            
+            //lbl2k = new Label(Image.CreateImage("2kg"));
+            //AddComponent(lbl2k, 200, 0, BodyShape.SQUARE, BodyType.DYNAMIC, Category.Cat1);            
+            //lbl2k.PhysicBody.Mass = 2f;
+
+            //staticLabel = new Label("I am a static label");            
+            //AddComponent(staticLabel, 50, 500, BodyShape.SQUARE, BodyType.STATIC, Category.Cat1);
+
+            //Third tutorial
 
             lbl1k = new Label(Image.CreateImage("1kg"));
-            AddComponent(lbl1k, 50, 400);
-            PhysicWorld.AddBody(lbl1k);
-            lbl1k.PhysicBody.Mass = 1f;            
+            AddComponent(lbl1k, 50, 0, BodyShape.SQUARE, BodyType.DYNAMIC, Category.Cat1);
+            lbl1k.PhysicBody.Mass = 1f;
 
             lbl2k = new Label(Image.CreateImage("2kg"));
-            AddComponent(lbl2k, 200, 400);
-            PhysicWorld.AddBody(lbl2k);
-            lbl2k.PhysicBody.Mass = 2f;            
+            AddComponent(lbl2k, 200, 0, BodyShape.SQUARE, BodyType.DYNAMIC, Category.Cat1);
+            lbl2k.PhysicBody.Mass = 2f;
 
-            staticLabel = new Label("I am a static label");            
+            staticLabel = new Label("I am a static label");
             AddComponent(staticLabel, 50, 500, BodyShape.SQUARE, BodyType.STATIC, Category.Cat1);
+
 
             Button btn = new Button("Press me!");
             AddComponent(btn, 50, 700, BodyShape.SQUARE, BodyType.STATIC, Category.Cat1);

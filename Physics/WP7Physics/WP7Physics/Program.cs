@@ -14,6 +14,7 @@ namespace Physics
         {
             Application application = new Application();
             base.Application = application;
+            FramesPerSecond = 50;
             base.Initialize();
         }
     }
