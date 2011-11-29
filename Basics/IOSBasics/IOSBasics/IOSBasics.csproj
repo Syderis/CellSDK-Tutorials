@@ -86,6 +86,7 @@
     <Content Include="App_Icon_72x72.png" />
     <Content Include="Content\Skin\skin_standart.png" />
     <Content Include="Content\Skin\StandardFont.xnb" />
+    <Content Include="Content\bg_mobile.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

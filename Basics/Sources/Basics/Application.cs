@@ -16,7 +16,7 @@ namespace Basics
             base.Initialize();
 
             // Replace this comment with your own poetry, and enjoy!
-            SetBackground(Image.CreateImage("Background"), Adjustment.CENTER);
+            SetBackground(Image.CreateImage("bg_mobile"),MobileApplication.Adjustment.CENTER);
         }
          public override void BackButtonPressed()
         {

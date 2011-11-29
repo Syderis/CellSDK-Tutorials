@@ -75,8 +75,7 @@ namespace Physics
             lbl2k.Draggable = true;
 
             lbl1k.PhysicBody.Restitution = 1.2f;
-            lbl2k.PhysicBody.Restitution = 0.9f;
-            
+            lbl2k.PhysicBody.Restitution = 0.9f;            
         }
 
         void btn_Released(Component source)
