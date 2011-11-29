@@ -25,14 +25,15 @@ namespace CellSDKApp
 
             clickLabel = new Label("Click Count");
             clickButton = new Button("Click me!!!");
-            clickButton.Released += delegate { clickLabel.Text = string.Format("{0} Clicks!.", ++count); };   
-			
-			clickLabel.Pivot = Vector2.One / 2;
-			clickLabel.Align = Label.AlignType.BOTTOMLEFT;
-			clickButton.Pivot = Vector2.One / 2;
-			clickButton.Align = Label.AlignType.MIDDLECENTER;
-			
-			
+
+            clickButton.Released += delegate { clickLabel.Text = string.Format("{0} Clicks!.", ++count); };
+
+            clickLabel.Pivot = Vector2.One / 2;
+            clickLabel.Align = Label.AlignType.MIDDLECENTER;
+            clickButton.Pivot = Vector2.One / 2;
+            clickButton.Align = Label.AlignType.MIDDLECENTER;
+
+
             AddComponent(clickLabel, Width / 2 - clickLabel.Size.X/2, Height / 2);
             AddComponent(clickButton, Width / 2 - clickButton.Size.X/2, Height / 2 - 100);            
         }
