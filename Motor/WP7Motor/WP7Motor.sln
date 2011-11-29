@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Motor", "WP7Motor\WP7Motor.csproj", "{6738036B-644D-479E-B091-4EEADCD8DD74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7MotorContent", "WP7MotorContent\WP7MotorContent.contentproj", "{F41F8BB4-D4E5-472B-AA28-2DA46975B7F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6738036B-644D-479E-B091-4EEADCD8DD74}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{6738036B-644D-479E-B091-4EEADCD8DD74}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{6738036B-644D-479E-B091-4EEADCD8DD74}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{6738036B-644D-479E-B091-4EEADCD8DD74}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{6738036B-644D-479E-B091-4EEADCD8DD74}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{6738036B-644D-479E-B091-4EEADCD8DD74}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{F41F8BB4-D4E5-472B-AA28-2DA46975B7F8}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{F41F8BB4-D4E5-472B-AA28-2DA46975B7F8}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
