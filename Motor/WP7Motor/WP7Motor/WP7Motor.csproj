@@ -68,7 +68,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Syderis.CellSDK.WindowsPhone.IO.AccelerometerSystem">
-      <HintPath>C:\Program Files\Syderis\CellSDK.framework\Versions\1.0-alpha\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.IO.AccelerometerSystem.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.0-alpha\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.IO.AccelerometerSystem.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Private>False</Private>
@@ -103,7 +103,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\source\Application.cs">
+    <Compile Include="..\..\Source\Application.cs">
       <Link>Application.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
