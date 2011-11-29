@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Sensors", "WP7Sensors\WP7Sensors.csproj", "{D3961657-9E3F-4811-9681-A3FC7C1306A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Sensor.Content", "WP7Sensor.Content\WP7Sensor.Content.contentproj", "{4E7DF738-9CAB-45BA-A233-5D00E353C6E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3961657-9E3F-4811-9681-A3FC7C1306A2}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{D3961657-9E3F-4811-9681-A3FC7C1306A2}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{D3961657-9E3F-4811-9681-A3FC7C1306A2}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{D3961657-9E3F-4811-9681-A3FC7C1306A2}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{D3961657-9E3F-4811-9681-A3FC7C1306A2}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{D3961657-9E3F-4811-9681-A3FC7C1306A2}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{4E7DF738-9CAB-45BA-A233-5D00E353C6E1}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{4E7DF738-9CAB-45BA-A233-5D00E353C6E1}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
