@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSJoints", "IOSJoints\IOSJoints.csproj", "{3DBD6454-E581-4F65-91AB-473DDF8DC92C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DBD6454-E581-4F65-91AB-473DDF8DC92C}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{3DBD6454-E581-4F65-91AB-473DDF8DC92C}.Debug|iPhone.Build.0 = Debug|iPhone
+		{3DBD6454-E581-4F65-91AB-473DDF8DC92C}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{3DBD6454-E581-4F65-91AB-473DDF8DC92C}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{3DBD6454-E581-4F65-91AB-473DDF8DC92C}.Release|iPhone.ActiveCfg = Release|iPhone
+		{3DBD6454-E581-4F65-91AB-473DDF8DC92C}.Release|iPhone.Build.0 = Release|iPhone
+		{3DBD6454-E581-4F65-91AB-473DDF8DC92C}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{3DBD6454-E581-4F65-91AB-473DDF8DC92C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IOSJoints\IOSJoints.csproj
+	EndGlobalSection
+EndGlobal
