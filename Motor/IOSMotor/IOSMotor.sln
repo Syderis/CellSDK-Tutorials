@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotorSample.IOS", "IOSMotor\MotorSample.IOS.csproj", "{CEAD9F6C-CE62-4F6C-A63F-719C82CCFFD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSMotor", "IOSMotor\IOSMotor.csproj", "{CEAD9F6C-CE62-4F6C-A63F-719C82CCFFD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +21,6 @@ Global
 		{CEAD9F6C-CE62-4F6C-A63F-719C82CCFFD5}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = IOSMotor\MotorSample.IOS.csproj
+		StartupItem = IOSMotor\IOSMotor.csproj
 	EndGlobalSection
 EndGlobal
