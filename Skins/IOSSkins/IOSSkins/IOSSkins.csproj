@@ -88,6 +88,8 @@
     <Content Include="Content\Skin\FontMetal.xnb" />
     <Content Include="Content\Skin\skin_metal.png" />
     <Content Include="Content\Skin\Skin.xml" />
+    <Content Include="Content\metalBG.png" />
+    <Content Include="Content\standardBG.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
