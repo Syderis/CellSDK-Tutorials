@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Skins", "WP7Skins\WP7Skins.csproj", "{3A0B096A-7460-4A20-90D8-09FB3E99CF19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7SkinsContent", "WP7SkinsContent\WP7SkinsContent.contentproj", "{18C926BB-E3B0-4A00-9890-EB36511CBA0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A0B096A-7460-4A20-90D8-09FB3E99CF19}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{3A0B096A-7460-4A20-90D8-09FB3E99CF19}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{3A0B096A-7460-4A20-90D8-09FB3E99CF19}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{3A0B096A-7460-4A20-90D8-09FB3E99CF19}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{3A0B096A-7460-4A20-90D8-09FB3E99CF19}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{3A0B096A-7460-4A20-90D8-09FB3E99CF19}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{18C926BB-E3B0-4A00-9890-EB36511CBA0A}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{18C926BB-E3B0-4A00-9890-EB36511CBA0A}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
