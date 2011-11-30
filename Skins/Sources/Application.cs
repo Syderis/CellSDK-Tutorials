@@ -6,6 +6,7 @@ using System.Text;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
 using Microsoft.Xna.Framework;
+using Syderis.CellSDK.Core.Graphics;
 
 namespace Skins
 {
@@ -17,6 +18,9 @@ namespace Skins
         public override void Initialize()
         {
             base.Initialize();
+
+            SetBackground(Image.CreateImage("metalBG"), Adjustment.FILL);
+                
 
             Button button = new Button("Button");
           
