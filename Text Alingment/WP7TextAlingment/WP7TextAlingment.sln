@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7TextAlingment", "WP7TextAlingment\WP7TextAlingment.csproj", "{D7665BC2-8943-40E9-BC45-A12DB5E8601F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7TextAlingmentContent", "WP7TextAlingmentContent\WP7TextAlingmentContent.contentproj", "{D122CDCD-464C-4925-9648-185BD3BDE4DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7665BC2-8943-40E9-BC45-A12DB5E8601F}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{D7665BC2-8943-40E9-BC45-A12DB5E8601F}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{D7665BC2-8943-40E9-BC45-A12DB5E8601F}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{D7665BC2-8943-40E9-BC45-A12DB5E8601F}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{D7665BC2-8943-40E9-BC45-A12DB5E8601F}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{D7665BC2-8943-40E9-BC45-A12DB5E8601F}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{D122CDCD-464C-4925-9648-185BD3BDE4DF}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{D122CDCD-464C-4925-9648-185BD3BDE4DF}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
