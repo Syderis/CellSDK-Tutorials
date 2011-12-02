@@ -24,6 +24,9 @@ namespace Images
             //AddComponent(new Label("Hello, World!"), 0, 0);
             Image img = Image.CreateImage("Image");
             Image img2 = Image.CreateImage("MyDir/Image2");
+
+            
+
             Label lbl = new Label(img);
             Label lbl2 = new Label(img2);
             lbl.Draggable = true;
@@ -31,6 +34,9 @@ namespace Images
 
             AddComponent(lbl, 10, 10);
             AddComponent(lbl2, 10, 400);
+
+            img.Effect = Image.EffectType.FLIP_HORIZONTAL_VERTICAL;
+            
 
         }
         public override void BackButtonPressed()

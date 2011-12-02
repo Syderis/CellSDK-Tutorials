@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7GPS", "WP7GPS\WP7GPS\WP7GPS.csproj", "{98376509-9126-404A-B6F3-A09C106D72C3}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "WP7GPSContent", "WP7GPS\WP7GPSContent\WP7GPSContent.contentproj", "{969D9496-AF9D-4FB8-9B61-1DA4320C9561}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98376509-9126-404A-B6F3-A09C106D72C3}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{98376509-9126-404A-B6F3-A09C106D72C3}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{98376509-9126-404A-B6F3-A09C106D72C3}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{98376509-9126-404A-B6F3-A09C106D72C3}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{98376509-9126-404A-B6F3-A09C106D72C3}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{98376509-9126-404A-B6F3-A09C106D72C3}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{969D9496-AF9D-4FB8-9B61-1DA4320C9561}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{969D9496-AF9D-4FB8-9B61-1DA4320C9561}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
