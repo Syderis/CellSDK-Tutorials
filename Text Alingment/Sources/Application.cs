@@ -23,7 +23,7 @@ namespace TextAlignment
             Label lbl = new Label(img);
             lbl.FitToText = false;
             lbl.Text = "My note";
-            lbl.Align = Label.AlignType.TOPLEFT;
+            lbl.Align = Label.AlignType.MIDDLECENTER;
 
             
             lbl.Draggable = true;
