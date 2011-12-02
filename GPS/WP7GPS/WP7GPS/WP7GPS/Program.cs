@@ -2,7 +2,7 @@ using System;
 
 using Syderis.CellSDK.WindowsPhone.Launcher;
 
-namespace WP7GPS
+namespace GPS
 {
     public class Program : Kernel
     {
