@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Compass", "WP7Compass\WP7Compass.csproj", "{66F39604-6802-4537-8CFC-03D11E2384A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7CompassContent", "WP7CompassContent\WP7CompassContent.contentproj", "{31854993-5D6C-49C4-BE5B-8AF494ECCED6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66F39604-6802-4537-8CFC-03D11E2384A1}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{66F39604-6802-4537-8CFC-03D11E2384A1}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{66F39604-6802-4537-8CFC-03D11E2384A1}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{66F39604-6802-4537-8CFC-03D11E2384A1}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{66F39604-6802-4537-8CFC-03D11E2384A1}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{66F39604-6802-4537-8CFC-03D11E2384A1}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{31854993-5D6C-49C4-BE5B-8AF494ECCED6}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{31854993-5D6C-49C4-BE5B-8AF494ECCED6}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
