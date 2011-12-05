@@ -24,7 +24,7 @@ namespace Compass
             base.Initialize();
 
             // TODO: Replace these comments with your own poetry, and enjoy!                        
-            Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Start(Syderis.CellSDK.Common.LocationSensors.COMPASS);
+            Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Start(Syderis.CellSDK.Common.LocationSensor.COMPASS);
 
             lblMagneticNorth = new Label("Magnetic Heading: ");
             lblRealNorth = new Label("True Heading: ");
@@ -61,7 +61,7 @@ namespace Compass
         public override void BackButtonPressed()
         {
             base.BackButtonPressed();
-            Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Stop(Syderis.CellSDK.Common.LocationSensors.COMPASS);
+            Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Stop(Syderis.CellSDK.Common.LocationSensor.COMPASS);
             Program.Instance.Exit();
         }
     }
