@@ -14,29 +14,34 @@ namespace Compass
 {
     public class Application : MobileApplication
     {
-        private Label lblMagneticNorth, lblRealNorth;
+        //private Label lblMagneticNorth, lblRealNorth;
+        private Label lblCover, lblCompass;
         private TimeSpan timer;
+        private Vector2 offset;
         /// <summary>
         /// The main method for loading controls and resources.
         /// </summary>
         public override void Initialize()
         {
             base.Initialize();
-
+			offset= Vector2.Zero;
+#if IOS
+			offset= Vector2.One*80;;
+#endif
+           
             // TODO: Replace these comments with your own poetry, and enjoy!                        
+            SetBackground(Image.CreateImage("Background"), Adjustment.CENTER);
             Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Start(Syderis.CellSDK.Common.LocationSensor.COMPASS);
-
-            lblMagneticNorth = new Label("Magnetic Heading: ");
-            lblRealNorth = new Label("True Heading: ");
-
-            AddComponent(lblMagneticNorth, Preferences.Width / 2, Preferences.Height / 8);
-            AddComponent(lblRealNorth, Preferences.Width / 2, 6*Preferences.Height / 8);
-            
-            lblRealNorth.Pivot = Vector2.One/2;
-            lblMagneticNorth.Pivot = Vector2.One / 2;            
-
-            lblRealNorth.Rotation = -MathHelper.ToRadians((float)Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Compass.trueHeading);
-            lblMagneticNorth.Rotation = -MathHelper.ToRadians((float)Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Compass.magneticHeading);
+   
+            lblCover = new Label(Image.CreateImage("compass_cover"));
+            lblCompass = new Label(Image.CreateImage("compass"));          
+			
+			lblCompass.Pivot = Vector2.One / 2;
+   
+            AddComponent(lblCompass, Preferences.Width/2, Preferences.Height/2);
+            AddComponent(lblCover, 48 + offset.X, 183 + offset.Y);
+   
+            lblCompass.Rotation = -MathHelper.ToRadians((float)Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Compass.magneticHeading);
         }
 
         public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
@@ -44,13 +49,10 @@ namespace Compass
             base.Update(gameTime);
 
             timer += gameTime.ElapsedGameTime;
-            if (timer > TimeSpan.FromMilliseconds(500))
+            if (timer > TimeSpan.FromMilliseconds(100))
             {
-                lblMagneticNorth.Text = string.Format("Magnetic Heading: {0}", Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Compass.magneticHeading);
-                lblRealNorth.Text = string.Format("True Heading: {0}", Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Compass.trueHeading);
-
-                lblRealNorth.Rotation = -lblRealNorth.Rotation - MathHelper.ToRadians((float)Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Compass.trueHeading);
-                lblMagneticNorth.Rotation = -lblMagneticNorth.Rotation - MathHelper.ToRadians((float)Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Compass.magneticHeading);
+                
+                lblCompass.Rotation = -lblCompass.Rotation -MathHelper.ToRadians((float)Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Compass.magneticHeading);
                 timer = TimeSpan.Zero;
             }
         }
