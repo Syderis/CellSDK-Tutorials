@@ -11,7 +11,7 @@ using Syderis.CellSDK.Common;
 using Syderis.CellSDK.Core.Graphics;
 using Microsoft.Xna.Framework;
 
-namespace WP7Gestures
+namespace Gestures
 {
     public class Application : MobileApplication
     {
