@@ -20,19 +20,19 @@ namespace zBuffering
             base.Initialize();
 
             // TODO: Replace these comments with your own poetry, and enjoy!
-            Label green = new Label(Image.CreateImage("cell1"));
-            Label red = new Label(Image.CreateImage("cell2"));
-            Label yellow = new Label(Image.CreateImage("cell3"));
-            green.Draggable = true;
-            red.Draggable = true;
-            yellow.Draggable = true;
-            yellow.BringToFront = false;
-            green.BringToFront = false;
+            Label cell1 = new Label(Image.CreateImage("cell1"));
+            Label cell2 = new Label(Image.CreateImage("cell2"));
+            Label cell3 = new Label(Image.CreateImage("cell3"));
+            cell1.Draggable = true;
+            cell2.Draggable = true;
+            cell3.Draggable = true;
+            cell3.BringToFront = false;
+            cell1.BringToFront = false;
 
-            green.Alpha = red.Alpha = yellow.Alpha = 0.8f;
-            AddComponent(green, 100, 100);
-            AddComponent(red, 100, 100);
-            AddComponent(yellow, 100, 100);
+            cell1.Alpha = cell2.Alpha = cell3.Alpha = 0.8f;
+            AddComponent(cell1, 100, 100);
+            AddComponent(cell2, 100, 100);
+            AddComponent(cell3, 100, 100);
 
 
         }
