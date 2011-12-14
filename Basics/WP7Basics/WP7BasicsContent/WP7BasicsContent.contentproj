@@ -62,6 +62,11 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+    <Compile Include="cell1.png">
+      <Name>cell1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(CellSDK)Versions\1.0-alpha\Common\Skins\Default\StandardFont.spritefont">
