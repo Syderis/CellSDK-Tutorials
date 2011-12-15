@@ -9,32 +9,57 @@ using Microsoft.Xna.Framework;
 
 namespace ProgressBarSample
 {
-    class Application : MobileApplication
+    public class Application : MobileApplication
     {
 
-        private ProgressBar pbCharger;
+        private ProgressBar charger;
 
         private bool charged;
 
-        /// <summary>
-        /// The main method for loading controls and resources.
-        /// </summary>
         public override void Initialize()
         {
+
             base.Initialize();
 
-            // TODO: Replace these comments with your own poetry, and enjoy!
-            pbCharger = new ProgressBar();
+            Label message = new Label("Charging...");
 
-            AddComponent(pbCharger, 0, 0);
+            AddComponent(message, 0, 100);
 
-            pbCharger.Value = 0;
-            pbCharger.EndEvent += delegate
+            Button shot = new Button("Shot!");
+
+            shot.Pressed += delegate
+            {
+
+                if (charged)
+                {
+
+                    charger.Value = 0;
+
+                    charged = false;
+
+                    message.Text = "Charging...";
+
+                }
+
+            };
+
+            AddComponent(shot, 150, 100);
+
+            charger = new ProgressBar();
+
+            charger.Value = 0;
+
+            charger.EndEvent += delegate
             {
 
                 charged = true;
 
+                message.Text = "Charged!";
+
             };
+
+            AddComponent(charger, 0, 0);
+
         }
 
         public override void Update(GameTime gameTime)
@@ -44,13 +69,9 @@ namespace ProgressBarSample
 
             if (!charged)
 
-                pbCharger.Value++;
+                charger.Value++;
 
         }
 
-        public override void BackButtonPressed()
-        {
-            Program.Instance.Exit();
-        }
     }
 }
