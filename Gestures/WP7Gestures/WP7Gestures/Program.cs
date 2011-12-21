@@ -2,7 +2,7 @@ using System;
 
 using Syderis.CellSDK.WindowsPhone.Launcher;
 
-namespace WP7Gestures
+namespace Gestures
 {
     public class Program : Kernel
     {
