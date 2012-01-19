@@ -89,13 +89,13 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Syderis.CellSDK.Windows.Common">
-      <HintPath>$(CellSDK)Versions\1.0-alpha\Windows\Libraries\Syderis.CellSDK.Windows.Common.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.0\Windows\Libraries\Syderis.CellSDK.Windows.Common.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.Windows.Core">
-      <HintPath>$(CellSDK)Versions\1.0-alpha\Windows\Libraries\Syderis.CellSDK.Windows.Core.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.0\Windows\Libraries\Syderis.CellSDK.Windows.Core.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.Windows.Launcher">
-      <HintPath>$(CellSDK)Versions\1.0-alpha\Windows\Libraries\Syderis.CellSDK.Windows.Launcher.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.0\Windows\Libraries\Syderis.CellSDK.Windows.Launcher.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Private>False</Private>

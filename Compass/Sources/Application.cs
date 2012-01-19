@@ -31,7 +31,7 @@ namespace Compass
            
             // TODO: Replace these comments with your own poetry, and enjoy!                        
             SetBackground(Image.CreateImage("Background"), Adjustment.CENTER);
-            Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Start(Syderis.CellSDK.Common.LocationSensor.COMPASS);
+            Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Start(LocationSensors.COMPASS);
    
             lblCover = new Label(Image.CreateImage("compass_cover"));
             lblCompass = new Label(Image.CreateImage("compass"));          
@@ -63,7 +63,7 @@ namespace Compass
         public override void BackButtonPressed()
         {
             base.BackButtonPressed();
-            Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Stop(Syderis.CellSDK.Common.LocationSensor.COMPASS);
+            Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Stop(LocationSensors.COMPASS);
             Program.Instance.Exit();
         }
     }

@@ -31,7 +31,7 @@ namespace GPS
             AddComponent(lblLatitude, Preferences.Width / 4, Preferences.Height / 8);
             AddComponent(lblLongitude, Preferences.Width / 4, Preferences.Height / 4);
 
-            Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Start(Syderis.CellSDK.Common.LocationSensor.GPS);
+            LocationSensor.Instance.Start(LocationSensors.GPS);
         }
 
         public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
@@ -54,7 +54,7 @@ namespace GPS
         public override void BackButtonPressed()
         {
             base.BackButtonPressed();
-            Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Stop(Syderis.CellSDK.Common.LocationSensor.GPS);
+            LocationSensor.Instance.Stop(LocationSensors.GPS);
             Program.Instance.Exit();
         }
     }

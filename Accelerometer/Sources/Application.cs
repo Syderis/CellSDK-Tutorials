@@ -21,7 +21,6 @@ namespace Accelerometer
         float maxX;
         float maxY;
         Vector2 centerposition;
-        Vector2 actualPosition;
 
 
         /// <summary>
@@ -40,7 +39,7 @@ namespace Accelerometer
             labels.Add( new Label(Image.CreateImage("cell3")));
             labels.Add( new Label(Image.CreateImage("cell4")));
 
-            actualPosition = centerposition = new Vector2(Preferences.Width / 2 - labels[0].Size.X / 2, Preferences.Height / 2 - labels[0].Size.Y / 2);
+            centerposition = new Vector2(Preferences.Width / 2 - labels[0].Size.X / 2, Preferences.Height / 2 - labels[0].Size.Y / 2);
             maxX = Preferences.Width - labels[0].Size.X;
             maxY = Preferences.Height - labels[0].Size.Y;
 
@@ -65,6 +64,7 @@ namespace Accelerometer
             {
                 if (lbl.Position.X >= 0 && lbl.Position.X <= maxX && lbl.Position.Y >= 0 && lbl.Position.Y <= maxY)
                 {
+                    Vector2 actualPosition = new Vector2(lbl.Position.X, lbl.Position.Y);
                     actualPosition.X += AccelerometerSensor.Instance.Data2.X * (accelfactor);
                     actualPosition.Y -= AccelerometerSensor.Instance.Data2.Y * (accelfactor);
 
@@ -72,9 +72,7 @@ namespace Accelerometer
                 }
                 else
                 {
-                    Vector2 pos;
-                    lbl.InitLocalWorld.GetPosition(out pos);
-                    lbl.Position = pos;
+                    lbl.Position = centerposition;
                 }
             }
         }
