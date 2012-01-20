@@ -56,7 +56,7 @@
       <HintPath>$(CellSDK)Versions\1.0\Android\Libraries\Syderis.CellSDK.Android.Launcher.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.Android.Recognizers">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\Syderis\CellSDK.framework\Versions\1.0-alpha\Android\Libraries\Syderis.CellSDK.Android.Recognizers.dll</HintPath>
+      <HintPath>..\$(CellSDK)Versions\1.0\Android\Libraries\Syderis.CellSDK.Android.Recognizers.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

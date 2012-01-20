@@ -47,7 +47,7 @@
     <Reference Include="OpenTK" />
     <Reference Include="mscorlib" />
     <Reference Include="Syderis.CellSDK.Android.Common">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\Syderis\CellSDK.framework\Versions\1.0-alpha\Android\Libraries\Syderis.CellSDK.Android.Common.dll</HintPath>
+      <HintPath>..\$(CellSDK)Versions\1.0\Android\Libraries\Syderis.CellSDK.Android.Common.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.Android.Core">
       <HintPath>$(CellSDK)Versions\1.0\Android\Libraries\Syderis.CellSDK.Android.Core.dll</HintPath>
