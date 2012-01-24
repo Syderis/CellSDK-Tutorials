@@ -1,15 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+#region Using Statements
+using System.IO;
+using Microsoft.Xna.Framework;
+using Syderis.CellSDK.Common;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
-using Syderis.CellSDK.Recognizers.Gestures;
-using System.IO;
-using Syderis.CellSDK.Common;
 using Syderis.CellSDK.Core.Graphics;
-using Microsoft.Xna.Framework;
+using Syderis.CellSDK.Recognizers.Gestures; 
+#endregion
 
 namespace Gestures
 {
@@ -35,11 +32,12 @@ namespace Gestures
             AddComponent(lblText, 20, Preferences.Height / 8);
 
             recognizer = new GestureRecognition();
-            recognizer.LoadGestureSet(Path.Combine(StaticContent.Content.RootDirectory, "Gestures.gs"));
-            recognizer.GestureRecognizerEvent += new GestureRecognition.GestureHandler(recognizer_GestureRecognizerEvent);
+            recognizer.LoadGestureSet("Gestures.gs");
+            recognizer.GestureRecognizerEvent -= recognizer_GestureRecognizerEvent;
+            recognizer.GestureRecognizerEvent += recognizer_GestureRecognizerEvent;
         }
 
-        void recognizer_GestureRecognizerEvent(string gestureName, float score, Microsoft.Xna.Framework.Vector2 centroid)
+        void recognizer_GestureRecognizerEvent(string gestureName, float score, Vector2 centroid)
         {           
             if (score>0.8f)
             {
