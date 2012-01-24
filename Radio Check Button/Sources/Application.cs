@@ -1,12 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+#region Using Statements
+using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
-using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core.Graphics;
+#endregion
 
 namespace SelectOptions
 {
@@ -48,7 +45,6 @@ namespace SelectOptions
             lblmessage = new Label("Remember: all I'm offering is the truth,\n nothing more");
             lblWhiteRabbit = new Label(Image.CreateImage("whiteRabbit"));
 
-
             AddComponent(check, 10, 300);
             AddComponent(lblmessage, 10, 350);
             AddComponent(lblWhiteRabbit, 10, 500);
@@ -56,12 +52,9 @@ namespace SelectOptions
             lblWhiteRabbit.Visible = lblmessage.Visible = check.Visible = false;
 
             //Events
-            rbRed.Released += new Component.ComponentEventHandler(rbRed_Released);
-            rbBlue.Released += new Component.ComponentEventHandler(rbBlue_Released);
-            check.Released += new Component.ComponentEventHandler(check_Released);
-
-
-
+            rbRed.Released += rbRed_Released;
+            rbBlue.Released += rbBlue_Released;
+            check.Released += check_Released;
         }
 
         void rbRed_Released(Component source)
