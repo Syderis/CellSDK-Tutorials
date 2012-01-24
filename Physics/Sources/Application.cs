@@ -1,13 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+#region using Statements
+using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
 using Syderis.CellSDK.Core.Graphics;
-using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core.Physics;
+#endregion
 
 namespace Physics
 {
@@ -27,27 +24,29 @@ namespace Physics
             CreatePhysicWorld(new Vector2(0, -10), true, true, Vector2.Zero);
 
             //First tutorial
+
             //Label lbl = new Label("Hello God!");
-            
             //AddComponent(lbl, 200, 100, BodyShape.SQUARE, BodyType.DYNAMIC, Category.Cat1);
 
             //Label staticLabel = new Label("I am a static label");
-
             //AddComponent(staticLabel, 200, 500, BodyShape.SQUARE, BodyType.STATIC, Category.Cat1);
+
             //staticLabel.Rotation = MathHelper.ToRadians(45f);
 
 
             //SecondTutorial
+
             //lbl1k = new Label(Image.CreateImage("1kg"));
             //AddComponent(lbl1k, 50, 0, BodyShape.SQUARE, BodyType.DYNAMIC, Category.Cat1);            
             //lbl1k.PhysicBody.Mass = 1f;
-            
+
             //lbl2k = new Label(Image.CreateImage("2kg"));
             //AddComponent(lbl2k, 200, 0, BodyShape.SQUARE, BodyType.DYNAMIC, Category.Cat1);            
             //lbl2k.PhysicBody.Mass = 2f;
 
             //staticLabel = new Label("I am a static label");            
             //AddComponent(staticLabel, 50, 500, BodyShape.SQUARE, BodyType.STATIC, Category.Cat1);
+
 
             //Third tutorial
 
@@ -61,7 +60,6 @@ namespace Physics
 
             staticLabel = new Label("I am a static label");
             AddComponent(staticLabel, 50, 500, BodyShape.SQUARE, BodyType.STATIC, Category.Cat1);
-
 
             Button btn = new Button("Press me!");
             AddComponent(btn, 50, 700, BodyShape.SQUARE, BodyType.STATIC, Category.Cat1);
