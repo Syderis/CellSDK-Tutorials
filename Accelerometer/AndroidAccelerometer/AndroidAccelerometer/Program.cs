@@ -10,11 +10,12 @@ using Android.Widget;
 using Syderis.CellSDK.Android.Launcher;
 using Syderis.CellSDK.Common;
 using Syderis.CellSDK.Core;
+using Microsoft.Xna.Framework;
 
 namespace Accelerometer
 {
     [Activity(Label = "AndroidAccelerometer", MainLauncher = true, Icon = "@drawable/icon")]
-    public class Program : Activity
+    public class Program : AndroidGameActivity
     {
         public static Program Instance;
 
@@ -25,6 +26,7 @@ namespace Accelerometer
         {
             base.OnCreate(savedInstanceState);
 
+            Kernel.Activity = this;
             Kernel view = new Kernel(this);
             SetContentView(view.Window);
 
