@@ -1,12 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+#region Using Statements
+using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
-using Microsoft.Xna.Framework;
-using Syderis.CellSDK.Core.Graphics;
+using Syderis.CellSDK.Core.Graphics; 
+#endregion
 
 namespace Buttons
 {
@@ -38,7 +35,8 @@ namespace Buttons
             if (ball == null)
             {
                 ball = new Button(Image.CreateImage("ball"), Image.CreateImage("ballpressed"));
-                AddComponent(ball, 50, 50);
+                ball.Pivot = Vector2.One / 2;
+                AddComponent(ball, Width/2, Height /5);
                 ball.Draggable = true;
                 ball.Released += new Component.ComponentEventHandler(ball_Released);
             }
@@ -49,7 +47,8 @@ namespace Buttons
             if (secondball == null)
             {
                 secondball = new Button(Image.CreateImage("ball"), Image.CreateImage("ballpressed"));
-                AddComponent(secondball, 10, 500);
+                secondball.Pivot = Vector2.One / 2;
+                AddComponent(secondball, Width/2, 4 * Height / 5);
                 secondball.Draggable = true;
             }
         }
