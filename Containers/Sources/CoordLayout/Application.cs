@@ -28,7 +28,6 @@ namespace CoordLayoutSample
             coordContainer.Layout.AddComponent(new Label("Five"), 200, 280);
 
             AddComponent(coordContainer, 10, 10);
-
         }
 
         public override void BackButtonPressed()
