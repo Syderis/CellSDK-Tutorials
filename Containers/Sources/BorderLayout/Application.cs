@@ -1,12 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+#region Using Statements
+using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
-using Microsoft.Xna.Framework;
-using Syderis.CellSDK.Core.Layouts;
+using Syderis.CellSDK.Core.Layouts; 
+#endregion
 
 namespace BorderLayoutSample
 {
@@ -45,9 +42,8 @@ namespace BorderLayoutSample
             borderContainer.Layout.AddComponent(BorderLayout.Organization.SOUTH, 25, lblSouth);
             borderContainer.Layout.AddComponent(BorderLayout.Organization.WEST, lblWest);
 
-            AddComponent(borderContainer, 10, 10);
-            borderContainer.Size = new Vector2(400, 200);
-
+            AddComponent(borderContainer, 0, 0);
+            borderContainer.Size = new Vector2(Width, Height/2);
         }
 
         public override void BackButtonPressed()
