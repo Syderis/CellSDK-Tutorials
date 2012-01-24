@@ -1,10 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+#region Using Statements
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
+#endregion
 
 namespace Labels
 {
@@ -18,8 +15,7 @@ namespace Labels
             base.Initialize();
 
             // TODO: Replace these comments with your own poetry, and enjoy!
-            AddComponent(new Label("Text . . ."), 0, 0);
-            
+            AddComponent(new Label("Text . . ."), 0, 0);            
         }
 
         public override void BackButtonPressed()
