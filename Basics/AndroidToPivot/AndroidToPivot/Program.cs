@@ -1,21 +1,17 @@
-using System;
-
+#region Using Statements
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 
 using Syderis.CellSDK.Android.Launcher;
-using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Common;
+using Microsoft.Xna.Framework; 
+#endregion
 
 
 namespace ToPivot
 {
     [Activity(Label = "AndroidToPivot", MainLauncher = true, Icon = "@drawable/icon")]
-    public class Program : Activity
+    public class Program : AndroidGameActivity
     {
         public static Program Instance;
 
@@ -26,6 +22,7 @@ namespace ToPivot
         {
             base.OnCreate(savedInstanceState);
 
+            Kernel.Activity = this;
             Kernel view = new Kernel(this);
             SetContentView(view.Window);
 
