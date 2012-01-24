@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+#region Using Statements
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
-using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core.Graphics;
+#endregion
 
 namespace Skins
 {
@@ -21,7 +17,6 @@ namespace Skins
 
             SetBackground(Image.CreateImage("metalBG"), Adjustment.FILL);
                 
-
             Button button = new Button("Button");
           
             ToggleButton toggleButton = new ToggleButton("Toggle");
@@ -47,14 +42,12 @@ namespace Skins
             ProgressBar progressBar = new ProgressBar();
             progressBar.Value = 50;
             
-            
             Slider slider = new Slider();
 
             string[] array = new string[] { "Listbox1", "Listbox2", "Listbox3", "Listbox4", "Listbox5", 
                                             "Listbox6", "Listbox7", "Listbox8", "Listbox9", "Listbox10" };
             ListBox listbox = new ListBox(array, 460, 200, ListBox.Orientation.VERTICAL);
 
-           
             TextArea text = new TextArea("Text", 1, 10);
             ////Buttons & Toggle
             AddComponent(button, 10, 10);
@@ -91,7 +84,6 @@ namespace Skins
         public override void BackButtonPressed()
         {
             base.BackButtonPressed();
-
             Program.Instance.Exit();
         }
     }
