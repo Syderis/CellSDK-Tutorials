@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+#region Using Statements
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
-using Syderis.CellSDK.Core.Graphics;
+using Syderis.CellSDK.Core.Graphics; 
+#endregion
 
 namespace Images
 {
@@ -25,8 +22,6 @@ namespace Images
             Image img = Image.CreateImage("Image");
             Image img2 = Image.CreateImage("MyDir/Image2");
 
-            
-
             Label lbl = new Label(img);
             Label lbl2 = new Label(img2);
             lbl.Draggable = true;
@@ -36,9 +31,8 @@ namespace Images
             AddComponent(lbl2, 10, 400);
 
             img.Effect = Image.EffectType.FLIP_HORIZONTAL_VERTICAL;
-            
-
         }
+
         public override void BackButtonPressed()
         {
             Program.Instance.Exit();
