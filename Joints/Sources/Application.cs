@@ -1,14 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+#region Using Statements
+using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
 using Syderis.CellSDK.Core.Graphics;
-using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core.Physics;
-using Syderis.CellSDK.IO.AccelerometerSystem;
+using Syderis.CellSDK.IO.AccelerometerSystem; 
+#endregion
 
 namespace Joints
 {
@@ -106,8 +103,6 @@ namespace Joints
 
             PhysicWorld.AddJoint(dummyRightLeg, dummyRightBottomLeg, new Vector2(102 + offX, 167 + offY), true, -MathHelper.Pi / 16.0f, MathHelper.Pi / 16.0f, 0.0f, float.MaxValue); // +- 5.625 grados
             PhysicWorld.AddJoint(dummyRightLeg, dummyBody, new Vector2(102 + offX, 116 + offY), true, -MathHelper.Pi / 8.0f, MathHelper.Pi / 8.0f, 0.0f, float.MaxValue);  //+- 22.5 grados
-
-            
         }
 
         public override void Update(GameTime gameTime)
