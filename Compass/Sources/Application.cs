@@ -18,6 +18,7 @@ namespace Compass
         private Label lblCover, lblCompass;
         private TimeSpan timer;
         private Vector2 offset;
+
         /// <summary>
         /// The main method for loading controls and resources.
         /// </summary>
@@ -51,8 +52,8 @@ namespace Compass
             timer += gameTime.ElapsedGameTime;
             if (timer > TimeSpan.FromMilliseconds(100))
             {
-                
-                lblCompass.Rotation = -lblCompass.Rotation -MathHelper.ToRadians((float)Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Compass.magneticHeading);
+
+                lblCompass.Rotation = -lblCompass.Rotation - (float)Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Compass.magneticHeading;
                 timer = TimeSpan.Zero;
             }
         }
