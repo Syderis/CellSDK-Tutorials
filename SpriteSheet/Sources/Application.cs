@@ -3,22 +3,17 @@
  * Use is subject to license terms.
  */
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+#region Using Statements
+using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
 using Syderis.CellSDK.Core.Graphics;
-using Microsoft.Xna.Framework;
-
+#endregion
 
 namespace SpriteSheet
 {
     class Application : MobileApplication
     {
-       
         /// <summary>
         /// The main method for loading controls and resources.
         /// </summary>
@@ -42,10 +37,7 @@ namespace SpriteSheet
             Label lblMoi = new Label(spritesheet.SubImage(361, 0, 143, 327));
             lblMoi.Draggable = true;
             AddComponent(lblMoi, 183,100 );
-
         }
-
-        
 
         public override void BackButtonPressed()
         {
