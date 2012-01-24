@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Syderis.CellSDK.Core;
-using Syderis.CellSDK.Core.Controls;
+#region Using Statements
 using Microsoft.Xna.Framework;
+using Syderis.CellSDK.Core;
+using Syderis.CellSDK.Core.Controls; 
+#endregion
 
 namespace CellSDKApp
 {
@@ -32,8 +29,8 @@ namespace CellSDKApp
             clickButton.Pivot = Vector2.One / 2;
             clickButton.Align = Label.AlignType.MIDDLECENTER;
 
-            AddComponent(clickLabel, Width / 2 - clickLabel.Size.X/2, Height / 2);
-            AddComponent(clickButton, Width / 2 - clickButton.Size.X/2, Height / 2 - 100);            
+            AddComponent(clickLabel, Width / 2, Height / 2);
+            AddComponent(clickButton, Width / 2, Height / 2 - 100);            
         }
 
         public override void BackButtonPressed()
