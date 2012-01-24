@@ -1,13 +1,11 @@
+#region Using Statements
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+using Syderis.CellSDK.Common;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
-using Syderis.CellSDK.IO.LocationSystem;
-using Syderis.CellSDK.Common;
 using Syderis.CellSDK.Core.Graphics;
+using Syderis.CellSDK.IO.LocationSystem; 
+#endregion
 
 namespace GPS
 {
@@ -31,7 +29,10 @@ namespace GPS
             AddComponent(lblLatitude, Preferences.Width / 4, Preferences.Height / 8);
             AddComponent(lblLongitude, Preferences.Width / 4, Preferences.Height / 4);
 
-            LocationSensor.Instance.Start(LocationSensors.GPS);
+            if (LocationSensor.Instance.IsConnected(LocationSensors.GPS))
+            {
+                LocationSensor.Instance.Start(LocationSensors.GPS);
+            }
         }
 
         public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
@@ -45,7 +46,6 @@ namespace GPS
                 lblLongitude.Text = string.Format("Longitude: {0}", Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.GeoLocation.longitude);
                 timer = TimeSpan.Zero;
             }
-
         }
 
         /// <summary>
