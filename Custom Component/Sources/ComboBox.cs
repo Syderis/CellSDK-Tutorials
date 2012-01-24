@@ -1,11 +1,10 @@
+#region Using Statements
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Syderis.CellSDK.Core.Controls;
-using Syderis.CellSDK.Core.Layouts;
-using Syderis.CellSDK.Core.Interfaces;
 using Microsoft.Xna.Framework;
+using Syderis.CellSDK.Core.Controls;
+using Syderis.CellSDK.Core.Interfaces;
+using Syderis.CellSDK.Core.Layouts; 
+#endregion
 
 namespace ComboBox
 {
@@ -19,8 +18,7 @@ namespace ComboBox
 
         public ComboBox()
             : base(new CoordLayout())
-        {
-                  
+        {  
             itemList = new ListBox(200, 200,ListBox.Orientation.VERTICAL);
             itemList.Visible = false;
             
@@ -51,14 +49,12 @@ namespace ComboBox
             countWatchDog = true;
         }
 
-       
         public void AddItem(string element)
         {
             Item itemAux = new Item(element);
             itemAux.Released -= itemAux_Released;
             itemAux.Released += new ComponentEventHandler(itemAux_Released);
             itemList.AddItem(itemAux);
-            
         }
 
         void itemAux_Released(Component source)
@@ -100,6 +96,7 @@ namespace ComboBox
         public Item( string text): base(text)
         {
         }
+
         #region IListBoxObject Members
 
         public Component CellRenderer()

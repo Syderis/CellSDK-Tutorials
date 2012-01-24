@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+#region Using Statements
 using Syderis.CellSDK.Core;
-using Syderis.CellSDK.Core.Controls;
+#endregion
 
 namespace ComboBox
 {
@@ -21,7 +17,6 @@ namespace ComboBox
             // TODO: Replace these comments with your own poetry, and enjoy!
             combo = new ComboBox();
             
-            
             combo.AddItem("Fruit");
             combo.AddItem("Milk");
             combo.AddItem("Wine");
@@ -32,7 +27,6 @@ namespace ComboBox
             combo.AddItem("Ketchup");
             combo.AddItem("Tomatoes");
             
-
             AddComponent(combo, 10, 100);
         }
 
