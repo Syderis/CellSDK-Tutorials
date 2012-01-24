@@ -1,27 +1,20 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+#region Using Statements
 using Microsoft.Xna.Framework;
-
 using Syderis.CellSDK.Core;
-using Syderis.CellSDK.Core.Graphics;
 using Syderis.CellSDK.Core.Controls;
+using Syderis.CellSDK.Core.Graphics;
 using Syderis.CellSDK.Core.Physics;
-
 using Syderis.CellSDK.IO.AccelerometerSystem;
+#endregion
 
 namespace Motor
 {
 	class Application : MobileApplication
 	{
         IMotionWheel tractionWheel, passiveWheel;
-
 		Image iCar;
 		Image iWheel;
-		
-		
+
 		bool accerometerActivated = false;
 		
 		public override void Initialize ()
@@ -120,6 +113,5 @@ namespace Motor
                 AccelerometerSensor.Instance.Stop();
             Program.Instance.Exit();
         }
-
 	}
 }
