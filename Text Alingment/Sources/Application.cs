@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+#region Using Statements
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
 using Syderis.CellSDK.Core.Graphics;
+#endregion 
 
 namespace TextAlignment
 {
@@ -25,7 +22,6 @@ namespace TextAlignment
             lbl.Text = "My note";
             lbl.Align = Label.AlignType.MIDDLECENTER;
 
-            
             lbl.Draggable = true;
             AddComponent(lbl,0,0);
         }
@@ -36,7 +32,6 @@ namespace TextAlignment
         public override void BackButtonPressed()
         {
             base.BackButtonPressed();
-
             Program.Instance.Exit();
         }
     }
