@@ -1,10 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Syderis.CellSDK.Core;
-using Syderis.CellSDK.Core.Controls;
 using Syderis.CellSDK.Core.Graphics;
 
 namespace Basics
