@@ -1,12 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+#region Using Stements
+using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
-using Syderis.CellSDK.Core.Layouts;
-using Microsoft.Xna.Framework;
+using Syderis.CellSDK.Core.Layouts; 
+#endregion
 
 namespace FlowLayoutSample
 {
