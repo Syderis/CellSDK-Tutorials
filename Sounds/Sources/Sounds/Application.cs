@@ -24,9 +24,8 @@ namespace Sounds
             //AddComponent(new Label("Hello, World!"), 0, 0);
             lovelySound = Sound.CreateSound("lovelySound");
             Button btn = new Button("Pretty button. Touch me to play!");
-            btn.Released += new Component.ComponentEventHandler(btn_Released);
+            btn.Released += btn_Released;
             AddComponent(btn, 10, 300);
-
         }
 
         void btn_Released(Component source)

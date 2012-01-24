@@ -25,13 +25,12 @@ namespace InstanceLovelySound
             base.Initialize();
 
             // TODO: Replace these comments with your own poetry, and enjoy!
-            
             lovelyInstance = Sound.CreateSound("lovelySound").CreateInstance();
 
-             playStop = new Button(Image.CreateImage("play"), Image.CreateImage("play_pressed"));
-             balanceLeft = new Button(Image.CreateImage("balance_left"), Image.CreateImage("balance_left_pressed"));
-             balanceNormal = new Button(Image.CreateImage("balance_normal"), Image.CreateImage("balance_normal_pressed"));
-             balanceRight = new Button(Image.CreateImage("balance_right"), Image.CreateImage("balance_right_pressed"));
+            playStop = new Button(Image.CreateImage("play"), Image.CreateImage("play_pressed"));
+            balanceLeft = new Button(Image.CreateImage("balance_left"), Image.CreateImage("balance_left_pressed"));
+            balanceNormal = new Button(Image.CreateImage("balance_normal"), Image.CreateImage("balance_normal_pressed"));
+            balanceRight = new Button(Image.CreateImage("balance_right"), Image.CreateImage("balance_right_pressed"));
 
             AddComponent(playStop, 230, 325);
             AddComponent(balanceLeft, 18, 325);
@@ -42,9 +41,6 @@ namespace InstanceLovelySound
             balanceLeft.Released += new Component.ComponentEventHandler(balanceLeft_Released);
             balanceNormal.Released += new Component.ComponentEventHandler(balanceNormal_Released);
             balanceRight.Released += new Component.ComponentEventHandler(balanceRight_Released);
-
-            
-
         }
 
         void playStop_Released(Component source)
