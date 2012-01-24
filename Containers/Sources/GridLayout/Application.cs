@@ -1,12 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+#region Using Statements
+using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
-using Syderis.CellSDK.Core.Layouts;
-using Microsoft.Xna.Framework;
+using Syderis.CellSDK.Core.Layouts; 
+#endregion
 
 namespace GridLayoutSample
 {
@@ -35,8 +32,8 @@ namespace GridLayoutSample
             gridContainer.Layout.AddComponent(new Label("Eleven"));
             gridContainer.Layout.AddComponent(new Label("Twelve"));
             gridContainer.Size = new Vector2(400, 400);
-            AddComponent(gridContainer, 50, 50);
 
+            AddComponent(gridContainer, 50, 50);
         }
 
         public override void BackButtonPressed()
