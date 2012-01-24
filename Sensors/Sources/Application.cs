@@ -1,13 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+#region Using Statements
+using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
-using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core.Graphics;
 using Syderis.CellSDK.Core.Physics;
+#endregion
 
 namespace Sensor
 {
@@ -48,11 +45,9 @@ namespace Sensor
             CreateNewtonBall(iSupport, iBall, new Vector2(420, 200 + 5 * ballSize), 300, true);
 
             Label lMetalSupport = new Label(iMetalCradle);
-
             AddComponent(lMetalSupport, 0, 0);
             
             lMetalSupport.Touchable = false;
-
             PhysicWorld.Iterations = 120;
         }
 
