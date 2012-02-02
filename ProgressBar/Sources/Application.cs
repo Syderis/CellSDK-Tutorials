@@ -45,6 +45,12 @@ namespace ProgressBarSample
             base.Update(gameTime);
             if (!charged)
                 charger.Value++;
+
+        }
+
+        public override void BackButtonPressed()
+        {
+            Program.Instance.Exit();
         }
     }
 }
