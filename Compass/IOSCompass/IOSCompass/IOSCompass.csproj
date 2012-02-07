@@ -74,7 +74,7 @@
       <HintPath>/Library\Frameworks\CellSDK.framework\Libraries\Syderis.CellSDK.IOS.Launcher.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.IOS.IO.LocationSystem.IOS">
-      <HintPath>/Library\Frameworks\CellSDK.framework\Libraries\Syderis.CellSDK.IOS.IO.LocationSystem.IOS.dll</HintPath>
+      <HintPath>/Library\Frameworks\CellSDK.framework\Libraries\Syderis.CellSDK.IOS.IO.LocationSystem.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
