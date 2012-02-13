@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidVibrate", "AndroidVibrate\AndroidVibrate.csproj", "{B893A970-3788-4853-8E8F-7AAB4C311963}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B893A970-3788-4853-8E8F-7AAB4C311963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B893A970-3788-4853-8E8F-7AAB4C311963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B893A970-3788-4853-8E8F-7AAB4C311963}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B893A970-3788-4853-8E8F-7AAB4C311963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B893A970-3788-4853-8E8F-7AAB4C311963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B893A970-3788-4853-8E8F-7AAB4C311963}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
