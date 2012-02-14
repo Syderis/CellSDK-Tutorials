@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Background", "WP7Background\WP7Background.csproj", "{48806ED5-949D-4432-80A2-9BFD30441712}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7BackgroundContent", "WP7BackgroundContent\WP7BackgroundContent.contentproj", "{38BF3BF2-C59E-4432-BC2F-65414A262B0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48806ED5-949D-4432-80A2-9BFD30441712}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{48806ED5-949D-4432-80A2-9BFD30441712}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{48806ED5-949D-4432-80A2-9BFD30441712}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{48806ED5-949D-4432-80A2-9BFD30441712}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{48806ED5-949D-4432-80A2-9BFD30441712}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{48806ED5-949D-4432-80A2-9BFD30441712}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{38BF3BF2-C59E-4432-BC2F-65414A262B0D}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{38BF3BF2-C59E-4432-BC2F-65414A262B0D}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
