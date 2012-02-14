@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Inmobi", "WP7Inmobi\WP7Inmobi.csproj", "{D36CFA06-78D8-490E-92F7-22F01D1FC54E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7InmobiContent", "WP7InmobiContent\WP7InmobiContent.contentproj", "{403826F3-6BBF-41EF-9C22-3DDE2F30E6D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D36CFA06-78D8-490E-92F7-22F01D1FC54E}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{D36CFA06-78D8-490E-92F7-22F01D1FC54E}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{D36CFA06-78D8-490E-92F7-22F01D1FC54E}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{D36CFA06-78D8-490E-92F7-22F01D1FC54E}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{D36CFA06-78D8-490E-92F7-22F01D1FC54E}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{D36CFA06-78D8-490E-92F7-22F01D1FC54E}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{403826F3-6BBF-41EF-9C22-3DDE2F30E6D0}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{403826F3-6BBF-41EF-9C22-3DDE2F30E6D0}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

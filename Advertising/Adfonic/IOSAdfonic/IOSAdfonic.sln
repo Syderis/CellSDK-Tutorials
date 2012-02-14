@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSAdfonic", "IOSAdfonic\IOSAdfonic.csproj", "{53B623A6-224F-48C5-B32B-DC08955C843C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53B623A6-224F-48C5-B32B-DC08955C843C}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{53B623A6-224F-48C5-B32B-DC08955C843C}.Debug|iPhone.Build.0 = Debug|iPhone
+		{53B623A6-224F-48C5-B32B-DC08955C843C}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{53B623A6-224F-48C5-B32B-DC08955C843C}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{53B623A6-224F-48C5-B32B-DC08955C843C}.Release|iPhone.ActiveCfg = Release|iPhone
+		{53B623A6-224F-48C5-B32B-DC08955C843C}.Release|iPhone.Build.0 = Release|iPhone
+		{53B623A6-224F-48C5-B32B-DC08955C843C}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{53B623A6-224F-48C5-B32B-DC08955C843C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IOSAdfonic\IOSAdfonic.csproj
+	EndGlobalSection
+EndGlobal

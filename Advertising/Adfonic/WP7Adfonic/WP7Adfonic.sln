@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Adfonic", "WP7Adfonic\WP7Adfonic.csproj", "{DF0EB352-DDC9-4BB1-AD1A-D59689EAE20A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7AdfonicContent", "WP7AdfonicContent\WP7AdfonicContent.contentproj", "{06782B45-AAE1-44C3-AADE-2A21E99B7FA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF0EB352-DDC9-4BB1-AD1A-D59689EAE20A}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{DF0EB352-DDC9-4BB1-AD1A-D59689EAE20A}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{DF0EB352-DDC9-4BB1-AD1A-D59689EAE20A}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{DF0EB352-DDC9-4BB1-AD1A-D59689EAE20A}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{DF0EB352-DDC9-4BB1-AD1A-D59689EAE20A}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{DF0EB352-DDC9-4BB1-AD1A-D59689EAE20A}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{06782B45-AAE1-44C3-AADE-2A21E99B7FA4}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{06782B45-AAE1-44C3-AADE-2A21E99B7FA4}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

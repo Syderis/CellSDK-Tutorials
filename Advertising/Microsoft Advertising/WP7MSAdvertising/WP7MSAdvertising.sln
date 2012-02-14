@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7MSAdvertising", "WP7MSAdvertising\WP7MSAdvertising.csproj", "{61F6BDF9-6365-4B18-AB25-7F40C8F60CB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7MSAdvertisingContent", "WP7MSAdvertisingContent\WP7MSAdvertisingContent.contentproj", "{7E8AC4C1-91CC-479D-BBBE-3F7A24AE06D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61F6BDF9-6365-4B18-AB25-7F40C8F60CB6}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{61F6BDF9-6365-4B18-AB25-7F40C8F60CB6}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{61F6BDF9-6365-4B18-AB25-7F40C8F60CB6}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{61F6BDF9-6365-4B18-AB25-7F40C8F60CB6}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{61F6BDF9-6365-4B18-AB25-7F40C8F60CB6}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{61F6BDF9-6365-4B18-AB25-7F40C8F60CB6}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{7E8AC4C1-91CC-479D-BBBE-3F7A24AE06D1}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{7E8AC4C1-91CC-479D-BBBE-3F7A24AE06D1}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

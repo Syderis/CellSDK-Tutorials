@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSInmobi", "IOSInmobi\IOSInmobi.csproj", "{05B746D9-22BC-49A2-918D-7DE1FD3762C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05B746D9-22BC-49A2-918D-7DE1FD3762C2}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{05B746D9-22BC-49A2-918D-7DE1FD3762C2}.Debug|iPhone.Build.0 = Debug|iPhone
+		{05B746D9-22BC-49A2-918D-7DE1FD3762C2}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{05B746D9-22BC-49A2-918D-7DE1FD3762C2}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{05B746D9-22BC-49A2-918D-7DE1FD3762C2}.Release|iPhone.ActiveCfg = Release|iPhone
+		{05B746D9-22BC-49A2-918D-7DE1FD3762C2}.Release|iPhone.Build.0 = Release|iPhone
+		{05B746D9-22BC-49A2-918D-7DE1FD3762C2}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{05B746D9-22BC-49A2-918D-7DE1FD3762C2}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IOSInmobi\IOSInmobi.csproj
+	EndGlobalSection
+EndGlobal
