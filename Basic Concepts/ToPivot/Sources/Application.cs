@@ -16,9 +16,8 @@ namespace ToPivot
         public override void Initialize()
         {
             base.Initialize();
-            //Add your code here   
-            SetBackground(Color.White);
-
+            //Add your code here
+           
             lbl1 = new Label(Image.CreateImage("cell1"));
             lbl2 = new Label(Image.CreateImage("cell2"));
             lbl3 = new Label(Image.CreateImage("cell3"));
