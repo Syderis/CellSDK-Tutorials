@@ -20,9 +20,7 @@ namespace Buttons
             base.Initialize();
 
             // TODO: Replace these comments with your own poetry, and enjoy!
-            //AddComponent(new Label("Hello, World!"), 0, 0);
-            //Add your code here
-
+            //AddComponent(new Label("Hello, World!"), 0, 0);         
             CreatePhysicWorld();
 
             Button btn = new Button("Push me");
@@ -53,7 +51,7 @@ namespace Buttons
                 secondball.Draggable = true;
             }
         }
-        
+
         public override void BackButtonPressed()
         {
             Program.Instance.Exit();
