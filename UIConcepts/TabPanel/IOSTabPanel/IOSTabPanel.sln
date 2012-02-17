@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSTabPanel", "IOSTabPanel\IOSTabPanel.csproj", "{027FAE46-DC76-4455-A952-C6FC37E326A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{027FAE46-DC76-4455-A952-C6FC37E326A5}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{027FAE46-DC76-4455-A952-C6FC37E326A5}.Debug|iPhone.Build.0 = Debug|iPhone
+		{027FAE46-DC76-4455-A952-C6FC37E326A5}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{027FAE46-DC76-4455-A952-C6FC37E326A5}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{027FAE46-DC76-4455-A952-C6FC37E326A5}.Release|iPhone.ActiveCfg = Release|iPhone
+		{027FAE46-DC76-4455-A952-C6FC37E326A5}.Release|iPhone.Build.0 = Release|iPhone
+		{027FAE46-DC76-4455-A952-C6FC37E326A5}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{027FAE46-DC76-4455-A952-C6FC37E326A5}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IOSTabPanel\IOSTabPanel.csproj
+	EndGlobalSection
+EndGlobal
