@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7TextArea", "WP7TextArea\WP7TextArea.csproj", "{DB6D6C82-BB16-4228-8650-38D3AAB89351}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7TextAreaContent", "WP7TextAreaContent\WP7TextAreaContent.contentproj", "{C3975980-C859-4AF1-BF41-E803B6D34D26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB6D6C82-BB16-4228-8650-38D3AAB89351}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{DB6D6C82-BB16-4228-8650-38D3AAB89351}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{DB6D6C82-BB16-4228-8650-38D3AAB89351}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{DB6D6C82-BB16-4228-8650-38D3AAB89351}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{DB6D6C82-BB16-4228-8650-38D3AAB89351}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{DB6D6C82-BB16-4228-8650-38D3AAB89351}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{C3975980-C859-4AF1-BF41-E803B6D34D26}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{C3975980-C859-4AF1-BF41-E803B6D34D26}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
