@@ -29,11 +29,13 @@ namespace zBuffering
 
             cell1.Alpha = cell2.Alpha = cell3.Alpha = 0.8f;
 
-            SendToFront(cell2);
+            
 
             AddComponent(cell1, Width / 2 - cell1.Size.X / 2, Height / 3);
             AddComponent(cell2, Width / 2 - cell2.Size.X / 2, Height / 3);
             AddComponent(cell3, Width / 2 - cell3.Size.X / 2, Height / 3);
+			
+			SendToFront(cell2);
         }
 
         public override void BackButtonPressed()
