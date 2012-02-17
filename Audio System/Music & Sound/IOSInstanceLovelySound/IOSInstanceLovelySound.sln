@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSInstanceLovelySound", "IOSInstanceLovelySound\IOSInstanceLovelySound.csproj", "{C03B51A4-B036-4A41-82C4-0B49BED55075}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C03B51A4-B036-4A41-82C4-0B49BED55075}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{C03B51A4-B036-4A41-82C4-0B49BED55075}.Debug|iPhone.Build.0 = Debug|iPhone
+		{C03B51A4-B036-4A41-82C4-0B49BED55075}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{C03B51A4-B036-4A41-82C4-0B49BED55075}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{C03B51A4-B036-4A41-82C4-0B49BED55075}.Release|iPhone.ActiveCfg = Release|iPhone
+		{C03B51A4-B036-4A41-82C4-0B49BED55075}.Release|iPhone.Build.0 = Release|iPhone
+		{C03B51A4-B036-4A41-82C4-0B49BED55075}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{C03B51A4-B036-4A41-82C4-0B49BED55075}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IOSInstanceLovelySound\IOSInstanceLovelySound.csproj
+	EndGlobalSection
+EndGlobal
