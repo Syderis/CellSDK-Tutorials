@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSAnimations", "IOSAnimations\IOSAnimations.csproj", "{D2DF28AA-156E-4646-B79F-BAC0F4501D43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2DF28AA-156E-4646-B79F-BAC0F4501D43}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{D2DF28AA-156E-4646-B79F-BAC0F4501D43}.Debug|iPhone.Build.0 = Debug|iPhone
+		{D2DF28AA-156E-4646-B79F-BAC0F4501D43}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{D2DF28AA-156E-4646-B79F-BAC0F4501D43}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{D2DF28AA-156E-4646-B79F-BAC0F4501D43}.Release|iPhone.ActiveCfg = Release|iPhone
+		{D2DF28AA-156E-4646-B79F-BAC0F4501D43}.Release|iPhone.Build.0 = Release|iPhone
+		{D2DF28AA-156E-4646-B79F-BAC0F4501D43}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{D2DF28AA-156E-4646-B79F-BAC0F4501D43}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IOSAnimations\IOSAnimations.csproj
+	EndGlobalSection
+EndGlobal
