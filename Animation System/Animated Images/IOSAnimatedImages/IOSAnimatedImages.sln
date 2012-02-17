@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSAnimatedImages", "IOSAnimatedImages\IOSAnimatedImages.csproj", "{9D5C5C79-F2D2-465F-91BC-CC22C5D9BA7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D5C5C79-F2D2-465F-91BC-CC22C5D9BA7B}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{9D5C5C79-F2D2-465F-91BC-CC22C5D9BA7B}.Debug|iPhone.Build.0 = Debug|iPhone
+		{9D5C5C79-F2D2-465F-91BC-CC22C5D9BA7B}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{9D5C5C79-F2D2-465F-91BC-CC22C5D9BA7B}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{9D5C5C79-F2D2-465F-91BC-CC22C5D9BA7B}.Release|iPhone.ActiveCfg = Release|iPhone
+		{9D5C5C79-F2D2-465F-91BC-CC22C5D9BA7B}.Release|iPhone.Build.0 = Release|iPhone
+		{9D5C5C79-F2D2-465F-91BC-CC22C5D9BA7B}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{9D5C5C79-F2D2-465F-91BC-CC22C5D9BA7B}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IOSAnimatedImages\IOSAnimatedImages.csproj
+	EndGlobalSection
+EndGlobal
