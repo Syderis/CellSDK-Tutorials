@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSChangeSplash", "IOSChangeSplash\IOSChangeSplash.csproj", "{3CE31EB9-BFD0-40C9-96F2-FC2CB9F9CA24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSChangeSplash", "IOSChangeSplash\IOSChangeSplash.csproj", "{C4EB33D8-B0FB-4CEA-95B9-A6E8A87D388A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,25 +11,16 @@ Global
 		Release|iPhone = Release|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3CE31EB9-BFD0-40C9-96F2-FC2CB9F9CA24}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{3CE31EB9-BFD0-40C9-96F2-FC2CB9F9CA24}.Debug|iPhone.Build.0 = Debug|iPhone
-		{3CE31EB9-BFD0-40C9-96F2-FC2CB9F9CA24}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{3CE31EB9-BFD0-40C9-96F2-FC2CB9F9CA24}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{3CE31EB9-BFD0-40C9-96F2-FC2CB9F9CA24}.Release|iPhone.ActiveCfg = Release|iPhone
-		{3CE31EB9-BFD0-40C9-96F2-FC2CB9F9CA24}.Release|iPhone.Build.0 = Release|iPhone
-		{3CE31EB9-BFD0-40C9-96F2-FC2CB9F9CA24}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{3CE31EB9-BFD0-40C9-96F2-FC2CB9F9CA24}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{C4EB33D8-B0FB-4CEA-95B9-A6E8A87D388A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{C4EB33D8-B0FB-4CEA-95B9-A6E8A87D388A}.Debug|iPhone.Build.0 = Debug|iPhone
+		{C4EB33D8-B0FB-4CEA-95B9-A6E8A87D388A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{C4EB33D8-B0FB-4CEA-95B9-A6E8A87D388A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{C4EB33D8-B0FB-4CEA-95B9-A6E8A87D388A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{C4EB33D8-B0FB-4CEA-95B9-A6E8A87D388A}.Release|iPhone.Build.0 = Release|iPhone
+		{C4EB33D8-B0FB-4CEA-95B9-A6E8A87D388A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{C4EB33D8-B0FB-4CEA-95B9-A6E8A87D388A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = IOSChangeSplash\IOSChangeSplash.csproj
-		Policies = $0
-		$0.DotNetNamingPolicy = $1
-		$1.DirectoryNamespaceAssociation = None
-		$1.ResourceNamePolicy = FileFormatDefault
-		$0.StandardHeader = $2
-		$2.Text = 
-		$2.IncludeInNewFiles = True
-		$0.VersionControlPolicy = $3
-		$3.inheritsSet = Mono
 	EndGlobalSection
 EndGlobal

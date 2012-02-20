@@ -1,31 +1,65 @@
+/*
+* Copyright 2011 Syderis Technologies S.L. All rights reserved.
+* Use is subject to license terms.
+*/
+                    
+#region Using statements
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
 using Syderis.CellSDK.IOS.Launcher;
 
+#endregion
 namespace IOSChangeSplash
 {
 	[Register("AppDelegate")]
 	class Program : UIApplicationDelegate
 	{
+        #region Variables
+        #endregion
+                    
+        #region Properties
+        #endregion
+                   
+        
 		public static Program Instance;
+		private Kernel kernel;
 		
 		static void Main (string[] args)
 		{
 			UIApplication.Main (args, null, "AppDelegate");
 		}
-
+#region Public methods
 		public override void FinishedLaunching (UIApplication app)
 		{
 			Instance = this;
-			
 			Application application = new Application ();
-			Kernel kernel = new Kernel (application);
+			kernel = new Kernel (application);
 			kernel.SplashStream =System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("ChangeSplash.DarkC.png");
-			string [] s= System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceNames();
 			kernel.Run ();
 		}
+
+		public void Exit ()
+		{
+			kernel.Exit ();
+		}
 		
-		public void Exit(){}
+		public override void DidEnterBackground (UIApplication application)
+		{
+			kernel.OnDeactivated ();
+		}
+		
+		public override void WillEnterForeground (UIApplication application)
+		{
+			kernel.OnActivated ();
+		}
+		
+		public override void WillTerminate (UIApplication application)
+		{
+			kernel.OnExiting ();
+		}#endregion
+        
+		#region Private methods
+        #endregion
 	}
 }
