@@ -1,3 +1,8 @@
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
 #region Using Statements
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
@@ -15,37 +20,17 @@ namespace SampleListBox
         {
             base.Initialize();
 
-            // TODO: Replace these comments with your own poetry, and enjoy!
-            ListBox descriptions = new ListBox(Width, 200);
+            StaticContent.Graphics.IsFullScreen = true;
+            StaticContent.Graphics.ApplyChanges();
 
-            descriptions.AddItem(new ListItem("Electronic Gadget"));
-            descriptions.AddItem(new ListItem("Plastic Guy"));
-            descriptions.AddItem(new ListItem("I-beleive-have-a-laser"));
-            descriptions.AddItem(new ListItem("My-helment-is-a-fishbowl"));
-            descriptions.AddItem(new ListItem("I-have-sort-of-wings"));
-            descriptions.AddItem(new ListItem("To-the-infinity-and-beyond"));
-            descriptions.AddItem(new ListItem("I-am-the-Andy's-second"));
-
-            AddComponent(descriptions, 0, 0);
+            StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }
-        public override void BackButtonPressed()
+
+        public override void Exit()
         {
+            base.Exit();
+
             Program.Instance.Exit();
         }
-    }
-
-    internal class ListItem : IListBoxObject
-    {
-        Label l;
-
-        public ListItem(string label)
-        {
-            l = new Label(label);
-        }
-
-        public Component CellRenderer()
-        {
-            return l;
-        }
-    }
+    }    
 }
