@@ -1,3 +1,8 @@
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
 #region Using Statements
 using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core;
@@ -16,38 +21,16 @@ namespace BorderLayoutSample
         {
             base.Initialize();
 
-            Label lblCenter;
-            Label lblEast;
-            Label lblNorth;
-            Label lblSouth;
-            Label lblWest;
+            StaticContent.Graphics.IsFullScreen = true;
+            StaticContent.Graphics.ApplyChanges();
 
-            lblCenter = new Label("Center");
-            lblEast = new Label("East");
-            lblNorth = new Label("North");
-            lblSouth = new Label("South");
-            lblWest = new Label("West");
-
-            lblCenter.Align = Label.AlignType.MIDDLECENTER;
-            lblEast.Align = Label.AlignType.MIDDLECENTER;
-            lblNorth.Align = Label.AlignType.MIDDLECENTER;
-            lblSouth.Align = Label.AlignType.MIDDLECENTER;
-            lblWest.Align = Label.AlignType.MIDDLECENTER;
-
-            Container<BorderLayout> borderContainer = new Container<BorderLayout>(new BorderLayout());
-            borderContainer.BackgroundColor = Color.Transparent;
-            borderContainer.Layout.AddComponent(BorderLayout.Organization.CENTER, lblCenter);
-            borderContainer.Layout.AddComponent(BorderLayout.Organization.EAST, lblEast);
-            borderContainer.Layout.AddComponent(BorderLayout.Organization.NORTH, 25, lblNorth);
-            borderContainer.Layout.AddComponent(BorderLayout.Organization.SOUTH, 25, lblSouth);
-            borderContainer.Layout.AddComponent(BorderLayout.Organization.WEST, lblWest);
-
-            AddComponent(borderContainer, 0, 0);
-            borderContainer.Size = new Vector2(Width, Height/2);
+            StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }
 
-        public override void BackButtonPressed()
+        public override void Exit()
         {
+            base.Exit();
+
             Program.Instance.Exit();
         }
     }
