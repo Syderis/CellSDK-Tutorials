@@ -34,7 +34,7 @@ namespace Vibrate
         #region Events
         void vibrate_Pressed(Component source)
         {
-            Preferences.App.Vibrate(500);
+            (Preferences.App as MobileApplication).Vibrate(500);
         } 
         #endregion
 
