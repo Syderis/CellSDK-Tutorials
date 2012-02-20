@@ -1,5 +1,15 @@
-using Syderis.CellSDK.Core;
-using Syderis.CellSDK.Core.Graphics;
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
+#region Using Statements
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Syderis.CellSDK.Core; 
+#endregion
 
 namespace Background
 {
@@ -9,11 +19,13 @@ namespace Background
         {
             base.Initialize();
 
-            // Replace this comment with your own poetry, and enjoy!
-            SetBackground(Image.CreateImage("cell1"), MobileApplication.Adjustment.CENTER);
+            StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }
-         public override void BackButtonPressed()
+
+        public override void Exit()
         {
+            base.Exit();
+
             Program.Instance.Exit();
         }
     }
