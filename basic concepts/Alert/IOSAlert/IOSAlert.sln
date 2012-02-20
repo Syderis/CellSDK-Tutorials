@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSAlert", "IOSAlert\IOSAlert.csproj", "{4D6DC67C-31C6-4964-BA75-936F363F5689}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D6DC67C-31C6-4964-BA75-936F363F5689}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{4D6DC67C-31C6-4964-BA75-936F363F5689}.Debug|iPhone.Build.0 = Debug|iPhone
+		{4D6DC67C-31C6-4964-BA75-936F363F5689}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{4D6DC67C-31C6-4964-BA75-936F363F5689}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{4D6DC67C-31C6-4964-BA75-936F363F5689}.Release|iPhone.ActiveCfg = Release|iPhone
+		{4D6DC67C-31C6-4964-BA75-936F363F5689}.Release|iPhone.Build.0 = Release|iPhone
+		{4D6DC67C-31C6-4964-BA75-936F363F5689}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{4D6DC67C-31C6-4964-BA75-936F363F5689}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IOSAlert\IOSAlert.csproj
+	EndGlobalSection
+EndGlobal
