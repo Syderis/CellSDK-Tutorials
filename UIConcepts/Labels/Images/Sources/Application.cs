@@ -1,3 +1,8 @@
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
 #region Using Statements
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
@@ -13,28 +18,18 @@ namespace Images
         /// </summary>
         public override void Initialize()
         {
-            CreatePhysicWorld();
-
             base.Initialize();
 
-            // TODO: Replace these comments with your own poetry, and enjoy!
-            //AddComponent(new Label("Hello, World!"), 0, 0);
-            Image img = Image.CreateImage("Image");
-            Image img2 = Image.CreateImage("MyDir/Image2");
+            StaticContent.Graphics.IsFullScreen = true;
+            StaticContent.Graphics.ApplyChanges();
 
-            Label lbl = new Label(img);
-            Label lbl2 = new Label(img2);
-            lbl.Draggable = true;
-            lbl2.Draggable = true;
-
-            AddComponent(lbl, 10, 10);
-            AddComponent(lbl2, 10, 400);
-
-            img.Effect = Image.EffectType.FLIP_HORIZONTAL_VERTICAL;
+            StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }
 
-        public override void BackButtonPressed()
+        public override void Exit()
         {
+            base.Exit();
+
             Program.Instance.Exit();
         }
     }
