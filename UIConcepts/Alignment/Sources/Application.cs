@@ -15,24 +15,22 @@ namespace TextAlignment
         {
             base.Initialize();
 
-            // TODO: Replace these comments with your own poetry, and enjoy!
-            Image img = Image.CreateImage("posit");
-            Label lbl = new Label(img);
-            lbl.FitToText = false;
-            lbl.Text = "My note";
-            lbl.Align = Label.AlignType.MIDDLECENTER;
+            StaticContent.Graphics.IsFullScreen = true;
+            StaticContent.Graphics.ApplyChanges();
 
-            lbl.Draggable = true;
-            AddComponent(lbl,0,0);
+            StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }
 
         /// <summary>
         /// Exits the application.
         /// </summary>
-        public override void BackButtonPressed()
+        public override void Exit()
         {
-            base.BackButtonPressed();
+            base.Exit();
+
             Program.Instance.Exit();
         }
+        
+        
     }
 }
