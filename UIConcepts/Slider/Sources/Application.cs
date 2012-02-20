@@ -1,3 +1,8 @@
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
 #region Using Statements
 using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core;
@@ -8,9 +13,7 @@ namespace Slider_Sample
 {
     class Application : MobileApplication
     {
-        private Slider slider;
-
-        private Label value;
+       
         /// <summary>
         /// The main method for loading controls and resources.
         /// </summary>
@@ -18,22 +21,16 @@ namespace Slider_Sample
         {
             base.Initialize();
 
-            // TODO: Replace these comments with your own poetry, and enjoy!
-            slider = new Slider();
-            value = new Label("");
+            StaticContent.Graphics.IsFullScreen = true;
+            StaticContent.Graphics.ApplyChanges();
 
-            AddComponent(value, 75f, 400f);
-            AddComponent(slider, 100f, 200f);
-        }
+            StaticContent.ScreenManager.GoToScreen(new MainScreen());
+        }       
 
-        public override void Update(GameTime gameTime)
+        public override void Exit()
         {
-            base.Update(gameTime);
-            value.Text = slider.Value.ToString();
-        }
+            base.Exit();
 
-        public override void BackButtonPressed()
-        {
             Program.Instance.Exit();
         }
     }
