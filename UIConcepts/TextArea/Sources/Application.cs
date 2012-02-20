@@ -1,3 +1,8 @@
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
 #region Using Statements
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
@@ -14,15 +19,16 @@ namespace TextAreaSample
         {
             base.Initialize();
 
-            // TODO: Replace these comments with your own poetry, and enjoy!
-            //AddComponent(new Label("Hello, World!"), 0, 0);
+            StaticContent.Graphics.IsFullScreen = true;
+            StaticContent.Graphics.ApplyChanges();
 
-            TextArea loveletter = new TextArea("Hello, World!", 1, 20);
-            AddComponent(loveletter, 20, 200);
+            StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }
 
-        public override void BackButtonPressed()
+        public override void Exit()
         {
+            base.Exit();
+
             Program.Instance.Exit();
         }
     }
