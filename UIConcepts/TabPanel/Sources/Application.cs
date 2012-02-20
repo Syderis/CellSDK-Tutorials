@@ -1,3 +1,8 @@
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
 #region Using Statements
 using Syderis.CellSDK.Common;
 using Syderis.CellSDK.Core;
@@ -16,17 +21,16 @@ namespace TabPanelSample
         {
             base.Initialize();
 
-            // TODO: Replace these comments with your own poetry, and enjoy!
-            TabPanel tab;
-            tab = new TabPanel(Preferences.Width, Preferences.Height);
-            tab.AddTab("mytab1", new Label(Image.CreateImage("cell_jekyll")));
-            tab.AddTab("mytab2", new Label(Image.CreateImage("cell_hyde")));
+            StaticContent.Graphics.IsFullScreen = true;
+            StaticContent.Graphics.ApplyChanges();
 
-            AddComponent(tab, 0, 0);
+            StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }
 
-        public override void BackButtonPressed()
+        public override void Exit()
         {
+            base.Exit();
+
             Program.Instance.Exit();
         }
     }
