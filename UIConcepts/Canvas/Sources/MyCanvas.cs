@@ -1,13 +1,20 @@
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
+#region Using Statements
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
-using Syderis.CellSDK.Common;
+using Syderis.CellSDK.Common; 
+#endregion
 
 namespace CanvasSample
 {
-    class MyCanvas:Canvas
+    public class MyCanvas:Canvas
     {
         private RenderTarget2D drawing;
         private Texture2D brush;
@@ -21,8 +28,8 @@ namespace CanvasSample
         {
             drawing = new RenderTarget2D(StaticContent.SpriteBatch.GraphicsDevice, weidth,
                       heigh, false, SurfaceFormat.Color,
-                      DepthFormat.Depth24, 0, RenderTargetUsage.PreserveContents);
-            brush = StaticContent.Content.Load<Texture2D>("brush");
+                      DepthFormat.Depth24, 0, RenderTargetUsage.PreserveContents);            
+            brush = StaticContent.Resources.CreateImage("brush").Texture;
             middleoffset = new Vector2(brush.Width / 2, brush.Height / 2);
         }
 

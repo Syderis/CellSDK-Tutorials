@@ -1,3 +1,8 @@
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
 #region Using Stements
 using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core;
@@ -16,22 +21,16 @@ namespace FlowLayoutSample
         {
             base.Initialize();
 
-            Container<FlowLayout> flowContainer = new Container<FlowLayout>(new FlowLayout());
-            flowContainer.BackgroundColor = Color.Transparent;
-            flowContainer.Size = new Vector2(150, 10);
-            flowContainer.Layout.AddComponent(new Label("One"));
-            flowContainer.Layout.AddComponent(new Label("Two"));
-            flowContainer.Layout.AddComponent(new Label("Three"));
-            flowContainer.Layout.AddComponent(new Label("Four"));
-            flowContainer.Layout.AddComponent(new Label("Five"));
-            flowContainer.Layout.AddComponent(new Label("Six"));
-            flowContainer.Layout.AddComponent(new Label("Seven"));
+            StaticContent.Graphics.IsFullScreen = true;
+            StaticContent.Graphics.ApplyChanges();
 
-            AddComponent(flowContainer, 100, 400);
+            StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }
 
-        public override void BackButtonPressed()
+        public override void Exit()
         {
+            base.Exit();
+
             Program.Instance.Exit();
         }
     }
