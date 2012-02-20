@@ -1,3 +1,8 @@
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
 #region Using Statements
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
@@ -14,12 +19,16 @@ namespace Labels
         {
             base.Initialize();
 
-            // TODO: Replace these comments with your own poetry, and enjoy!
-            AddComponent(new Label("Text . . ."), 0, 0);            
+            StaticContent.Graphics.IsFullScreen = true;
+            StaticContent.Graphics.ApplyChanges();
+
+            StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }
 
-        public override void BackButtonPressed()
+        public override void Exit()
         {
+            base.Exit();
+
             Program.Instance.Exit();
         }
     }
