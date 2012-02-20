@@ -103,6 +103,7 @@
     <Compile Include="..\..\Sources\MyCanvas.cs">
       <Link>MyCanvas.cs</Link>
     </Compile>
+    <Compile Include="MainScreen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Properties\AppManifest.xml">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7ChangeSplash", "WP7ChangeSplash\WP7ChangeSplash.csproj", "{6D58D7C2-55D2-4146-8D49-E5712E46B0DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7ChangeSplashContent", "WP7ChangeSplashContent\WP7ChangeSplashContent.contentproj", "{14D92CF7-204D-47D1-B8DD-75C026EC5FC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D58D7C2-55D2-4146-8D49-E5712E46B0DD}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{6D58D7C2-55D2-4146-8D49-E5712E46B0DD}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{6D58D7C2-55D2-4146-8D49-E5712E46B0DD}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{6D58D7C2-55D2-4146-8D49-E5712E46B0DD}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{6D58D7C2-55D2-4146-8D49-E5712E46B0DD}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{6D58D7C2-55D2-4146-8D49-E5712E46B0DD}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{14D92CF7-204D-47D1-B8DD-75C026EC5FC8}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{14D92CF7-204D-47D1-B8DD-75C026EC5FC8}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
