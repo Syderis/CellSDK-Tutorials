@@ -14,7 +14,6 @@ using Syderis.CellSDK.Core.Screens;
 using Syderis.CellSDK.Core.Graphics;
 using Syderis.CellSDK.Core;
 
-using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Common;
 using Syderis.CellSDK.Core.Animations; 
 #endregion
