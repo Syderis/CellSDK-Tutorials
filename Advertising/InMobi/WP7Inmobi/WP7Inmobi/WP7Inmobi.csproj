@@ -59,8 +59,8 @@
     <Reference Include="Microsoft.Xna.Framework.GamerServices" />
     <Reference Include="Microsoft.Xna.Framework.Input.Touch" />
     <Reference Include="mscorlib" />
-    <Reference Include="Syderis.CellSDK.WindowsPhone.Advertising">
-      <HintPath>C$(CellSDK)Versions\1.1\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Advertising.dll</HintPath>
+	<Reference Include="Syderis.CellSDK.WindowsPhone.Advertising">
+      <HintPath>$(CellSDK)Versions\1.1\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Advertising.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.WindowsPhone.Common, Version=1.0.0.30407, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -83,6 +83,9 @@
   <ItemGroup>
     <Compile Include="..\..\Sources\Application.cs">
       <Link>Application.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Sources\MainScreen.cs">
+      <Link>MainScreen.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Properties\AppManifest.xml">
