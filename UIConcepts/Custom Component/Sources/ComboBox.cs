@@ -1,3 +1,8 @@
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
 #region Using Statements
 using System;
 using Microsoft.Xna.Framework;
@@ -38,16 +43,23 @@ namespace ComboBox
             //itemList.AddItem(new Item(this,""));
         }
 
-        void actualItem_Released(Component source)
+        #region Events
+        public void actualItem_Released(Component source)
         {
             countWatchDog = false;
         }
 
-        void actualItem_Pressed(Component source)
+        public void actualItem_Pressed(Component source)
         {
             watchDog = TimeSpan.Zero;
             countWatchDog = true;
         }
+
+        public void itemAux_Released(Component source)
+        {
+            SelectElement(((Label)source).Text);
+        } 
+        #endregion
 
         public void AddItem(string element)
         {
@@ -57,14 +69,10 @@ namespace ComboBox
             itemList.AddItem(itemAux);
         }
 
-        void itemAux_Released(Component source)
-        {
-            SelectElement(((Label)source).Text);
-        }
-
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
+
             if (countWatchDog)
             {
                 watchDog += gameTime.ElapsedGameTime;
