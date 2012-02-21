@@ -1,19 +1,23 @@
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
+#region Using Statements
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 using Syderis.CellSDK.Core;
-using Syderis.CellSDK.Core.Controls;
-using Syderis.CellSDK.Advertising;
-using Microsoft.Xna.Framework;
+#endregion
 
 namespace MSAdvertising
 {
     public class Application : MobileApplication
     {
         /// <summary>
-        /// The main method for loading controls and resources.
+        /// Loads the main screen
         /// </summary>
         public override void Initialize()
         {
@@ -22,27 +26,17 @@ namespace MSAdvertising
             StaticContent.Graphics.IsFullScreen = true;
             StaticContent.Graphics.ApplyChanges();
 
-            SetBackground(Color.Blue);
-
-            IAdvertising ads = AdvertisingFactory.CreateAds(AdvertisingType.MICROSOFT_ADS, "8c89c892-2003-43fd-b7a1-db3d1ab6b56d/10030126");
-            
-            ads.Test = true;
-            
-            Banner bannerMsAdvertising = new Banner(ads, 300, 50);
-
-            bannerMsAdvertising.AdsIntervalRequest = 10;
-
-            AddComponent(bannerMsAdvertising,
-                Width / 2 - bannerMsAdvertising.Width / 2, 
-                Height/2-bannerMsAdvertising.Height/2);
+            // NOTE: Starting from Cell SDK 1.1 all the resources load within this method are done on a specific Screen object.
+            // For instance, the Hello World Label is created on MainScreen
+            StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }
-        
+
         /// <summary>
-        /// Exits the application.
+        /// Exits the app
         /// </summary>
-        public override void BackButtonPressed()
+        public override void Exit()
         {
-            base.BackButtonPressed();
+            base.Exit();
 
             Program.Instance.Exit();
         }
