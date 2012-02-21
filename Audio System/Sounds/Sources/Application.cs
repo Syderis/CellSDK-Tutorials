@@ -1,40 +1,43 @@
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
+#region Using Statements
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 using Syderis.CellSDK.Core;
-using Syderis.CellSDK.Core.Controls;
-using Syderis.CellSDK.Core.Sounds;
+#endregion
 
 namespace Sounds
 {
-    class Application : MobileApplication
+    public class Application : MobileApplication
     {
-
-        private Sound lovelySound;
         /// <summary>
-        /// The main method for loading controls and resources.
+        /// Loads the main screen
         /// </summary>
         public override void Initialize()
         {
             base.Initialize();
 
-            // TODO: Replace these comments with your own poetry, and enjoy!
-            //AddComponent(new Label("Hello, World!"), 0, 0);
-            lovelySound = Sound.CreateSound("lovelySound");
-            Button btn = new Button("Pretty button. Touch me to play!");
-            btn.Released += btn_Released;
-            AddComponent(btn, 10, 300);
+            StaticContent.Graphics.IsFullScreen = true;
+            StaticContent.Graphics.ApplyChanges();
+
+            // NOTE: Starting from Cell SDK 1.1 all the resources load within this method are done on a specific Screen object.
+            // For instance, the Hello World Label is created on MainScreen
+            StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }
 
-        void btn_Released(Component source)
+        /// <summary>
+        /// Exits the app
+        /// </summary>
+        public override void Exit()
         {
-            lovelySound.Play();
-        }
+            base.Exit();
 
-        public override void BackButtonPressed()
-        {
             Program.Instance.Exit();
         }
     }
