@@ -81,6 +81,7 @@ namespace Accelerometer
 
         public override void BackButtonPressed()
         {
+            AccelerometerSensor.Instance.Stop();
             base.BackButtonPressed();
         }
     }
