@@ -1,12 +1,16 @@
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
 #region Using Statements
 using Syderis.CellSDK.Core;
 #endregion
 
 namespace ComboBox
 {
-    class Application : MobileApplication
-    {
-        ComboBox combo;
+    public class Application : MobileApplication
+    {        
         /// <summary>
         /// The main method for loading controls and resources.
         /// </summary>
@@ -14,24 +18,16 @@ namespace ComboBox
         {
             base.Initialize();
 
-            // TODO: Replace these comments with your own poetry, and enjoy!
-            combo = new ComboBox();
-            
-            combo.AddItem("Fruit");
-            combo.AddItem("Milk");
-            combo.AddItem("Wine");
-            combo.AddItem("Ice");
-            combo.AddItem("Ice cream");
-            combo.AddItem("Carrots");
-            combo.AddItem("Potatoes");
-            combo.AddItem("Ketchup");
-            combo.AddItem("Tomatoes");
-            
-            AddComponent(combo, 10, 100);
+            StaticContent.Graphics.IsFullScreen = true;
+            StaticContent.Graphics.ApplyChanges();
+
+            StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }
 
-        public override void BackButtonPressed()
+        public override void Exit()
         {
+            base.Exit();
+
             Program.Instance.Exit();
         }
     }

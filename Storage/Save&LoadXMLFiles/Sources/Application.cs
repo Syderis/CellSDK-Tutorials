@@ -1,3 +1,8 @@
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
 #region Using Statements
 using System.Collections.Generic;
 using System.Xml.Linq;
@@ -11,10 +16,6 @@ namespace StorageSample
 {
     class Application : MobileApplication
     {
-        Button btGetNotice;
-        Label lblTime;
-        Label lblNotice;
-        int index;
 
         /// <summary>
         /// The main method for loading controls and resources.
@@ -23,62 +24,19 @@ namespace StorageSample
         {
             base.Initialize();
 
-            // TODO: Replace these comments with your own poetry, and enjoy!
-            List<Notice> list = new List<Notice>();
+            StaticContent.Graphics.IsFullScreen = true;
+            StaticContent.Graphics.ApplyChanges();
 
-            list.Add(new Notice() { Year = 1972, News = "PLATO IV: First computer with \n a touchable screen." });
-            list.Add(new Notice() { Year = 1985, News = "Home Manager: First home computer \n with a touchable screen." });
-            list.Add(new Notice() { Year = 1992, News = "SIMON. First smartphone." });
-            list.Add(new Notice() { Year = 1999, News = "Edge: Voting machine." });
-            list.Add(new Notice() { Year = 2000, News = "iPhone: Firts multitouch smartphone." });
+            StaticContent.ScreenManager.GoToScreen(new MainScreen());
+        }    
 
-            XDocument doc = new XDocument();
-            XmlSerializer serializer = new XmlSerializer(typeof(List<Notice>));
-            System.Xml.XmlWriter writer = doc.CreateWriter();
-            serializer.Serialize(writer, list);
-            writer.Close();
-            IsolatedStorage.SaveFile(doc, "myFile");
-
-            btGetNotice = new Button("Get next notice");
-            btGetNotice.Released += new Component.ComponentEventHandler(btnOpenBox_Released);
-            AddComponent(btGetNotice, 50, 600);
-
-            lblTime = new Label(list[0].Year.ToString());
-            lblNotice = new Label(list[0].News);
-            AddComponent(lblTime, 50, 100);
-            AddComponent(lblNotice, 50, 200);
-            index = 1;
-        }
-
-        void btnOpenBox_Released(Component source)
+        public override void Exit()
         {
-            XDocument doc = IsolatedStorage.LoadFile("myFile");
-            XmlSerializer serializer = new XmlSerializer(typeof(List<Notice>));
-            List<Notice> list = serializer.Deserialize(doc.CreateReader()) as List<Notice>;
-            Notice not;
-            if (index < list.Count)
-            {
-                not = list[index];
-                index++;
-            }
-            else
-            {
-                index = 0;
-                not = list[index];
-            }
-            lblTime.Text = not.Year.ToString();
-            lblNotice.Text = not.News;
-        }
+            base.Exit();
 
-        public override void BackButtonPressed()
-        {
             Program.Instance.Exit();
         }
     }
 
-    public class Notice
-    {
-        public int Year { get; set; }
-        public string News { get; set; }
-    }
+    
 }

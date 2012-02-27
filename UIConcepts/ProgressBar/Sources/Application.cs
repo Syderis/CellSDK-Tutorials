@@ -1,3 +1,8 @@
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
 #region Using Statements
 using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core;
@@ -7,49 +12,21 @@ using Syderis.CellSDK.Core.Controls;
 namespace ProgressBarSample
 {
     public class Application : MobileApplication
-    {
-        private ProgressBar charger;
-        private bool charged;
-
+    {        
         public override void Initialize()
         {
             base.Initialize();
 
-            Label message = new Label("Charging...");
-            AddComponent(message, 0, 100);
+            StaticContent.Graphics.IsFullScreen = true;
+            StaticContent.Graphics.ApplyChanges();
 
-            Button shot = new Button("Shot!");
-            shot.Pressed += delegate
-            {
-                if (charged)
-                {
-                    charger.Value = 0;
-                    charged = false;
-                    message.Text = "Charging...";
-                }
-            };
-            AddComponent(shot, 150, 100);
+            StaticContent.ScreenManager.GoToScreen(new MainScreen());
+        }       
 
-            charger = new ProgressBar();
-            charger.Value = 0;
-            charger.EndEvent += delegate
-            {
-                charged = true;
-                message.Text = "Charged!";
-            };
-            AddComponent(charger, 0, 0);
-        }
-
-        public override void Update(GameTime gameTime)
+        public override void Exit()
         {
-            base.Update(gameTime);
-            if (!charged)
-                charger.Value++;
+            base.Exit();
 
-        }
-
-        public override void BackButtonPressed()
-        {
             Program.Instance.Exit();
         }
     }

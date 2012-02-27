@@ -65,7 +65,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\Sources\Application.cs">
-      <Link>Resources\Application.cs</Link>
+      <Link>Application.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Sources\MainScreen.cs">
+      <Link>MainScreen.cs</Link>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

@@ -1,3 +1,8 @@
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
+
 #region Using Statements
 using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core;
@@ -8,9 +13,7 @@ namespace CellSDKApp
 {
     class Application : MobileApplication
     {
-        int count = 0;
-        Label clickLabel;
-        Button clickButton;
+
         /// <summary>
         /// The main method for loading controls and resources.
         /// </summary>
@@ -18,23 +21,16 @@ namespace CellSDKApp
         {
             base.Initialize();
 
-            SetBackground(Color.Gray);
+            StaticContent.Graphics.IsFullScreen = true;
+            StaticContent.Graphics.ApplyChanges();
 
-            clickLabel = new Label("Click Count");
-            clickButton = new Button("Click me!!!");
-            clickButton.Released += delegate { clickLabel.Text = string.Format("{0} Clicks!.", ++count); };
-
-            clickLabel.Pivot = Vector2.One / 2;
-            clickLabel.Align = Label.AlignType.MIDDLECENTER;
-            clickButton.Pivot = Vector2.One / 2;
-            clickButton.Align = Label.AlignType.MIDDLECENTER;
-
-            AddComponent(clickLabel, Width / 2, Height / 2);
-            AddComponent(clickButton, Width / 2, Height / 2 - 100);            
+            StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }
 
-        public override void BackButtonPressed()
+        public override void Exit()
         {
+            base.Exit();
+
             Program.Instance.Exit();
         }
     }

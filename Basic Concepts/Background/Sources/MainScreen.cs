@@ -23,7 +23,6 @@ namespace Background
         {
             base.Initialize();
 
-            // Replace this comment with your own poetry, and enjoy!
             SetBackground(ResourceManager.CreateImage("cell1"), Adjustment.CENTER);
         }
 

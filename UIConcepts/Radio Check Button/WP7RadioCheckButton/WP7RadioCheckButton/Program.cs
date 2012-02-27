@@ -1,7 +1,12 @@
-using System;
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
 
-using Syderis.CellSDK.WindowsPhone.Launcher;
-using SelectOptions;
+#region Using Statements
+using System;
+using Syderis.CellSDK.WindowsPhone.Launcher; 
+#endregion
 
 namespace SelectOptions
 {
@@ -13,6 +18,7 @@ namespace SelectOptions
         protected override void Initialize()
         {
             Application application = new Application();
+            FramesPerSecond = 50;
             base.Application = application;
             base.Initialize();
         }

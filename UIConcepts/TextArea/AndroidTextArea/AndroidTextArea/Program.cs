@@ -1,17 +1,15 @@
-using System;
+/*
+ * Copyright 2012 Syderis Technologies S.L. All rights reserved.
+ * Use is subject to license terms.
+ */
 
+#region Using Statements
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-
 using Microsoft.Xna.Framework;
-
 using Syderis.CellSDK.Android.Launcher;
 using Syderis.CellSDK.Common;
-using Syderis.CellSDK.Core;
+#endregion
 
 namespace TextAreaSample
 {
@@ -19,6 +17,7 @@ namespace TextAreaSample
     public class Program : AndroidGameActivity
     {
         public static Program Instance;
+        private Kernel kernel;
 
         /// <summary>
         /// The main method which loads Application.
@@ -29,16 +28,18 @@ namespace TextAreaSample
 
             Kernel.Activity = this;
 
-            Kernel view = new Kernel(this);
-            SetContentView(view.Window);
+            kernel = new Kernel(this);
+            SetContentView(kernel.Window);
 
             Instance = this;
-            Preferences.SkinXMLFileStream = Assets.Open("Content/Skin/Skin.xml");
-            Preferences.ApplicationActivity = this;
+            Syderis.CellSDK.Common.Preferences.SkinXMLFileStream = Assets.Open("Content/Skin/Skin.xml");
+            Syderis.CellSDK.Common.Preferences.ApplicationActivity = this;
+
+
 
             Application application = new Application();
-            view.Application = application;
-            view.Run();
+            kernel.Application = application;
+            kernel.Run();
         }
 
         /// <summary>
@@ -47,6 +48,26 @@ namespace TextAreaSample
         public void Exit()
         {
             Finish();
+        }
+
+        /// <summary>
+        /// The application's activity pauses the execution
+        /// </summary>
+        protected override void OnPause()
+        {
+            base.OnPause();
+
+            kernel.OnPause();
+        }
+
+        /// <summary>
+        /// The application's activity resumes the execution
+        /// </summary>
+        protected override void OnResume()
+        {
+            base.OnResume();
+
+            kernel.OnResume();
         }
     }
 }
