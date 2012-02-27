@@ -13,10 +13,9 @@ namespace Alert
         public override void Initialize()
         {
             base.Initialize();
-            // TODO: Replace these comments with your own poetry, and enjoy!
-            //AddComponent(new Label("Hello, World!"), 0, 0);
+            
             Button alert = new Button("Push me!");
-        alert.Pressed += new Component.ComponentEventHandler(alert_Pressed);
+            alert.Pressed += new Component.ComponentEventHandler(alert_Pressed);
             AddComponent(alert, Preferences.Width / 2 - alert.Size.X / 2, Preferences.Height / 2 - alert.Size.Y / 2);
         }
 
@@ -24,7 +23,5 @@ namespace Alert
         {
             Preferences.App.Alert("Hi guy!","Message");
         }
-
-
     }
 }
