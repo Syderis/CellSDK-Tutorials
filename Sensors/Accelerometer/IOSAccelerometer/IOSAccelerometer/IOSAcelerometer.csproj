@@ -80,6 +80,9 @@
     <Compile Include="..\..\Sources\Application.cs">
       <Link>Application.cs</Link>
     </Compile>
+    <Compile Include="..\..\Sources\MainScreen.cs">
+      <Link>MainScreen.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\cell1.png" />
