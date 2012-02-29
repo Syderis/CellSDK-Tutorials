@@ -73,7 +73,7 @@
     <Reference Include="Syderis.CellSDK.IOS.Launcher">
       <HintPath>/Library\Frameworks\CellSDK.framework\Versions\1.1\Libraries\Syderis.CellSDK.IOS.Launcher.dll</HintPath>
     </Reference>
-    <Reference Include="Syderis.CellSDK.IOS.IO.LocationSystem.IOS">
+    <Reference Include="Syderis.CellSDK.IOS.IO.LocationSystem">
       <HintPath>/Library\Frameworks\CellSDK.framework\Versions\1.1\Libraries\Syderis.CellSDK.IOS.IO.LocationSystem.dll</HintPath>
     </Reference>
   </ItemGroup>
@@ -81,6 +81,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="..\..\Sources\Application.cs">
       <Link>Application.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Sources\MainScreen.cs">
+      <Link>MainScreen.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>
