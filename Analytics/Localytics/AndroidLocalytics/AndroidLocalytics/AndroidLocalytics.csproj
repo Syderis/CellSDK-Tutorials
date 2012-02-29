@@ -68,10 +68,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\Source\Application.cs">
+      <Link>Application.cs</Link>
+    </Compile>
     <Compile Include="..\..\Source\MainScreen.cs">
       <Link>MainScreen.cs</Link>
     </Compile>
-    <Compile Include="Application.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
