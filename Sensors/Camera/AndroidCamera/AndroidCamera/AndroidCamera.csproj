@@ -56,7 +56,7 @@
       <HintPath>$(CellSDK)Versions\1.1\Android\Libraries\Syderis.CellSDK.Android.Core.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.Android.IO.CameraSystem">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Syderis\CellSDK.framework\Versions\1.1\Android\Libraries\Syderis.CellSDK.Android.IO.CameraSystem.dll</HintPath>
+      <HintPath>$(CellSDK)\Versions\1.1\Android\Libraries\Syderis.CellSDK.Android.IO.CameraSystem.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.Android.Launcher, Version=1.0.0.20159, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
