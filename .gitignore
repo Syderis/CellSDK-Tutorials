@@ -53,3 +53,6 @@ monodroid*.msi
 
 #Unix temporary files
 *~
+
+#VSDocumentation
+*.vsdoc
