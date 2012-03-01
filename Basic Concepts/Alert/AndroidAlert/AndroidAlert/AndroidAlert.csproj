@@ -64,7 +64,9 @@
     <Compile Include="..\..\Sources\MainScreen.cs">
       <Link>MainScreen.cs</Link>
     </Compile>
-    <Compile Include="Application.cs" />
+	<Compile Include="..\..\Sources\Application.cs">
+      <Link>Application.cs</Link>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

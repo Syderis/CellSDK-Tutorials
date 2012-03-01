@@ -75,10 +75,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="..\..\Sources\MainScreen.cs">
       <Link>MainScreen.cs</Link>
+    </Compile>
+	 <Compile Include="..\..\Sources\Application.cs">
+      <Link>Application.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>
