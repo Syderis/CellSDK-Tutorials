@@ -68,7 +68,7 @@
       <HintPath>$(CellSDK)Versions\1.1\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Core.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.WindowsPhone.IO.CameraSystem">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Syderis\CellSDK.framework\Versions\1.1\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.IO.CameraSystem.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.1\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.IO.CameraSystem.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.WindowsPhone.Launcher, Version=1.0.0.17882, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
