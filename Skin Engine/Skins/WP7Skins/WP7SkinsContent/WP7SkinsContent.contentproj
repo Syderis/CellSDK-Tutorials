@@ -56,12 +56,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Skin\FontMetal.spritefont">
+    <Content Include="Skin\FontMetal.xnb">
       <Name>FontMetal</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <SubType>Designer</SubType>
-    </Compile>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Skin\Skin.xml">

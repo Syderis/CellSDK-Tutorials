@@ -21,6 +21,7 @@
 *.tlh
 *.bak
 *.[Cc]ache
+*.[Cc]ache[Ff]ile
 *.ilk
 *.log
 *.lib
@@ -52,3 +53,6 @@ monodroid*.msi
 
 #Unix temporary files
 *~
+
+#VSDocumentation
+*.vsdoc
