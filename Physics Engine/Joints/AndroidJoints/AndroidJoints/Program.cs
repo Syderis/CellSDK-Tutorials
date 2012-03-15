@@ -55,6 +55,8 @@ namespace Joints
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

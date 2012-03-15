@@ -48,6 +48,8 @@ namespace BorderLayoutSample
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

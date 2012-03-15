@@ -48,6 +48,8 @@ namespace TextAlignment
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

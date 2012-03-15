@@ -55,6 +55,8 @@ namespace Animations
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

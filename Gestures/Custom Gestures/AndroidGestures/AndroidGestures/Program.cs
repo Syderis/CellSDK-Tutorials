@@ -55,6 +55,8 @@ namespace Gestures
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

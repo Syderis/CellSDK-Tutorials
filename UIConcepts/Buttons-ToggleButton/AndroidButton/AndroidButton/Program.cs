@@ -48,6 +48,8 @@ namespace Buttons
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

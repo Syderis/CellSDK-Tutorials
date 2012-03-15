@@ -48,6 +48,8 @@ namespace TextAreaSample
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

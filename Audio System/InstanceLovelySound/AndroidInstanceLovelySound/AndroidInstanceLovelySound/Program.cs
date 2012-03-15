@@ -55,6 +55,8 @@ namespace InstanceLovelySound
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

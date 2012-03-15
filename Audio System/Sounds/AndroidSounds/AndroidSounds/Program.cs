@@ -55,6 +55,8 @@ namespace Sounds
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

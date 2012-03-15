@@ -55,6 +55,8 @@ namespace OpenUri
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

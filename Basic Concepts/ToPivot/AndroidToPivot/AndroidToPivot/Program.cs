@@ -47,6 +47,8 @@ namespace ToPivot
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

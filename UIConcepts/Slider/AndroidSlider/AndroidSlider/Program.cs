@@ -48,6 +48,8 @@ namespace Slider_Sample
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

@@ -48,6 +48,8 @@ namespace SelectOptions
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();   
         }
 
         /// <summary>

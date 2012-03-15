@@ -46,9 +46,10 @@ namespace Camera
                     btnType = new Button("To Secondary Camera");
                     btnType.Released -= btnType_Released;
                     btnType.Released += btnType_Released;
-                    
-                    AddComponent(btnType, Preferences.Width - btnType.Size.X, Preferences.Height-btnType.Size.Y);
+
+                    AddComponent(btnType, Preferences.Width - btnType.Size.X, Preferences.Height - btnType.Size.Y);
                 }
+
 				CameraSystem.Instance.SetCallbackImage(cameraImage);
 
                 btTakePhoto = new Button("Take a photo");
@@ -60,15 +61,15 @@ namespace Camera
 
 			btnStartStop = new Button("Start Camera");
             btnStartStop.Released -= btnStartStop_Released;
-            btnStartStop.Released += btnStartStop_Released;				
-			AddComponent(btnStartStop, Preferences.Width-btnStartStop.Size.X , btnType.Position.Y-btnStartStop.Size.Y);
+            btnStartStop.Released += btnStartStop_Released;
+            float margin = (btnType != null) ? btnType.Position.Y : Preferences.Height;
+			AddComponent(btnStartStop, Preferences.Width-btnStartStop.Size.X , margin - btnStartStop.Size.Y);
 			
 			cameraLabel = new Label(cameraImage);
 			cameraLabel.Draggable = true;
 			cameraLabel.Scalable = true;
 			cameraLabel.Rotable = true;            
 			AddComponent(cameraLabel, Preferences.Width/2-cameraLabel.Size.X/2, 0);
-            
         }
 
         public override void BackButtonPressed()
@@ -121,11 +122,14 @@ namespace Camera
         //Takes a photo
         void btTakePhoto_Released(Component source)
         {
-            Texture2D fotoTexture = CameraSystem.Instance.CaptureImage();
-            
-            Label lbl = new Label(Image.CreateImage(fotoTexture));
-            lbl.Rotable = lbl.Draggable = lbl.Scalable = true;
-            AddComponent(lbl, 0, 0);           
+            if (this.started)
+            {
+                Texture2D fotoTexture = CameraSystem.Instance.CaptureImage();
+
+                Label lbl = new Label(Image.CreateImage(fotoTexture));
+                lbl.Rotable = lbl.Draggable = lbl.Scalable = true;
+                AddComponent(lbl, 0, 0);
+            }
         }
 
         #endregion

@@ -19,6 +19,7 @@ namespace Alert
     public class Program : AndroidGameActivity
     {
         public static Program Instance;
+        private Kernel kernel;
 
         /// <summary>
         /// The main method which loads Application.
@@ -29,16 +30,16 @@ namespace Alert
 
             Kernel.Activity = this;
 
-            Kernel view = new Kernel(this);
-            SetContentView(view.Window);
+            kernel = new Kernel(this);
+            SetContentView(kernel.Window);
 
             Instance = this;
             Preferences.SkinXMLFileStream = Assets.Open("Content/Skin/Skin.xml");
             Preferences.ApplicationActivity = this;
 
             Application application = new Application();
-            view.Application = application;
-            view.Run();
+            kernel.Application = application;
+            kernel.Run();
         }
 
         /// <summary>
@@ -47,6 +48,28 @@ namespace Alert
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
+        }
+
+        /// <summary>
+        /// The application's activity pauses the execution
+        /// </summary>
+        protected override void OnPause()
+        {
+            base.OnPause();
+
+            kernel.OnPause();
+        }
+
+        /// <summary>
+        /// The application's activity resumes the execution
+        /// </summary>
+        protected override void OnResume()
+        {
+            base.OnResume();
+
+            kernel.OnResume();
         }
     }
 }

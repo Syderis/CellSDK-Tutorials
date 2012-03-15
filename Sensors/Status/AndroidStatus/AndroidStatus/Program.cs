@@ -61,6 +61,8 @@ namespace PhoneState
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
         #endregion
 

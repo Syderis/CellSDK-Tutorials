@@ -48,6 +48,8 @@ namespace CoordLayoutSample
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

@@ -55,6 +55,8 @@ namespace Accelerometer
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

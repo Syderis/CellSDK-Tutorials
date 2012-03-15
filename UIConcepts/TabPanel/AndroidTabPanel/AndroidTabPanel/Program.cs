@@ -48,6 +48,8 @@ namespace TabPanelSample
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

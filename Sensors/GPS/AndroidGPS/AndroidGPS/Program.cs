@@ -55,6 +55,8 @@ namespace GPS
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

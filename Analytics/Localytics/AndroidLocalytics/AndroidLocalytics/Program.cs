@@ -61,6 +61,8 @@ namespace Localytics
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
         #endregion
 

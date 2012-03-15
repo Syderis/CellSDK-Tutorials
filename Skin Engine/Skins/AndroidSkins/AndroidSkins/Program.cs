@@ -48,6 +48,8 @@ namespace Skins
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

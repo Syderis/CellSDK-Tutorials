@@ -48,6 +48,8 @@ namespace StorageSample
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

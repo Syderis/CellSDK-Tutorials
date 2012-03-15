@@ -61,6 +61,8 @@ namespace Camera
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
         #endregion
 

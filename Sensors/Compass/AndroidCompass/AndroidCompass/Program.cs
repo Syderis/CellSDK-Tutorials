@@ -55,6 +55,8 @@ namespace Compass
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

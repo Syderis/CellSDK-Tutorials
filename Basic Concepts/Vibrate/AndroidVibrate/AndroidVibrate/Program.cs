@@ -54,6 +54,8 @@ namespace Vibrate
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

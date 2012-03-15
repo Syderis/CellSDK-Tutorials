@@ -55,6 +55,8 @@ namespace Motor
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

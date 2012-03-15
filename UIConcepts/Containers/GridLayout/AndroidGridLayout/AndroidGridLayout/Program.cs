@@ -48,6 +48,8 @@ namespace GridLayoutSample
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

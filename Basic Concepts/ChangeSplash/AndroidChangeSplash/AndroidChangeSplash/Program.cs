@@ -60,6 +60,8 @@ namespace AndroidChangeSplash
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
         #endregion
 

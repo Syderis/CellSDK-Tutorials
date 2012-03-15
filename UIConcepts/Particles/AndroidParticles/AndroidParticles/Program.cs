@@ -48,6 +48,8 @@ namespace ParticlesSample
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

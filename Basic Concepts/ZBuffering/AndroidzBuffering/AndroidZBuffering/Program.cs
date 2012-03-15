@@ -47,6 +47,8 @@ namespace zBuffering
         public void Exit()
         {
             Finish();
+
+            kernel.KillApp();
         }
 
         /// <summary>

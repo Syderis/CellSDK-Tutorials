@@ -59,21 +59,6 @@
     <Reference Include="Microsoft.Xna.Framework.GamerServices" />
     <Reference Include="Microsoft.Xna.Framework.Input.Touch" />
     <Reference Include="mscorlib" />
-    <Reference Include="Syderis.CellSDK.WindowsPhone.Common, Version=1.0.0.30407, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(CellSDK)Versions\1.1\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Syderis.CellSDK.WindowsPhone.Core, Version=1.0.0.17882, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(CellSDK)Versions\1.1\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Syderis.CellSDK.WindowsPhone.IO.CameraSystem">
-      <HintPath>$(CellSDK)Versions\1.1\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.IO.CameraSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="Syderis.CellSDK.WindowsPhone.Launcher, Version=1.0.0.17882, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(CellSDK)Versions\1.1\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Launcher.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -101,9 +86,26 @@
     <Content Include="PhoneGameThumb.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\Svn\Syderis\NUIVS2010\tags\Release-1.1.0.0\Core\Components\Core.csproj">
+      <Project>{C474A605-A12B-462F-8310-E6B250A7A60B}</Project>
+      <Name>Core %28WindowsPhone\Core\Core%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Svn\Syderis\NUIVS2010\tags\Release-1.1.0.0\Launcher\Launcher.WindowsPhone\Launcher.WindowsPhone.csproj">
+      <Project>{D0C7059A-66CE-4702-99EC-C4DFA64CA555}</Project>
+      <Name>Launcher.WindowsPhone</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Svn\Syderis\NUIVS2010\tags\Release-1.1.0.0\Libraries\Common\Common.csproj">
+      <Project>{B2AD5F8E-5068-40A8-8E4B-F77B2E799751}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Svn\Syderis\NUIVS2010\tags\Release-1.1.0.0\Services\SensorSystems\CameraSystem.WindowsPhone\CameraSystem.WindowsPhone.csproj">
+      <Project>{912E7A41-6352-46AF-BA44-E4C38EB23C61}</Project>
+      <Name>CameraSystem.WindowsPhone</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WP7CameraContent\WP7CameraContent.contentproj">
-      <Name>WP7CameraContent</Name>
+      <Name>WP7CameraContent %28Content%29</Name>
       <XnaReferenceType>Content</XnaReferenceType>
+      <Project>{98C1EBBB-993A-4073-85B3-9A6F2F7DA04B}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
