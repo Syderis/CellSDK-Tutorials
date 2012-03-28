@@ -25,19 +25,18 @@ namespace SpriteSheet
             base.Initialize();
 
             SetBackground(Color.Gray);
-
             //Loads the sprite sheet
-            Image spritesheet = ResourceManager.CreateImage("Stuff");
+            Syderis.CellSDK.Core.Graphics.SpriteSheet spritesheet= ResourceManager.CreateSpriteSheet("Resources");
 
-            Label lblJmlao = new Label(spritesheet.SubImage(158, 0, 183, 337));
+            Label lblJmlao = new Label(spritesheet["Stuff1"]);
             lblJmlao.Draggable = true;
             AddComponent(lblJmlao, 0, 0);
 
-            Label lblMarcos = new Label(spritesheet.SubImage(0, 0, 144, 299));
+            Label lblMarcos = new Label(spritesheet["Stuff2"]);
             lblMarcos.Draggable = true;
             AddComponent(lblMarcos, 0, 337);
 
-            Label lblMoi = new Label(spritesheet.SubImage(361, 0, 143, 327));
+            Label lblMoi = new Label(spritesheet["Stuff3"]);
             lblMoi.Draggable = true;
             AddComponent(lblMoi, 183, 100);
         }

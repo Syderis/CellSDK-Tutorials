@@ -42,13 +42,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Stuff.png">
-      <Name>Stuff</Name>
+    <Compile Include="Resources.png">
+      <Name>Resources</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="Resources.xml">
+      <Name>Resources</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Skin\DefaultSkinFont.xnb">
       <Name>DefaultSkinFont</Name>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
