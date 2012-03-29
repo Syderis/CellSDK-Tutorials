@@ -49,6 +49,18 @@ namespace GridLayoutSample
 		{
 			kernel.OnExiting ();
 		}
+		
+		
+        public override void OnActivated (UIApplication application)
+		{
+			kernel.OnActivated();
+		}
+		
+		public override void OnResignActivation (UIApplication application)
+		{
+			kernel.OnDeactivated();
+		}
+
 	}
 }
 
