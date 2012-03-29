@@ -86,22 +86,22 @@
     <Content Include="PhoneGameThumb.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\Svn\Syderis\NUIVS2010\tags\Release-1.1.0.0\Core\Components\Core.csproj">
-      <Project>{C474A605-A12B-462F-8310-E6B250A7A60B}</Project>
-      <Name>Core %28WindowsPhone\Core\Core%29</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\..\Svn\Syderis\NUIVS2010\tags\Release-1.1.0.0\Launcher\Launcher.WindowsPhone\Launcher.WindowsPhone.csproj">
-      <Project>{D0C7059A-66CE-4702-99EC-C4DFA64CA555}</Project>
-      <Name>Launcher.WindowsPhone</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\..\Svn\Syderis\NUIVS2010\tags\Release-1.1.0.0\Libraries\Common\Common.csproj">
-      <Project>{B2AD5F8E-5068-40A8-8E4B-F77B2E799751}</Project>
-      <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\..\Svn\Syderis\NUIVS2010\tags\Release-1.1.0.0\Services\SensorSystems\CameraSystem.WindowsPhone\CameraSystem.WindowsPhone.csproj">
-      <Project>{912E7A41-6352-46AF-BA44-E4C38EB23C61}</Project>
-      <Name>CameraSystem.WindowsPhone</Name>
-    </ProjectReference>
+    <Reference Include="Syderis.CellSDK.WindowsPhone.Common">
+      <HintPath>$(CellSDK)Versions\1.2\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syderis.CellSDK.WindowsPhone.Core">
+      <HintPath>$(CellSDK)Versions\1.2\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syderis.CellSDK.WindowsPhone.Launcher">
+      <HintPath>$(CellSDK)Versions\1.2\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Launcher.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+     <Reference Include="Syderis.CellSDK.WindowsPhone.IO.CameraSystem">
+      <HintPath>$(CellSDK)Versions\1.2\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.IO.CameraSystem.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <ProjectReference Include="..\WP7CameraContent\WP7CameraContent.contentproj">
       <Name>WP7CameraContent %28Content%29</Name>
       <XnaReferenceType>Content</XnaReferenceType>
