@@ -15,13 +15,7 @@ namespace IOSChangeSplash
 	[Register("AppDelegate")]
 	class Program : UIApplicationDelegate
 	{
-        #region Variables
-        #endregion
-                    
-        #region Properties
-        #endregion
-                   
-        
+
 		public static Program Instance;
 		private Kernel kernel;
 		
@@ -29,7 +23,7 @@ namespace IOSChangeSplash
 		{
 			UIApplication.Main (args, null, "AppDelegate");
 		}
-#region Public methods
+
 		public override void FinishedLaunching (UIApplication app)
 		{
 			Instance = this;
@@ -57,9 +51,16 @@ namespace IOSChangeSplash
 		public override void WillTerminate (UIApplication application)
 		{
 			kernel.OnExiting ();
-		}#endregion
-        
-		#region Private methods
-        #endregion
+		}
+
+		public override void OnActivated (UIApplication application)
+		{
+			kernel.OnActivated();
+		}
+		
+		public override void OnResignActivation (UIApplication application)
+		{
+			kernel.OnDeactivated();
+		}
 	}
 }

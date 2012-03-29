@@ -11,7 +11,7 @@ using Syderis.CellSDK.IOS.Launcher;
 
 namespace TextAlignment
 {
-	[Register("AppDelegate")]
+		[Register("AppDelegate")]
 	class Program : UIApplicationDelegate
 	{
 		public static Program Instance;
@@ -48,6 +48,16 @@ namespace TextAlignment
 		public override void WillTerminate (UIApplication application)
 		{
 			kernel.OnExiting ();
+		}
+		
+		public override void OnActivated (UIApplication application)
+		{
+			kernel.OnActivated();
+		}
+		
+		public override void OnResignActivation (UIApplication application)
+		{
+			kernel.OnDeactivated();
 		}
 	}
 }
