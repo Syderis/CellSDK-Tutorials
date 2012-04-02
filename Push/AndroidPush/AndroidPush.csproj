@@ -43,25 +43,25 @@
     <Reference Include="Mono.Android" />
     <Reference Include="MonoGame.Framework, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Syderis\CellSDK.framework\Versions\1.2\Android\Libraries\MonoGame.Framework.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.2\Android\Libraries\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="OpenTK" />
     <Reference Include="mscorlib" />
     <Reference Include="Syderis.CellSDK.Android.Common, Version=1.2.0.29693, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Syderis\CellSDK.framework\Versions\1.2\Android\Libraries\Syderis.CellSDK.Android.Common.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.2\Android\Libraries\Syderis.CellSDK.Android.Common.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.Android.Core, Version=1.2.0.29694, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Syderis\CellSDK.framework\Versions\1.2\Android\Libraries\Syderis.CellSDK.Android.Core.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.2\Android\Libraries\Syderis.CellSDK.Android.Core.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.Android.Launcher, Version=1.2.0.29695, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Syderis\CellSDK.framework\Versions\1.2\Android\Libraries\Syderis.CellSDK.Android.Launcher.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.2\Android\Libraries\Syderis.CellSDK.Android.Launcher.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.Android.Notifications, Version=1.2.0.29694, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Syderis\CellSDK.framework\Versions\1.2\Android\Libraries\Syderis.CellSDK.Android.Notifications.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.2\Android\Libraries\Syderis.CellSDK.Android.Notifications.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
