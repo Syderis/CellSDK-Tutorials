@@ -86,9 +86,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Properties\AppManifest.xml">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
+      <SubType>Designer</SubType>
     </None>
     <None Include="Properties\WMAppManifest.xml">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
+      <SubType>Designer</SubType>
     </None>
     <Compile Include="Program.cs" />
   </ItemGroup>
