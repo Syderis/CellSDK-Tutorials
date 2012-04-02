@@ -62,17 +62,17 @@
     <Reference Include="Syderis.CellSDK.WindowsPhone.Advertising">
       <HintPath>$(CellSDK)Versions\1.2\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Advertising.dll</HintPath>
     </Reference>
-    <Reference Include="Syderis.CellSDK.WindowsPhone.Common, Version=1.2.0.21330, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Syderis.CellSDK.WindowsPhone.Common">
       <HintPath>$(CellSDK)Versions\1.2\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Common.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Syderis.CellSDK.WindowsPhone.Core, Version=1.2.0.21333, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Syderis.CellSDK.WindowsPhone.Core">
       <HintPath>$(CellSDK)Versions\1.2\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Syderis.CellSDK.WindowsPhone.Launcher, Version=1.2.0.21335, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Syderis.CellSDK.WindowsPhone.Launcher">
       <HintPath>$(CellSDK)Versions\1.2\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Launcher.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />

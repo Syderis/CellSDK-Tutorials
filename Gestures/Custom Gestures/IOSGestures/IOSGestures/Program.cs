@@ -12,7 +12,7 @@ using Syderis.CellSDK.IOS.Launcher;
 
 namespace Gestures
 {
-	[Register("AppDelegate")]
+		[Register("AppDelegate")]
 	class Program : UIApplicationDelegate
 	{
 		public static Program Instance;
@@ -49,6 +49,16 @@ namespace Gestures
 		public override void WillTerminate (UIApplication application)
 		{
 			kernel.OnExiting ();
+		}
+		
+		public override void OnActivated (UIApplication application)
+		{
+			kernel.OnActivated();
+		}
+		
+		public override void OnResignActivation (UIApplication application)
+		{
+			kernel.OnDeactivated();
 		}
 	}
 }

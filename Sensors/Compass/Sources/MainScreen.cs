@@ -67,7 +67,7 @@ namespace Compass
             timer += gameTime.ElapsedGameTime;
             if (timer > TimeSpan.FromMilliseconds(100))
             {
-                lblCompass.Rotation = -lblCompass.Rotation - (float)Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Compass.magneticHeading;
+                lblCompass.Rotation = -(float)Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Compass.magneticHeading;
                 timer = TimeSpan.Zero;
             }
         }

@@ -13,7 +13,7 @@ using Syderis.CellSDK.IOS.Launcher;
 
 namespace zBuffering
 {
-	[Register("AppDelegate")]
+		[Register("AppDelegate")]
 	class Program : UIApplicationDelegate
 	{
 		public static Program Instance;
@@ -50,6 +50,16 @@ namespace zBuffering
 		public override void WillTerminate (UIApplication application)
 		{
 			kernel.OnExiting ();
+		}
+		
+		public override void OnActivated (UIApplication application)
+		{
+			kernel.OnActivated();
+		}
+		
+		public override void OnResignActivation (UIApplication application)
+		{
+			kernel.OnDeactivated();
 		}
 	}
 }

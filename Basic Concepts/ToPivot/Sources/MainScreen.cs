@@ -52,7 +52,7 @@ namespace ToPivot
 
         void rotate_Released(Component source)
         {
-            lbl1.Rotation = lbl2.Rotation = lbl3.Rotation = angle;
+            lbl1.Rotation = lbl2.Rotation = lbl3.Rotation += angle;
         }
 
 
