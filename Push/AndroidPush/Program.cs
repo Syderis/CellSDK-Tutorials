@@ -13,7 +13,7 @@ using Syderis.CellSDK.Android.Launcher;
 using Syderis.CellSDK.Common;
 using Syderis.CellSDK.Core;
 
-namespace AndroidPush
+namespace MyPush
 {
     //Uncomment the following block code to enable C2DM push notifications
     

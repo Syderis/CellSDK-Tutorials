@@ -5,7 +5,7 @@ using System.Text;
 
 using Syderis.CellSDK.Core;
 
-namespace AndroidPush
+namespace MyPush
 {
     class Application : MobileApplication
     {
