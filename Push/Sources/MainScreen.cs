@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ using Syderis.CellSDK.Notifications;
 using Syderis.CellSDK.Common;
 using Microsoft.Xna.Framework;
 
-namespace AndroidPush
+namespace MyPush
 {
     class MainScreen : Screen
     {
@@ -26,10 +27,9 @@ namespace AndroidPush
             configuration.Android.SenderEmail = "me@email.com";
 
             ANotificationServerConnector serverConnector = new UrbanArshipServerConnector("AppKey", "AppSecret", "Alias", new string[] { "tag01", "tag02" }); 
-
-            NotificationManager.Register(configuration, serverConnector);
-            NotificationManager.OnNotification += new NotificationManager.NotificationMessageHandle(NotificationManager_OnNotification);
-
+			
+			NotificationManager.OnNotification += new NotificationManager.NotificationMessageHandle(NotificationManager_OnNotification);
+            NotificationManager.Register(configuration, serverConnector);            
         }
 
         void NotificationManager_OnNotification(Dictionary<string, string> parameters)

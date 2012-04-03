@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSPush", "IOSPush\IOSPush.csproj", "{DFFFEE2D-021A-497C-8954-878BE7DA56CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFFFEE2D-021A-497C-8954-878BE7DA56CE}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{DFFFEE2D-021A-497C-8954-878BE7DA56CE}.Debug|iPhone.Build.0 = Debug|iPhone
+		{DFFFEE2D-021A-497C-8954-878BE7DA56CE}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{DFFFEE2D-021A-497C-8954-878BE7DA56CE}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{DFFFEE2D-021A-497C-8954-878BE7DA56CE}.Release|iPhone.ActiveCfg = Release|iPhone
+		{DFFFEE2D-021A-497C-8954-878BE7DA56CE}.Release|iPhone.Build.0 = Release|iPhone
+		{DFFFEE2D-021A-497C-8954-878BE7DA56CE}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{DFFFEE2D-021A-497C-8954-878BE7DA56CE}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IOSPush\IOSPush.csproj
+	EndGlobalSection
+EndGlobal
