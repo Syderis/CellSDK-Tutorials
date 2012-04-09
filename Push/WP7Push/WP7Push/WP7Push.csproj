@@ -72,7 +72,7 @@
       <HintPath>$(CellSDK)Versions\1.2\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Launcher.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.WindowsPhone.Notifications">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Syderis\CellSDK.framework\Versions\1.2\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Notifications.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.2\WindowsPhone\Libraries\Syderis.CellSDK.WindowsPhone.Notifications.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
