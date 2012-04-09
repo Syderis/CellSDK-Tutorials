@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7ScreenManager", "WP7ScreenManager\WP7ScreenManager.csproj", "{5E870A9A-4ED1-4523-AB01-3F13451D6EE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7ScreenManagerContent", "WP7ScreenManagerContent\WP7ScreenManagerContent.contentproj", "{6DA10352-8011-4696-8601-361F2B2992B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E870A9A-4ED1-4523-AB01-3F13451D6EE4}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{5E870A9A-4ED1-4523-AB01-3F13451D6EE4}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{5E870A9A-4ED1-4523-AB01-3F13451D6EE4}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{5E870A9A-4ED1-4523-AB01-3F13451D6EE4}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{5E870A9A-4ED1-4523-AB01-3F13451D6EE4}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{5E870A9A-4ED1-4523-AB01-3F13451D6EE4}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{6DA10352-8011-4696-8601-361F2B2992B2}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{6DA10352-8011-4696-8601-361F2B2992B2}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

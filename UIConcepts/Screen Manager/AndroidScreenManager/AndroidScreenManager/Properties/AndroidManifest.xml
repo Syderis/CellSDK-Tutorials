@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="AndroidScreenManager.AndroidScreenManager" android:versionCode="1" android:versionName="1.0">
+  <application>
+  </application>
+  <uses-sdk android:minSdkVersion="8" />
+  
+  
+  <!-- Uncomment the following lines to enable C2DM push notification.-->
+  <!--
+  <permission android:name="AndroidScreenManager.AndroidScreenManager.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+  <uses-permission android:name="AndroidScreenManager.AndroidScreenManager.permission.C2D_MESSAGE" />
+	
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  -->
+</manifest>
