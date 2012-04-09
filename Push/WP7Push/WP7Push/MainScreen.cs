@@ -35,8 +35,9 @@ namespace WP7Push
             configuration.WindowsPhone.ChannelName = "My Channel";
             ANotificationServerConnector serverConnector = new MyServerConnector();
 
+			NotificationManager.OnNotification += new NotificationManager.NotificationMessageHandle(NotificationManager_OnNotification);
             NotificationManager.Register(configuration, serverConnector);
-            NotificationManager.OnNotification += new NotificationManager.NotificationMessageHandle(NotificationManager_OnNotification);
+           
 
         }
 
