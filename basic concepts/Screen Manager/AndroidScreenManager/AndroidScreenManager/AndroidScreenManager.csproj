@@ -45,7 +45,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FarseerPhysics.Android">
-      <HintPath>$(CellSDK)Versions\1.2\Android\Libraries\FarseerPhysics.Android.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.2\Android\Libraries\FarseerPhysics.Android.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="MonoGame.Framework, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
