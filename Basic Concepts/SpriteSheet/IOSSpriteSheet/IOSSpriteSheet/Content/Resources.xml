@@ -1,0 +1,6 @@
+
+<TextureAtlas imagePath="Resources" width="512" height="512">
+    <sprite n="Stuff1" x="2" y="2" w="183" h="337"/>
+    <sprite n="Stuff2" x="187" y="2" w="144" h="299"/>
+    <sprite n="Stuff3" x="333" y="2" w="143" h="327"/>
+</TextureAtlas>

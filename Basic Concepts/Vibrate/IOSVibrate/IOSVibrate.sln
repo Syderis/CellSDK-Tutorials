@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSVibrate", "IOSVibrate\IOSVibrate.csproj", "{73AF471E-DF54-4738-9454-5F3841D0B182}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73AF471E-DF54-4738-9454-5F3841D0B182}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{73AF471E-DF54-4738-9454-5F3841D0B182}.Debug|iPhone.Build.0 = Debug|iPhone
+		{73AF471E-DF54-4738-9454-5F3841D0B182}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{73AF471E-DF54-4738-9454-5F3841D0B182}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{73AF471E-DF54-4738-9454-5F3841D0B182}.Release|iPhone.ActiveCfg = Release|iPhone
+		{73AF471E-DF54-4738-9454-5F3841D0B182}.Release|iPhone.Build.0 = Release|iPhone
+		{73AF471E-DF54-4738-9454-5F3841D0B182}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{73AF471E-DF54-4738-9454-5F3841D0B182}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IOSVibrate\IOSVibrate.csproj
+	EndGlobalSection
+EndGlobal

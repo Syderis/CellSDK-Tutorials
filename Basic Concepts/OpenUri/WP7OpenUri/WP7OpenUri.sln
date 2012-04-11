@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7OpenUri", "WP7OpenUri\WP7OpenUri.csproj", "{E6D2B9A0-08AE-4D1C-837E-DC258873AAB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7OpenUriContent", "WP7OpenUriContent\WP7OpenUriContent.contentproj", "{C1373A30-C23B-42D7-8985-399D404A4943}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6D2B9A0-08AE-4D1C-837E-DC258873AAB0}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{E6D2B9A0-08AE-4D1C-837E-DC258873AAB0}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{E6D2B9A0-08AE-4D1C-837E-DC258873AAB0}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{E6D2B9A0-08AE-4D1C-837E-DC258873AAB0}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{E6D2B9A0-08AE-4D1C-837E-DC258873AAB0}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{E6D2B9A0-08AE-4D1C-837E-DC258873AAB0}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{C1373A30-C23B-42D7-8985-399D404A4943}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{C1373A30-C23B-42D7-8985-399D404A4943}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

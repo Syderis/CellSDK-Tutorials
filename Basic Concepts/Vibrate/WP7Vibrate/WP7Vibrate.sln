@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Vibrate", "WP7Vibrate\WP7Vibrate.csproj", "{F27892F6-B0C1-4913-B952-7026091321AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7VibrateContent", "WP7VibrateContent\WP7VibrateContent.contentproj", "{A384E69E-36D5-48CB-B6D9-064E4801BCA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F27892F6-B0C1-4913-B952-7026091321AC}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{F27892F6-B0C1-4913-B952-7026091321AC}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{F27892F6-B0C1-4913-B952-7026091321AC}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{F27892F6-B0C1-4913-B952-7026091321AC}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{F27892F6-B0C1-4913-B952-7026091321AC}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{F27892F6-B0C1-4913-B952-7026091321AC}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{A384E69E-36D5-48CB-B6D9-064E4801BCA1}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{A384E69E-36D5-48CB-B6D9-064E4801BCA1}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSUri", "IOSUri\IOSUri.csproj", "{62EF7B46-A0E6-4747-ABD9-E13345FF9651}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62EF7B46-A0E6-4747-ABD9-E13345FF9651}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{62EF7B46-A0E6-4747-ABD9-E13345FF9651}.Debug|iPhone.Build.0 = Debug|iPhone
+		{62EF7B46-A0E6-4747-ABD9-E13345FF9651}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{62EF7B46-A0E6-4747-ABD9-E13345FF9651}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{62EF7B46-A0E6-4747-ABD9-E13345FF9651}.Release|iPhone.ActiveCfg = Release|iPhone
+		{62EF7B46-A0E6-4747-ABD9-E13345FF9651}.Release|iPhone.Build.0 = Release|iPhone
+		{62EF7B46-A0E6-4747-ABD9-E13345FF9651}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{62EF7B46-A0E6-4747-ABD9-E13345FF9651}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IOSUri\IOSUri.csproj
+	EndGlobalSection
+EndGlobal
