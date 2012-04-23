@@ -35,7 +35,7 @@ namespace Millenial
             // TODO: Replace these comments with your own poetry, and enjoy!
             IAdvertising ads = AdvertisingFactory.CreateAds(AdvertisingType.MILLENIAL, "78802");
             ads.Test = true;
-            Banner milleniall = new Banner(ads, 300, 100);
+            Banner milleniall = new Banner(ads, 300, 100,"127.0.0.1");
             AddComponent(milleniall,
                 Preferences.Width / 2 - milleniall.Width / 2,
                 Preferences.Height / 2 - milleniall.Height / 2);

@@ -35,7 +35,7 @@ namespace MSAdvertising
 
             ads.Test = true;
 
-            Banner bannerMsAdvertising = new Banner(ads, 300, 50);
+            Banner bannerMsAdvertising = new Banner(ads, 300, 50, "127.0.0.1");
 
             bannerMsAdvertising.AdsIntervalRequest = 10;
 

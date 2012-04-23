@@ -35,7 +35,7 @@ namespace Adfonic
 
             ads.Test = true;
 
-            Banner bannerAdfonnic = new Banner(ads, 300, 50);
+            Banner bannerAdfonnic = new Banner(ads, 300, 50,"127.0.0.1");
 
             AddComponent(bannerAdfonnic,
                 Preferences.Width / 2 - bannerAdfonnic.Width / 2,

@@ -36,7 +36,7 @@ namespace Inmobi
 
             ads.Test = true;
 
-            Banner bannerInmobi = new Banner(ads, 300, 50);
+            Banner bannerInmobi = new Banner(ads, 300, 50,"127.0.0.1");
 
             AddComponent(bannerInmobi,
                 Preferences.Width / 2 - bannerInmobi.Width / 2,
