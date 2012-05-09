@@ -15,7 +15,8 @@ using Syderis.CellSDK.Core.Graphics;
 using Syderis.CellSDK.Core;
 using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Advertising;
-using Syderis.CellSDK.Common; 
+using Syderis.CellSDK.Common;
+using Syderis.CellSDK.Advertising.Beans; 
 #endregion
 
 namespace MSAdvertising
@@ -30,8 +31,8 @@ namespace MSAdvertising
             base.Initialize();
 
             SetBackground(Color.Blue);
-
-            IAdvertising ads = AdvertisingFactory.CreateAds(AdvertisingType.MICROSOFT_ADS, "8c89c892-2003-43fd-b7a1-db3d1ab6b56d/10030126");
+            AdsConfig cfg= new AdsConfig("push your code",1);
+            IAdvertising ads = AdvertisingFactory.CreateAds(AdvertisingType.MICROSOFT_ADS,cfg);
 
             ads.Test = true;
 

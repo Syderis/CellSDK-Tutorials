@@ -16,7 +16,8 @@ using Syderis.CellSDK.Core;
 
 using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Advertising;
-using Syderis.CellSDK.Common; 
+using Syderis.CellSDK.Common;
+using Syderis.CellSDK.Advertising.Beans; 
 #endregion
 
 namespace Inmobi
@@ -31,8 +32,8 @@ namespace Inmobi
             base.Initialize();
 
             SetBackground(Color.Blue);
-
-            IAdvertising ads = AdvertisingFactory.CreateAds(AdvertisingType.INMOBI, "push your code");
+            AdsConfig cfg= new AdsConfig("push your code", 1);
+            IAdvertising ads = AdvertisingFactory.CreateAds(AdvertisingType.INMOBI,cfg);
 
             ads.Test = true;
 

@@ -15,7 +15,8 @@ using Syderis.CellSDK.Core.Graphics;
 using Syderis.CellSDK.Core;
 using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Advertising;
-using Syderis.CellSDK.Common; 
+using Syderis.CellSDK.Common;
+using Syderis.CellSDK.Advertising.Beans; 
 #endregion
 
 namespace Adfonic
@@ -30,8 +31,8 @@ namespace Adfonic
             base.Initialize();
 
             SetBackground(Color.Blue);
-
-            IAdvertising ads = AdvertisingFactory.CreateAds(AdvertisingType.ADFONIC, "push your code");
+            AdsConfig cfg = new AdsConfig("push your code", 1);
+            IAdvertising ads = AdvertisingFactory.CreateAds(AdvertisingType.ADFONIC, cfg);
 
             ads.Test = true;
 

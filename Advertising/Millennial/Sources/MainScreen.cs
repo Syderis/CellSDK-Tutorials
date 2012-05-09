@@ -14,6 +14,7 @@ using Syderis.CellSDK.Core.Screens;
 using Syderis.CellSDK.Advertising;
 using Syderis.CellSDK.Common;
 using Microsoft.Xna.Framework;
+using Syderis.CellSDK.Advertising.Beans;
 
 #endregion
 namespace Millenial
@@ -33,7 +34,8 @@ namespace Millenial
             base.Initialize();
             SetBackground(Color.Blue);
             // TODO: Replace these comments with your own poetry, and enjoy!
-            IAdvertising ads = AdvertisingFactory.CreateAds(AdvertisingType.MILLENIAL, "78802");
+            AdsConfig cfg= new AdsConfig("push your code",1);
+            IAdvertising ads = AdvertisingFactory.CreateAds(AdvertisingType.MILLENNIAL,cfg);
             ads.Test = true;
             Banner milleniall = new Banner(ads, 300, 100,"127.0.0.1");
             AddComponent(milleniall,
