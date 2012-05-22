@@ -34,7 +34,7 @@ namespace AnimatedImages
             base.Initialize();
 
             SetBackground(ResourceManager.CreateImage("bg_mobile"), Adjustment.CENTER);
-            // TODO: Replace these comments with your own poetry, and enjoy!
+            
             StripAnimation animation = new StripAnimation(1020, 868, 204, 217, 19);
             animation.FramesPerSecond = 40;
             img = ResourceManager.CreateAnimatedImage("ball");
