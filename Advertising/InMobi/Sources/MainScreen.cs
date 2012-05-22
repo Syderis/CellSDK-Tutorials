@@ -38,10 +38,17 @@ namespace Inmobi
             ads.Test = true;
 
             Banner bannerInmobi = new Banner(ads, 300, 50,"127.0.0.1");
+            bannerInmobi.DefaultImage = ResourceManager.CreateImage("banner_zombeee");
+            bannerInmobi.EventClick += new Banner.DefaultClick(bannerInmobi_EventClick);
 
             AddComponent(bannerInmobi,
                 Preferences.Width / 2 - bannerInmobi.Width / 2,
                 Preferences.Height / 2 - bannerInmobi.Height / 2);
+        }
+
+        void bannerInmobi_EventClick(object sender)
+        {
+            Preferences.App.Alert("Click on default banner", "Custom action");
         }
 
         /// <summary>
