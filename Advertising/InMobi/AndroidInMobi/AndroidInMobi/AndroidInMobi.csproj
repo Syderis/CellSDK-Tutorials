@@ -42,7 +42,7 @@
   <ItemGroup>
     <Reference Include="Mono.Android" />
     <Reference Include="MonoGame.Framework">
-      <HintPath>$(CellSDK)Versions\1.2\Android\Libraries\MonoGame.Framework.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.3\Android\Libraries\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="OpenTK" />
     <Reference Include="mscorlib" />
