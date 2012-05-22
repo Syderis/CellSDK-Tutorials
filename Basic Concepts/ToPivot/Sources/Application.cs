@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 
 using Syderis.CellSDK.Core;
+using Syderis.CellSDK.Common;
 #endregion
 
 namespace ToPivot
@@ -22,6 +23,11 @@ namespace ToPivot
 
             StaticContent.Graphics.IsFullScreen = true;
             StaticContent.Graphics.ApplyChanges();
+
+            Preferences.ViewportManager.Adjustment = ViewportAdjustment.FIT;
+            Preferences.ViewportManager.AlignType = ViewportAlignType.MIDDLECENTER;
+            Preferences.ViewportManager.VirtualWidth = 480;
+            Preferences.ViewportManager.VirtualHeight = 800;
 
             StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }
