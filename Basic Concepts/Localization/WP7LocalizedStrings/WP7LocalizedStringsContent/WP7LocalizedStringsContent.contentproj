@@ -36,6 +36,7 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="..\..\Sources\Data\values.ES.xml">
       <Link>I18N\values.ES.xml</Link>
@@ -43,6 +44,7 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="..\..\Sources\Data\values.xml">
       <Link>I18N\values.xml</Link>

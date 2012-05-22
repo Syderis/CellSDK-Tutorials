@@ -15,6 +15,7 @@ using Syderis.CellSDK.Core.Utils;
 
 using Syderis.CellSDK.Common;
 #endregion
+
 namespace LocalizedStrings
 {
     class MainScreen : Screen
@@ -30,11 +31,13 @@ namespace LocalizedStrings
         public override void Initialize()
         {
             base.Initialize();
-            // TODO: Replace these comments with your own poetry, and enjoy!            
+
+            Preferences.DeviceInfo.CurrentCulture = new System.Globalization.CultureInfo("EN-us");
+
             AddComponent(new Label(I18N.GetString("label1")), 10, 0);
             AddComponent(new Label(I18N.GetString("label2")), 10, 50);            
 
-            Preferences.DeviceInfo.CurrentCulture = new System.Globalization.CultureInfo("ES");
+            Preferences.DeviceInfo.CurrentCulture = new System.Globalization.CultureInfo("ES-es");
 
             AddComponent(new Label(I18N.GetString("label1")), 300, 0);
             AddComponent(new Label(I18N.GetString("label2")), 300, 50);            
