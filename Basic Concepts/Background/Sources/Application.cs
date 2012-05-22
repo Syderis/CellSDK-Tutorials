@@ -8,7 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Syderis.CellSDK.Core; 
+using Syderis.CellSDK.Core;
+using Syderis.CellSDK.Common; 
 #endregion
 
 namespace Background
@@ -18,6 +19,11 @@ namespace Background
         public override void Initialize()
         {
             base.Initialize();
+
+            Preferences.ViewportManager.Adjustment = ViewportAdjustment.FIT;
+            Preferences.ViewportManager.AlignType = ViewportAlignType.MIDDLECENTER;
+            Preferences.ViewportManager.VirtualWidth = 480;
+            Preferences.ViewportManager.VirtualHeight = 800;
 
             StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }
