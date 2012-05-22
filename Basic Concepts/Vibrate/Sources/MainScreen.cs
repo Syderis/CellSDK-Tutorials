@@ -13,7 +13,8 @@ using Syderis.CellSDK.Core.Controls;
 using Syderis.CellSDK.Core.Screens;
 using Syderis.CellSDK.Core.Graphics;
 using Syderis.CellSDK.Core;
-using Syderis.CellSDK.Common; 
+using Syderis.CellSDK.Common;
+using Microsoft.Xna.Framework; 
 #endregion
 
 namespace Vibrate
@@ -24,8 +25,9 @@ namespace Vibrate
         {
             base.Initialize();
 
-            // TODO: Replace these comments with your own poetry, and enjoy!
+            
             Button vibrate = new Button(ResourceManager.CreateImage("Woody"));
+            
             vibrate.Pressed += new Component.ComponentEventHandler(vibrate_Pressed);
             AddComponent(vibrate, Preferences.Width / 2 - vibrate.Size.X / 2, Preferences.Height / 2 - vibrate.Size.Y / 2);
 
