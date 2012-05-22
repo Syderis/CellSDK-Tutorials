@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 
 using Syderis.CellSDK.Core;
+using Syderis.CellSDK.Common;
 #endregion
 
 namespace Gestures
@@ -26,8 +27,11 @@ namespace Gestures
             StaticContent.Graphics.IsFullScreen = true;
             StaticContent.Graphics.ApplyChanges();
 
-            // NOTE: Starting from Cell SDK 1.1 all the resources load within this method are done on a specific Screen object.
-            // For instance, the Hello World Label is created on MainScreen
+            Preferences.ViewportManager.Adjustment = ViewportAdjustment.FIT;
+            Preferences.ViewportManager.AlignType = ViewportAlignType.MIDDLECENTER;
+            Preferences.ViewportManager.VirtualWidth = 480;
+            Preferences.ViewportManager.VirtualHeight = 800;
+
             StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }
 
