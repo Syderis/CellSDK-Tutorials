@@ -37,12 +37,19 @@ namespace MSAdvertising
             ads.Test = true;
 
             Banner bannerMsAdvertising = new Banner(ads, 300, 50, "127.0.0.1");
+            bannerMsAdvertising.DefaultImage = ResourceManager.CreateImage("banner_zombeee");
+            bannerMsAdvertising.EventClick += new Banner.DefaultClick(bannerMsAdvertising_EventClick);
 
             bannerMsAdvertising.AdsIntervalRequest = 10;
 
             AddComponent(bannerMsAdvertising,
                 Preferences.Width / 2 - bannerMsAdvertising.Width / 2,
                 Preferences.Height / 2 - bannerMsAdvertising.Height / 2);
+        }
+
+        void bannerMsAdvertising_EventClick(object sender)
+        {
+            Preferences.App.Alert("Click on default banner", "Custom action");
         }
 
         /// <summary>
