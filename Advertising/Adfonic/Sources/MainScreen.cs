@@ -37,10 +37,17 @@ namespace Adfonic
             ads.Test = true;
 
             Banner bannerAdfonnic = new Banner(ads, 300, 50,"127.0.0.1");
+            bannerAdfonnic.DefaultImage = ResourceManager.CreateImage("banner_zombeee");
+            bannerAdfonnic.EventClick += new Banner.DefaultClick(bannerAdfonnic_EventClick);
 
             AddComponent(bannerAdfonnic,
                 Preferences.Width / 2 - bannerAdfonnic.Width / 2,
                 Preferences.Height / 2 - bannerAdfonnic.Height / 2);
+        }
+
+        void bannerAdfonnic_EventClick(object sender)
+        {
+            Preferences.App.Alert("Click on default banner", "Custom action");
         }
 
         /// <summary>
