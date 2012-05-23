@@ -61,7 +61,7 @@
     </Reference>
     <Reference Include="Syderis.CellSDK.Android.Notifications, Version=1.2.0.29694, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(CellSDK)Versions\1.3\Android\Libraries\Syderis.CellSDK.Android.Notifications.dll</HintPath>
+      <HintPath>$(CellSDK)Versions\1.3\Android\Libraries\Syderis.CellSDK.Android.Notification.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
