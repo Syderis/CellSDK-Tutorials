@@ -49,12 +49,12 @@ namespace Motor
             iCar = ResourceManager.CreateImage("car");
             iWheel = ResourceManager.CreateImage("wheel");
 
-            Label lCar = new Label(iCar);
+            Sprite lCar = new Sprite("car", iCar);
             lCar.Draggable = true;
             lCar.Rotable = true;
-            Label lWheel1 = new Label(iWheel);
+            Sprite lWheel1 = new Sprite("wheel1", iWheel);
             lWheel1.Touchable = false;
-            Label lWheel2 = new Label(iWheel);
+            Sprite lWheel2 = new Sprite("wheel2", iWheel);
             lWheel2.Touchable = false;
 
             AddComponent(lCar, 18, 0);
@@ -85,17 +85,17 @@ namespace Motor
 
             Button btnLeft = new Button("Engine LEFT");
             btnLeft.Released += HandleBtnLeftReleased;
-            AddComponent(btnLeft, Preferences.Width / 2, 100);
+            AddComponent(btnLeft, Preferences.ViewportManager.VirtualScreenWidth / 2, 100);
             btnLeft.Rotation = MathHelper.PiOver2;
 
             Button btnStop = new Button("Engine STOP");
             btnStop.Released += HandleBtnStopReleased;
-            AddComponent(btnStop, Preferences.Width / 2, 300);
+            AddComponent(btnStop, Preferences.ViewportManager.VirtualScreenWidth / 2, 300);
             btnStop.Rotation = MathHelper.PiOver2;
 
             Button btnRight = new Button("Engine RIGHT");
             btnRight.Released += HandleBtnRightReleased;
-            AddComponent(btnRight, Preferences.Width / 2, 500);
+            AddComponent(btnRight, Preferences.ViewportManager.VirtualScreenWidth / 2, 500);
             btnRight.Rotation = MathHelper.PiOver2;
         }
 
