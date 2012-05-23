@@ -22,7 +22,7 @@ namespace SampleListBox
         {
             base.Initialize();
             
-            ListBox descriptions = new ListBox(Preferences.Width, 200);
+            ListBox descriptions = new ListBox((int)Preferences.Width, 200);
 
             descriptions.AddItem(new ListItem("Electronic Gadget"));
             descriptions.AddItem(new ListItem("Plastic Guy"));

@@ -7,7 +7,8 @@
 using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
-using Syderis.CellSDK.Core.Layouts; 
+using Syderis.CellSDK.Core.Layouts;
+using Syderis.CellSDK.Common; 
 #endregion
 
 namespace GridLayoutSample
@@ -20,6 +21,11 @@ namespace GridLayoutSample
         public override void Initialize()
         {
             base.Initialize();
+
+            Preferences.ViewportManager.Adjustment = ViewportAdjustment.FIT;
+            Preferences.ViewportManager.AlignType = ViewportAlignType.MIDDLECENTER;
+            Preferences.ViewportManager.VirtualWidth = 480;
+            Preferences.ViewportManager.VirtualHeight = 800;
 
             StaticContent.Graphics.IsFullScreen = true;
             StaticContent.Graphics.ApplyChanges();
