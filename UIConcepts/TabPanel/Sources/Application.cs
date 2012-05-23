@@ -21,6 +21,11 @@ namespace TabPanelSample
         {
             base.Initialize();
 
+            Preferences.ViewportManager.Adjustment = ViewportAdjustment.FIT;
+            Preferences.ViewportManager.AlignType = ViewportAlignType.MIDDLECENTER;
+            Preferences.ViewportManager.VirtualWidth = 480;
+            Preferences.ViewportManager.VirtualHeight = 800;
+
             StaticContent.Graphics.IsFullScreen = true;
             StaticContent.Graphics.ApplyChanges();
 
