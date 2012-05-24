@@ -68,8 +68,8 @@
     <Reference Include="Syderis.CellSDK.IOS.Launcher">
       <HintPath>\Library\Frameworks\CellSDK.framework\Versions\1.3\Libraries\iOS\Syderis.CellSDK.IOS.Launcher.dll</HintPath>
     </Reference>
-    <Reference Include="MonoGame.Framework">
-      <HintPath>\Library\Frameworks\CellSDK.framework\Versions\1.3\Libraries\iOS\MonoGame.Framework.dll</HintPath>
+    <Reference Include="MonoGame.Framework.iOS">
+      <HintPath>\Library\Frameworks\CellSDK.framework\Versions\1.3\Libraries\iOS\MonoGame.Framework.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
