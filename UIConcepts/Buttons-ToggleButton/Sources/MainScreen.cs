@@ -28,9 +28,10 @@ namespace Buttons
             CreatePhysicWorld();
 
             Button btn = new Button("Push me");
-            AddComponent(btn, Preferences.Width / 2, Preferences.Height / 2, BodyShape.SQUARE, BodyType.DYNAMIC, Category.Cat1);
             btn.Pivot = Vector2.One / 2;
             btn.Pressed += new Component.ComponentEventHandler(btn_Pressed);
+            AddComponent(btn, Preferences.ViewportManager.MiddleCenterAnchor, BodyShape.SQUARE, BodyType.DYNAMIC, Category.Cat1);
+            
         }
 
         #region Events
@@ -40,7 +41,7 @@ namespace Buttons
             {
                 ball = new Button(ResourceManager.CreateImage("ball"), ResourceManager.CreateImage("ballpressed"));
                 ball.Pivot = Vector2.One / 2;
-                AddComponent(ball, Preferences.Width / 2, Preferences.Height / 5, BodyShape.SQUARE, BodyType.DYNAMIC, Category.Cat1);
+                AddComponent(ball, Preferences.ViewportManager.VirtualScreenWidth / 2, Preferences.ViewportManager.VirtualScreenHeight / 5, BodyShape.SQUARE, BodyType.DYNAMIC, Category.Cat1);
                 ball.Draggable = true;
                 ball.Released += new Component.ComponentEventHandler(ball_Released);
             }
@@ -52,7 +53,7 @@ namespace Buttons
             {
                 secondball = new Button(ResourceManager.CreateImage("ball"), ResourceManager.CreateImage("ballpressed"));
                 secondball.Pivot = Vector2.One / 2;
-                AddComponent(secondball, Preferences.Width / 2, 4 * Preferences.Height / 5, BodyShape.SQUARE, BodyType.DYNAMIC, Category.Cat1);
+                AddComponent(secondball, Preferences.ViewportManager.VirtualScreenWidth / 2, 4 * Preferences.ViewportManager.VirtualScreenHeight / 5, BodyShape.SQUARE, BodyType.DYNAMIC, Category.Cat1);
                 secondball.Draggable = true;
             }
         } 

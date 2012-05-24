@@ -23,7 +23,7 @@ namespace Accelerometer
     class MainScreen : Screen
     {
         int accelfactor = 10;
-        List<Label> labels = new List<Label>();
+        List<Sprite> sprites = new List<Sprite>();
         float maxX;
         float maxY;
         Vector2 centerposition;
@@ -36,21 +36,20 @@ namespace Accelerometer
 
             AccelerometerSensor.Instance.Start();
 
-            labels.Add(new Label(ResourceManager.CreateImage("cell1")));
-            labels.Add(new Label(ResourceManager.CreateImage("cell2")));
-            labels.Add(new Label(ResourceManager.CreateImage("cell3")));
-            labels.Add(new Label(ResourceManager.CreateImage("cell4")));
+            sprites.Add(new Sprite("cell1", ResourceManager.CreateImage("cell1")));
+            sprites.Add(new Sprite("cell2", ResourceManager.CreateImage("cell2")));
+            sprites.Add(new Sprite("cell3", ResourceManager.CreateImage("cell3")));
+            sprites.Add(new Sprite("cell4", ResourceManager.CreateImage("cell4")));
 
-            centerposition = new Vector2(Preferences.Width / 2 - labels[0].Size.X / 2, Preferences.Height / 2 - labels[0].Size.Y / 2);
-            maxX = Preferences.Width - labels[0].Size.X;
-            maxY = Preferences.Height - labels[0].Size.Y;
+            maxX = Preferences.ViewportManager.VirtualScreenWidth - sprites[0].Size.X;
+            maxY = Preferences.ViewportManager.VirtualScreenHeight - sprites[0].Size.Y;
 
-            AddComponent(labels[0], 10, 10);
-            AddComponent(labels[1], 250, 10);
-            AddComponent(labels[2], 10, 600);
-            AddComponent(labels[3], 250, 600);
+            AddComponent(sprites[0], 10, 10);
+            AddComponent(sprites[1], 250, 10);
+            AddComponent(sprites[2], 10, 600);
+            AddComponent(sprites[3], 250, 600);
 
-            foreach (Label lbl in labels)
+            foreach (Sprite lbl in sprites)
             {
                 lbl.Draggable = true;
             }
@@ -62,7 +61,7 @@ namespace Accelerometer
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
-            foreach (Label lbl in labels)
+            foreach (Sprite lbl in sprites)
             {
                 if (lbl.Position.X >= 0 && lbl.Position.X <= maxX && lbl.Position.Y >= 0 && lbl.Position.Y <= maxY)
                 {

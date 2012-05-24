@@ -23,33 +23,30 @@ namespace Compass
     class MainScreen : Screen
     {
         //private Label lblMagneticNorth, lblRealNorth;
-        private Label lblCover, lblCompass;
+        private Sprite sprCover, sprCompass;
         private TimeSpan timer;
-        private Vector2 offset;
         private bool isConnected = false;
 
         public override void Initialize()
         {
-            base.Initialize(); offset = Vector2.Zero;
-#if IOS
-			offset= Vector2.One*80;
-#endif
+            base.Initialize();
+
             // TODO: Replace these comments with your own poetry, and enjoy!                        
             SetBackground(ResourceManager.CreateImage("Background"), Adjustment.CENTER);
-            
-            lblCover = new Label(ResourceManager.CreateImage("compass_cover"));
-            lblCompass = new Label(ResourceManager.CreateImage("compass"));
 
-            lblCompass.Pivot = Vector2.One / 2;
+            sprCover = new Sprite("compass_cover", ResourceManager.CreateImage("compass_cover"));
+            sprCompass = new Sprite("compass", ResourceManager.CreateImage("compass"));
 
-            AddComponent(lblCompass, Preferences.Width / 2, Preferences.Height / 2);
-            AddComponent(lblCover, 48 + offset.X, 183 + offset.Y);
+            sprCompass.Pivot = Vector2.One / 2;
+
+            AddComponent(sprCompass, Preferences.Width / 2, Preferences.Height / 2);
+            AddComponent(sprCover, 48, 183);
             
             isConnected =  LocationSensor.Instance.IsConnected(LocationSensors.COMPASS);
             if (isConnected)
             {
                 LocationSensor.Instance.Start(LocationSensors.COMPASS);
-                lblCompass.Rotation = -(float)Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Compass.magneticHeading;
+                sprCompass.Rotation = -(float)Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Compass.magneticHeading;
             }
             else
             {
@@ -67,7 +64,7 @@ namespace Compass
             timer += gameTime.ElapsedGameTime;
             if (timer > TimeSpan.FromMilliseconds(100))
             {
-                lblCompass.Rotation = -(float)Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Compass.magneticHeading;
+                sprCompass.Rotation = -(float)Syderis.CellSDK.IO.LocationSystem.LocationSensor.Instance.Compass.magneticHeading;
                 timer = TimeSpan.Zero;
             }
         }
