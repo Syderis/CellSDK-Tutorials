@@ -57,8 +57,9 @@ namespace Sensor
             CreateNewtonBall(iSupport, iBall, new Vector2(420, 200 + 4 * ballSize), 300, false);
             CreateNewtonBall(iSupport, iBall, new Vector2(420, 200 + 5 * ballSize), 300, true);
 
-            Label lMetalSupport = new Label(iMetalCradle);
-            AddComponent(lMetalSupport, 0, 0);
+            Sprite lMetalSupport = new Sprite("metal",iMetalCradle);
+			lMetalSupport.Pivot = Vector2.One/2;
+            AddComponent(lMetalSupport, Preferences.ViewportManager.MiddleCenterAnchor);
 
             lMetalSupport.Touchable = false;
             PhysicWorld.Iterations = 120;
@@ -67,7 +68,7 @@ namespace Sensor
         public void CreateNewtonBall(Image iGround, Image iSphere, Vector2 vPosition, int ropeLength, bool touchable)
         {
             Label lSupport = new Label(iGround); //Static Label 
-            Label lBall = new Label(iSphere); //Label with the ball texture.
+            Sprite lBall = new Sprite("ball",iSphere); //Label with the ball texture.
 
             //We add the lSupport as a static physic object. So it does not interact with anything
             AddComponent(lSupport, vPosition.X + offset.X, vPosition.Y + offset.Y, BodyShape.SQUARE, BodyType.STATIC, Category.Cat1);
