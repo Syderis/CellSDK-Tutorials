@@ -32,7 +32,7 @@ namespace Physics
         {
             base.Initialize();
 
-            SetBackground(ResourceManager.CreateImage("background"), Adjustment.STRETCH);
+            SetBackground(ResourceManager.CreateImage("Background"), Adjustment.STRETCH);
 
             CreatePhysicWorld(new Vector2(0, -10), true, true, Vector2.Zero);
 
