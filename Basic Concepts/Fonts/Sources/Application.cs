@@ -25,7 +25,7 @@ namespace Fonts
             set
             {
                 base.SupportedOrientation = value;
-                Program.Instance.SupportedOrientation = value;
+                Program.Instance.SupportedOrientation=value;
             }
         }
 
