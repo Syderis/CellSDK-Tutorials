@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<properties>    
+    <key>I am a value</key>
+    <myProperty>Hello Properties!</myProperty>   
+</properties>
