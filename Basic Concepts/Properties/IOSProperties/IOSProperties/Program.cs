@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework;
 
 using Syderis.CellSDK.IOS.Launcher;
 
-namespace Fonts
+namespace CellProperties
 {
 	[Register("AppDelegate")]
 	class Program : UIApplicationDelegate
