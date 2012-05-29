@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="chuck.png" width="256" height="512">
+    <sprite n="arm_left_1" x="163" y="67" w="89" h="76"/>
+    <sprite n="arm_left_2" x="158" y="2" w="68" h="63"/>
+    <sprite n="arm_right_1" x="72" y="67" w="89" h="76"/>
+    <sprite n="arm_right_2" x="2" y="67" w="68" h="63"/>
+    <sprite n="body" x="108" y="145" w="88" h="188"/>
+    <sprite n="foot_left" x="80" y="2" w="76" h="32"/>
+    <sprite n="foot_right" x="2" y="2" w="76" h="32"/>
+    <sprite n="head" x="2" y="145" w="104" h="98"/>
+</TextureAtlas>
