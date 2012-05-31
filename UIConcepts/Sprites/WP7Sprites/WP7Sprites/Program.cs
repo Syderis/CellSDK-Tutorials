@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework;
 
 using Syderis.CellSDK.WindowsPhone.Launcher;
 
-namespace WP7Sprites
+namespace CellSprites
 {
     public class Program : Kernel
     {

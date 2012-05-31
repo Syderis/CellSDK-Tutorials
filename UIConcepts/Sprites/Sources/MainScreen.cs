@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Common;
 using Syderis.CellSDK.Core.Animations;
 
-namespace WP7Sprites
+namespace CellSprites
 {
     class MainScreen : Screen
     {

@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Common;
 using Syderis.CellSDK.Core;
 
-namespace WP7Sprites
+namespace CellSprites
 {
     public class Application : MobileApplication
     {
