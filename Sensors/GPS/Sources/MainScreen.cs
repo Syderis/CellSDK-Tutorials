@@ -34,8 +34,8 @@ namespace GPS
             lblLatitude = new Label("Latitude: 37,427");
             lblLongitude = new Label("Longitude: -5,972");
 
-            AddComponent(lblLatitude, Preferences.Width / 4, Preferences.Height / 8);
-            AddComponent(lblLongitude, Preferences.Width / 4, Preferences.Height / 4);
+            AddComponent(lblLatitude, Preferences.ViewportManager.VirtualScreenWidth / 4, Preferences.ViewportManager.VirtualScreenHeight / 8);
+            AddComponent(lblLongitude, Preferences.ViewportManager.VirtualScreenWidth / 4, Preferences.ViewportManager.VirtualScreenHeight / 4);
 
             isConnected = LocationSensor.Instance.IsConnected(LocationSensors.GPS);
             if (isConnected)

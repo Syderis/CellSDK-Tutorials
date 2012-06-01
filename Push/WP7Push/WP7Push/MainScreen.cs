@@ -45,7 +45,8 @@ namespace WP7Push
         {
             Label myLabel;
             myLabel = new Label("Notification received", Color.White, Color.Transparent);
-            AddComponent(myLabel, Preferences.Width / 2 - myLabel.Size.X / 2, Preferences.Height / 2 - myLabel.Size.Y / 2);
+            myLabel.Pivot = Vector2.One / 2;
+            AddComponent(myLabel, Preferences.ViewportManager.MiddleCenterAnchor);
         }
 
 

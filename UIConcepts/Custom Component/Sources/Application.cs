@@ -5,6 +5,7 @@
 
 #region Using Statements
 using Syderis.CellSDK.Core;
+using Syderis.CellSDK.Common;
 #endregion
 
 namespace ComboBox
@@ -17,6 +18,11 @@ namespace ComboBox
         public override void Initialize()
         {
             base.Initialize();
+
+            Preferences.ViewportManager.Adjustment = ViewportAdjustment.FIT;
+            Preferences.ViewportManager.AlignType = ViewportAlignType.MIDDLECENTER;
+            Preferences.ViewportManager.VirtualWidth = 480;
+            Preferences.ViewportManager.VirtualHeight = 800;
 
             StaticContent.Graphics.IsFullScreen = true;
             StaticContent.Graphics.ApplyChanges();

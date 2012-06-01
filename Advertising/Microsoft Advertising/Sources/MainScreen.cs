@@ -15,7 +15,8 @@ using Syderis.CellSDK.Core.Graphics;
 using Syderis.CellSDK.Core;
 using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Advertising;
-using Syderis.CellSDK.Common; 
+using Syderis.CellSDK.Common;
+using Syderis.CellSDK.Advertising.Beans; 
 #endregion
 
 namespace MSAdvertising
@@ -30,18 +31,25 @@ namespace MSAdvertising
             base.Initialize();
 
             SetBackground(Color.Blue);
-
-            IAdvertising ads = AdvertisingFactory.CreateAds(AdvertisingType.MICROSOFT_ADS, "8c89c892-2003-43fd-b7a1-db3d1ab6b56d/10030126");
+            AdsConfig cfg= new AdsConfig("push your code",1);
+            IAdvertising ads = AdvertisingFactory.CreateAds(AdvertisingType.MICROSOFT_ADS,cfg);
 
             ads.Test = true;
 
-            Banner bannerMsAdvertising = new Banner(ads, 300, 50);
+            Banner bannerMsAdvertising = new Banner(ads, 300, 50, "127.0.0.1");
+            bannerMsAdvertising.DefaultImage = ResourceManager.CreateImage("banner_zombeee");
+            bannerMsAdvertising.EventClick += new Banner.DefaultClick(bannerMsAdvertising_EventClick);
 
             bannerMsAdvertising.AdsIntervalRequest = 10;
 
             AddComponent(bannerMsAdvertising,
                 Preferences.Width / 2 - bannerMsAdvertising.Width / 2,
                 Preferences.Height / 2 - bannerMsAdvertising.Height / 2);
+        }
+
+        void bannerMsAdvertising_EventClick(object sender)
+        {
+            Preferences.App.Alert("Click on default banner", "Custom action");
         }
 
         /// <summary>

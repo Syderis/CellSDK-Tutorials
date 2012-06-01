@@ -28,7 +28,7 @@ namespace CanvasSample
 
             SetBackground(ResourceManager.CreateImage("Background"), Adjustment.NONE);
 
-            canv = new MyCanvas(Preferences.Width, Preferences.Height);
+            canv = new MyCanvas((int)Preferences.ViewportManager.VirtualScreenWidth, (int)Preferences.ViewportManager.VirtualScreenHeight);
             canv.BringToFront = false;
             AddComponent(canv, 0, 0);
 
@@ -49,7 +49,7 @@ namespace CanvasSample
 
             for (int i = 0; i < colors.Count; i++)
             {
-                AddComponent(colors[i], i * colors[i].Size.X, Preferences.Height - colors[i].Size.Y);
+                AddComponent(colors[i], i * colors[i].Size.X, Preferences.ViewportManager.VirtualScreenHeight - colors[i].Size.Y);
                 colors[i].Released -= Application_Released;
                 colors[i].Released += new Component.ComponentEventHandler(Application_Released);
 

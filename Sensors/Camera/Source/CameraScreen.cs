@@ -28,7 +28,7 @@ namespace Camera
         bool started;
 		Button btnStartStop, btnType, btTakePhoto;
 		
-		Label cameraLabel;
+		Sprite cameraLabel;
 		Image cameraImage;
         
         CameraType cType = CameraType.PRIMARY;
@@ -43,33 +43,33 @@ namespace Camera
 			{
                 if (CameraSystem.Instance.IsConnected(CameraType.SECONDARY))
                 {
-                    btnType = new Button("To Secondary Camera");
+                    btnType = new Button("To Secondary Camera") { Pivot = Vector2.One };
                     btnType.Released -= btnType_Released;
                     btnType.Released += btnType_Released;
 
-                    AddComponent(btnType, Preferences.Width - btnType.Size.X, Preferences.Height - btnType.Size.Y);
+                    AddComponent(btnType, Preferences.ViewportManager.BottomRightAnchor);
                 }
 
 				CameraSystem.Instance.SetCallbackImage(cameraImage);
 
-                btTakePhoto = new Button("Take a photo");
+                btTakePhoto = new Button("Take a photo") { Pivot = Vector2.UnitY};
                 btTakePhoto.Released -= btTakePhoto_Released;
                 btTakePhoto.Released += btTakePhoto_Released;
 
-                AddComponent(btTakePhoto, 0, Preferences.Height - btTakePhoto.Size.Y);
+                AddComponent(btTakePhoto, Preferences.ViewportManager.BottomLeftAnchor);
 			}
 
-			btnStartStop = new Button("Start Camera");
+            btnStartStop = new Button("Start Camera") { Pivot = Vector2.One };
             btnStartStop.Released -= btnStartStop_Released;
             btnStartStop.Released += btnStartStop_Released;
-            float margin = (btnType != null) ? btnType.Position.Y : Preferences.Height;
-			AddComponent(btnStartStop, Preferences.Width-btnStartStop.Size.X , margin - btnStartStop.Size.Y);
-			
-			cameraLabel = new Label(cameraImage);
+            
+			AddComponent(btnStartStop, Preferences.ViewportManager.BottomRightAnchor - new Vector2(0, 40));
+
+            cameraLabel = new Sprite("camera", cameraImage) { Pivot = Vector2.UnitX / 2};
 			cameraLabel.Draggable = true;
 			cameraLabel.Scalable = true;
 			cameraLabel.Rotable = true;            
-			AddComponent(cameraLabel, Preferences.Width/2-cameraLabel.Size.X/2, 0);
+			AddComponent(cameraLabel, Preferences.ViewportManager.TopCenterAnchor);
         }
 
         public override void BackButtonPressed()

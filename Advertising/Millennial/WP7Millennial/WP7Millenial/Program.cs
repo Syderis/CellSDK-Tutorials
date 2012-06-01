@@ -9,7 +9,7 @@ using System;
 using Syderis.CellSDK.WindowsPhone.Launcher;
 #endregion
 
-namespace WP7Millenial
+namespace Millenial
 {
     public class Program : Kernel
     {

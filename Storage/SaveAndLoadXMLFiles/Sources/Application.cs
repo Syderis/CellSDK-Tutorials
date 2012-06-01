@@ -10,6 +10,7 @@ using System.Xml.Serialization;
 using Syderis.CellSDK.Core;
 using Syderis.CellSDK.Core.Controls;
 using Syderis.CellSDK.Core.Storage;
+using Syderis.CellSDK.Common;
 #endregion
 
 namespace StorageSample
@@ -26,6 +27,11 @@ namespace StorageSample
 
             StaticContent.Graphics.IsFullScreen = true;
             StaticContent.Graphics.ApplyChanges();
+
+            Preferences.ViewportManager.Adjustment = ViewportAdjustment.FIT;
+            Preferences.ViewportManager.AlignType = ViewportAlignType.MIDDLECENTER;
+            Preferences.ViewportManager.VirtualWidth = 480;
+            Preferences.ViewportManager.VirtualHeight = 800;
 
             StaticContent.ScreenManager.GoToScreen(new MainScreen());
         }    

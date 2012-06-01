@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7LocalizedStrings", "WP7LocalizedStrings\WP7LocalizedStrings.csproj", "{00FA634A-47E4-4978-B059-74C254D79ACF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7LocalizedStringsContent", "WP7LocalizedStringsContent\WP7LocalizedStringsContent.contentproj", "{CE149566-2C66-4B9C-9B67-C2C1E6077A9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00FA634A-47E4-4978-B059-74C254D79ACF}.Debug|Any CPU.ActiveCfg = Debug|Windows Phone
+		{00FA634A-47E4-4978-B059-74C254D79ACF}.Debug|Mixed Platforms.ActiveCfg = Debug|Windows Phone
+		{00FA634A-47E4-4978-B059-74C254D79ACF}.Debug|Mixed Platforms.Build.0 = Debug|Windows Phone
+		{00FA634A-47E4-4978-B059-74C254D79ACF}.Debug|Mixed Platforms.Deploy.0 = Debug|Windows Phone
+		{00FA634A-47E4-4978-B059-74C254D79ACF}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{00FA634A-47E4-4978-B059-74C254D79ACF}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{00FA634A-47E4-4978-B059-74C254D79ACF}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{00FA634A-47E4-4978-B059-74C254D79ACF}.Release|Any CPU.ActiveCfg = Release|Windows Phone
+		{00FA634A-47E4-4978-B059-74C254D79ACF}.Release|Mixed Platforms.ActiveCfg = Release|Windows Phone
+		{00FA634A-47E4-4978-B059-74C254D79ACF}.Release|Mixed Platforms.Build.0 = Release|Windows Phone
+		{00FA634A-47E4-4978-B059-74C254D79ACF}.Release|Mixed Platforms.Deploy.0 = Release|Windows Phone
+		{00FA634A-47E4-4978-B059-74C254D79ACF}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{00FA634A-47E4-4978-B059-74C254D79ACF}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{00FA634A-47E4-4978-B059-74C254D79ACF}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{CE149566-2C66-4B9C-9B67-C2C1E6077A9D}.Debug|Any CPU.ActiveCfg = Debug|Windows Phone
+		{CE149566-2C66-4B9C-9B67-C2C1E6077A9D}.Debug|Mixed Platforms.ActiveCfg = Debug|Windows Phone
+		{CE149566-2C66-4B9C-9B67-C2C1E6077A9D}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{CE149566-2C66-4B9C-9B67-C2C1E6077A9D}.Release|Any CPU.ActiveCfg = Release|Windows Phone
+		{CE149566-2C66-4B9C-9B67-C2C1E6077A9D}.Release|Mixed Platforms.ActiveCfg = Release|Windows Phone
+		{CE149566-2C66-4B9C-9B67-C2C1E6077A9D}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

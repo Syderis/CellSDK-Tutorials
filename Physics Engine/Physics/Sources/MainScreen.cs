@@ -23,7 +23,7 @@ namespace Physics
 {
     class MainScreen : Screen
     {
-        Label lbl1k, lbl2k, staticLabel;
+        Sprite lbl1k, lbl2k, staticLabel;
 
         /// <summary>
         /// Sets the screen up (UI components, multimedia content, etc.)
@@ -32,7 +32,7 @@ namespace Physics
         {
             base.Initialize();
 
-            SetBackground(ResourceManager.CreateImage("background"), Adjustment.STRETCH);
+            SetBackground(ResourceManager.CreateImage("Background"), Adjustment.STRETCH);
 
             CreatePhysicWorld(new Vector2(0, -10), true, true, Vector2.Zero);
 
@@ -63,15 +63,15 @@ namespace Physics
 
             //Third tutorial
 
-            lbl1k = new Label(ResourceManager.CreateImage("1kg"));
+            lbl1k = new Sprite("1kg",ResourceManager.CreateImage("1kg"));
             AddComponent(lbl1k, 50, 0, BodyShape.SQUARE, BodyType.DYNAMIC, Category.Cat1);
             lbl1k.PhysicBody.Mass = 1f;
 
-            lbl2k = new Label(ResourceManager.CreateImage("2kg"));
+            lbl2k = new Sprite("2kg",ResourceManager.CreateImage("2kg"));
             AddComponent(lbl2k, 200, 0, BodyShape.SQUARE, BodyType.DYNAMIC, Category.Cat1);
             lbl2k.PhysicBody.Mass = 2f;
 
-            staticLabel = new Label("I am a static label");
+            staticLabel = new Sprite("static", ResourceManager.CreateImage(Color.Brown,120,40));
             AddComponent(staticLabel, 50, 500, BodyShape.SQUARE, BodyType.STATIC, Category.Cat1);
 
             Button btn = new Button("Press me!");

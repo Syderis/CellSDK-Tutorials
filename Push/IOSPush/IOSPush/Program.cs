@@ -10,6 +10,7 @@ namespace MyPush
 	{
 		public static Program Instance;
 		private Kernel kernel;
+		private Application application;
 		
 		static void Main (string[] args)
 		{
@@ -19,7 +20,7 @@ namespace MyPush
 		public override void FinishedLaunching (UIApplication app)
 		{
 			Instance = this;
-			Application application = new Application ();
+			application = new Application ();
 			kernel = new Kernel (application);
 			kernel.Run ();
 		}
@@ -42,6 +43,21 @@ namespace MyPush
 		public override void WillTerminate (UIApplication application)
 		{
 			kernel.OnExiting ();
+		}
+		
+		public override void RegisteredForRemoteNotifications (UIApplication uiApplication, NSData deviceToken)
+		{
+			application.RegisteredForRemoteNotifications(deviceToken);
+		}
+		
+		public override void ReceivedRemoteNotification (UIApplication uiApplication, NSDictionary userInfo)
+		{
+			application.ReceivedRemoteNotification(userInfo);
+		}
+		
+		public override void FailedToRegisterForRemoteNotifications (UIApplication uiApplication, NSError error)
+		{
+			application.FailedToRegisterForRemoteNotifications(error);
 		}
 	}
 }

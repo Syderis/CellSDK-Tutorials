@@ -16,7 +16,8 @@ using Syderis.CellSDK.Core;
 
 using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Advertising;
-using Syderis.CellSDK.Common; 
+using Syderis.CellSDK.Common;
+using Syderis.CellSDK.Advertising.Beans; 
 #endregion
 
 namespace Inmobi
@@ -31,16 +32,23 @@ namespace Inmobi
             base.Initialize();
 
             SetBackground(Color.Blue);
-
-            IAdvertising ads = AdvertisingFactory.CreateAds(AdvertisingType.INMOBI, "push your code");
+            AdsConfig cfg= new AdsConfig("push your code", 1);
+            IAdvertising ads = AdvertisingFactory.CreateAds(AdvertisingType.INMOBI,cfg);
 
             ads.Test = true;
 
-            Banner bannerInmobi = new Banner(ads, 300, 50);
+            Banner bannerInmobi = new Banner(ads, 300, 50,"127.0.0.1");
+            bannerInmobi.DefaultImage = ResourceManager.CreateImage("banner_zombeee");
+            bannerInmobi.EventClick += new Banner.DefaultClick(bannerInmobi_EventClick);
 
             AddComponent(bannerInmobi,
                 Preferences.Width / 2 - bannerInmobi.Width / 2,
                 Preferences.Height / 2 - bannerInmobi.Height / 2);
+        }
+
+        void bannerInmobi_EventClick(object sender)
+        {
+            Preferences.App.Alert("Click on default banner", "Custom action");
         }
 
         /// <summary>

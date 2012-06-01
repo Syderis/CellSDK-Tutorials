@@ -22,7 +22,7 @@ namespace TabPanelSample
             base.Initialize();
 
             TabPanel tab;
-            tab = new TabPanel(Preferences.Width, Preferences.Height);
+            tab = new TabPanel((int)Preferences.Width, (int)Preferences.Height);
             tab.AddTab("mytab1", new Label(ResourceManager.CreateImage("cell_jekyll")));
             tab.AddTab("mytab2", new Label(ResourceManager.CreateImage("cell_hyde")));
 

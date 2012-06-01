@@ -15,7 +15,8 @@ using Syderis.CellSDK.Core.Graphics;
 using Syderis.CellSDK.Core;
 using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Advertising;
-using Syderis.CellSDK.Common; 
+using Syderis.CellSDK.Common;
+using Syderis.CellSDK.Advertising.Beans; 
 #endregion
 
 namespace Adfonic
@@ -30,16 +31,23 @@ namespace Adfonic
             base.Initialize();
 
             SetBackground(Color.Blue);
-
-            IAdvertising ads = AdvertisingFactory.CreateAds(AdvertisingType.ADFONIC, "push your code");
+            AdsConfig cfg = new AdsConfig("push your code", 1);
+            IAdvertising ads = AdvertisingFactory.CreateAds(AdvertisingType.ADFONIC, cfg);
 
             ads.Test = true;
 
-            Banner bannerAdfonnic = new Banner(ads, 300, 50);
+            Banner bannerAdfonnic = new Banner(ads, 300, 50,"127.0.0.1");
+            bannerAdfonnic.DefaultImage = ResourceManager.CreateImage("banner_zombeee");
+            bannerAdfonnic.EventClick += new Banner.DefaultClick(bannerAdfonnic_EventClick);
 
             AddComponent(bannerAdfonnic,
                 Preferences.Width / 2 - bannerAdfonnic.Width / 2,
                 Preferences.Height / 2 - bannerAdfonnic.Height / 2);
+        }
+
+        void bannerAdfonnic_EventClick(object sender)
+        {
+            Preferences.App.Alert("Click on default banner", "Custom action");
         }
 
         /// <summary>

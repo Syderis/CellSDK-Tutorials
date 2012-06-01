@@ -42,7 +42,7 @@ namespace Localytics
             Button b = new Button("Push me");
             b.Released += new Component.ComponentEventHandler(b_Released);
 
-            AddComponent(b, Preferences.Width / 2 - b.Size.X, Preferences.Height / 2 - b.Size.Y / 2);
+            AddComponent(b, Preferences.Width / 2 - b.Size.X, Preferences.Height / 2 - b.Size.Y / 2);            
         }
 
         void b_Released(Component source)

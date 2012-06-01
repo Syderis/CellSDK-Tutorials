@@ -17,7 +17,7 @@ using Syderis.CellSDK.Core;
 using Microsoft.Xna.Framework;
 using Syderis.CellSDK.Common;
 using Syderis.CellSDK.IO.AccelerometerSystem;
-using Syderis.CellSDK.Core.Physics; 
+using Syderis.CellSDK.Core.Physics;
 #endregion
 
 namespace Joints
@@ -42,13 +42,13 @@ namespace Joints
                 AccelerometerSensor.Instance.Start();
                 accelerometerIsConnected = true;
             }
-            CreatesDummy(Preferences.Width / 2, 0);
+            CreatesDummy(Preferences.ViewportManager.VirtualScreenWidth / 2, 0);
         }
 
-        private void CreatesDummy(int offX, int offY)
+        private void CreatesDummy(float offX, float offY)
         {
             // Head            
-            Label dummyHead = new Label(ResourceManager.CreateImage("head"));
+            Sprite dummyHead = new Sprite("head", ResourceManager.CreateImage("head"));
             AddComponent(dummyHead, 64 + offX, -11 + offY);
             PhysicWorld.AddBody(dummyHead);
             dummyHead.PhysicBody.CollisionCategory = Category.Cat1;
@@ -56,7 +56,7 @@ namespace Joints
             dummyHead.Draggable = true;
 
             // Body
-            Label dummyBody = new Label(ResourceManager.CreateImage("body"));
+            Sprite dummyBody = new Sprite("body", ResourceManager.CreateImage("body"));
             AddComponent(dummyBody, 64 + offX, 43 + offY);
             PhysicWorld.AddBody(dummyBody);
             dummyBody.PhysicBody.CollisionCategory = Category.Cat2;
@@ -66,11 +66,11 @@ namespace Joints
             IJoint neck = PhysicWorld.AddJoint(dummyHead, dummyBody, new Vector2(86 + offX, 40 + offY), true, -MathHelper.PiOver4, MathHelper.PiOver4, 0.0f, float.MaxValue);
 
             // Left Arm
-            Label dummyLeftArm = new Label(ResourceManager.CreateImage("arm_left_1"));
+            Sprite dummyLeftArm = new Sprite("arm_left_1", ResourceManager.CreateImage("arm_left_1"));
             AddComponent(dummyLeftArm, 0 + offX, 43 + offY);
             PhysicWorld.AddBody(dummyLeftArm);
             dummyLeftArm.PhysicBody.CollisionCategory = Category.Cat3;
-            Label dummyLeftMiddleArm = new Label(ResourceManager.CreateImage("arm_left_2"));
+            Sprite dummyLeftMiddleArm = new Sprite("arm_left_2", ResourceManager.CreateImage("arm_left_2"));
             AddComponent(dummyLeftMiddleArm, 32 + offX, 43 + offY);
             PhysicWorld.AddBody(dummyLeftMiddleArm);
             dummyLeftMiddleArm.PhysicBody.CollisionCategory = Category.Cat4;
@@ -79,11 +79,11 @@ namespace Joints
             IJoint leftShoulder = PhysicWorld.AddJoint(dummyLeftMiddleArm, dummyBody, new Vector2(62 + offX, 49 + offY), true, -(15f / 32f) * MathHelper.Pi, (15f / 32f) * MathHelper.Pi, 0.0f, float.MaxValue);
 
             // Right Arm
-            Label dummyRightArm = new Label(ResourceManager.CreateImage("arm_right_1"));
+            Sprite dummyRightArm = new Sprite("arm_right_1", ResourceManager.CreateImage("arm_right_1"));
             AddComponent(dummyRightArm, 145 + offX, 43 + offY);
             PhysicWorld.AddBody(dummyRightArm);
             dummyRightArm.PhysicBody.CollisionCategory = Category.Cat5;
-            Label dummyRightMiddleArm = new Label(ResourceManager.CreateImage("arm_right_2"));
+            Sprite dummyRightMiddleArm = new Sprite("arm_right_2", ResourceManager.CreateImage("arm_right_2"));
             AddComponent(dummyRightMiddleArm, 113 + offX, 43 + offY);
             PhysicWorld.AddBody(dummyRightMiddleArm);
             dummyRightMiddleArm.PhysicBody.CollisionCategory = Category.Cat6;
@@ -92,11 +92,11 @@ namespace Joints
             IJoint rightShoulder = PhysicWorld.AddJoint(dummyRightMiddleArm, dummyBody, new Vector2(111 + offX, 49 + offY), true, -(15f / 32f) * MathHelper.Pi, (15f / 32f) * MathHelper.Pi, 0.0f, float.MaxValue); // +-84grados
 
             // Left Leg
-            Label dummyLeftLeg = new Label(ResourceManager.CreateImage("leg_left_1"));
+            Sprite dummyLeftLeg = new Sprite("leg_left_1", ResourceManager.CreateImage("leg_left_1"));
             AddComponent(dummyLeftLeg, 60 + offX, 118 + offY);
             PhysicWorld.AddBody(dummyLeftLeg);
             dummyLeftLeg.PhysicBody.CollisionCategory = Category.Cat7;
-            Label dummyLeftBottomLeg = new Label(ResourceManager.CreateImage("leg_left_2"));
+            Sprite dummyLeftBottomLeg = new Sprite("leg_left_2", ResourceManager.CreateImage("leg_left_2"));
             AddComponent(dummyLeftBottomLeg, 60 + offX, 168 + offY);
             PhysicWorld.AddBody(dummyLeftBottomLeg);
             dummyLeftBottomLeg.PhysicBody.CollisionCategory = Category.Cat8;
@@ -105,11 +105,11 @@ namespace Joints
             IJoint leftGroin = PhysicWorld.AddJoint(dummyLeftLeg, dummyBody, new Vector2(69 + offX, 116 + offY), true, -MathHelper.Pi / 8.0f, MathHelper.Pi / 8.0f, 0.0f, float.MaxValue);              // +-22.5 grados
 
             // Right Leg
-            Label dummyRightLeg = new Label(ResourceManager.CreateImage("leg_right_1"));
+            Sprite dummyRightLeg = new Sprite("leg_right_1", ResourceManager.CreateImage("leg_right_1"));
             AddComponent(dummyRightLeg, 93 + offX, 118 + offY);
             PhysicWorld.AddBody(dummyRightLeg);
             dummyRightLeg.PhysicBody.CollisionCategory = Category.Cat9;
-            Label dummyRightBottomLeg = new Label(ResourceManager.CreateImage("leg_right_2"));
+            Sprite dummyRightBottomLeg = new Sprite("leg_right_2", ResourceManager.CreateImage("leg_right_2"));
             AddComponent(dummyRightBottomLeg, 93 + offX, 168 + offY);
             PhysicWorld.AddBody(dummyRightBottomLeg);
             dummyRightBottomLeg.PhysicBody.CollisionCategory = Category.Cat10;

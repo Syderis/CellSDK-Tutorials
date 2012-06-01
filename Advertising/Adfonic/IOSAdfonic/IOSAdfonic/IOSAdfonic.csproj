@@ -10,6 +10,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>IOSAdfonic</RootNamespace>
     <AssemblyName>IOSAdfonic</AssemblyName>
+    <ReleaseVersion>1.3</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,6 +46,8 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchProfiling>true</MtouchProfiling>
+    <CodesignProvision>BE16A46F-215C-4B96-8B3B-7E4949704E86</CodesignProvision>
+    <MtouchI18n />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -61,20 +64,20 @@
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
     <Reference Include="OpenTK" />
-    <Reference Include="MonoGame.Framework">
-      <HintPath>/Library\Frameworks\CellSDK.framework\Versions\1.2\Libraries\iOS\MonoGame.Framework.dll</HintPath>
+    <Reference Include="MonoGame.Framework.iOS">
+      <HintPath>..\..\..\..\..\..\..\..\..\Library\Frameworks\CellSDK.framework\Versions\1.3\Libraries\iOS\MonoGame.Framework.iOS.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.IOS.Advertising">
-      <HintPath>/Library\Frameworks\CellSDK.framework\Versions\1.2\Libraries\iOS\Syderis.CellSDK.IOS.Advertising.dll</HintPath>
-    </Reference>
-    <Reference Include="Syderis.CellSDK.IOS.Core">
-      <HintPath>/Library\Frameworks\CellSDK.framework\Versions\1.2\Libraries\iOS\Syderis.CellSDK.IOS.Core.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Library\Frameworks\CellSDK.framework\Versions\1.3\Libraries\iOS\Syderis.CellSDK.IOS.Advertising.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.IOS.Common">
-      <HintPath>/Library\Frameworks\CellSDK.framework\Versions\1.2\Libraries\iOS\Syderis.CellSDK.IOS.Common.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Library\Frameworks\CellSDK.framework\Versions\1.3\Libraries\iOS\Syderis.CellSDK.IOS.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Syderis.CellSDK.IOS.Core">
+      <HintPath>..\..\..\..\..\..\..\..\..\Library\Frameworks\CellSDK.framework\Versions\1.3\Libraries\iOS\Syderis.CellSDK.IOS.Core.dll</HintPath>
     </Reference>
     <Reference Include="Syderis.CellSDK.IOS.Launcher">
-      <HintPath>/Library\Frameworks\CellSDK.framework\Versions\1.2\Libraries\iOS\Syderis.CellSDK.IOS.Launcher.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Library\Frameworks\CellSDK.framework\Versions\1.3\Libraries\iOS\Syderis.CellSDK.IOS.Launcher.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -96,6 +99,7 @@
     <Content Include="Content\Skin\DefaultSkinSpriteSheet.png" />
     <Content Include="Content\Skin\Skin.xml" />
     <Content Include="Content\Skin\DefaultSkinFont.xnb" />
+    <Content Include="Content\banner_zombeee.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
