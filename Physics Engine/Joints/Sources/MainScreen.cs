@@ -88,8 +88,8 @@ namespace Joints
             PhysicWorld.AddBody(dummyRightMiddleArm);
             dummyRightMiddleArm.PhysicBody.CollisionCategory = Category.Cat6;
 
-            IJoint rightElbow = PhysicWorld.AddJoint(dummyRightArm, dummyRightMiddleArm, new Vector2(143 + offX, 49 + offY), true, -(5f / 8f) * MathHelper.Pi, (5f / 8f) * MathHelper.Pi, 0.0f, float.MaxValue);// +-90grados +22,5 grados = +-112,5 
-            IJoint rightShoulder = PhysicWorld.AddJoint(dummyRightMiddleArm, dummyBody, new Vector2(111 + offX, 49 + offY), true, -(15f / 32f) * MathHelper.Pi, (15f / 32f) * MathHelper.Pi, 0.0f, float.MaxValue); // +-84grados
+            IJoint rightElbow = PhysicWorld.AddJoint(dummyRightArm, dummyRightMiddleArm, new Vector2(143 + offX, 49 + offY), true, -(5f / 8f) * MathHelper.Pi, (5f / 8f) * MathHelper.Pi, 0.0f, float.MaxValue);// +-90 degrees +22,5 degrees = +-112,5 
+            IJoint rightShoulder = PhysicWorld.AddJoint(dummyRightMiddleArm, dummyBody, new Vector2(111 + offX, 49 + offY), true, -(15f / 32f) * MathHelper.Pi, (15f / 32f) * MathHelper.Pi, 0.0f, float.MaxValue); // +-84 degrees
 
             // Left Leg
             Sprite dummyLeftLeg = new Sprite("leg_left_1", ResourceManager.CreateImage("leg_left_1"));
@@ -101,8 +101,8 @@ namespace Joints
             PhysicWorld.AddBody(dummyLeftBottomLeg);
             dummyLeftBottomLeg.PhysicBody.CollisionCategory = Category.Cat8;
 
-            IJoint leftKnee = PhysicWorld.AddJoint(dummyLeftLeg, dummyLeftBottomLeg, new Vector2(69 + offX, 167 + offY), true, -MathHelper.Pi / 16.0f, MathHelper.Pi / 16.0f, 0.0f, float.MaxValue); // +-5.625 grados
-            IJoint leftGroin = PhysicWorld.AddJoint(dummyLeftLeg, dummyBody, new Vector2(69 + offX, 116 + offY), true, -MathHelper.Pi / 8.0f, MathHelper.Pi / 8.0f, 0.0f, float.MaxValue);              // +-22.5 grados
+            IJoint leftKnee = PhysicWorld.AddJoint(dummyLeftLeg, dummyLeftBottomLeg, new Vector2(69 + offX, 167 + offY), true, -MathHelper.Pi / 16.0f, MathHelper.Pi / 16.0f, 0.0f, float.MaxValue); // +-5.625 degrees
+            IJoint leftGroin = PhysicWorld.AddJoint(dummyLeftLeg, dummyBody, new Vector2(69 + offX, 116 + offY), true, -MathHelper.Pi / 8.0f, MathHelper.Pi / 8.0f, 0.0f, float.MaxValue);              // +-22.5 degrees
 
             // Right Leg
             Sprite dummyRightLeg = new Sprite("leg_right_1", ResourceManager.CreateImage("leg_right_1"));
@@ -114,8 +114,8 @@ namespace Joints
             PhysicWorld.AddBody(dummyRightBottomLeg);
             dummyRightBottomLeg.PhysicBody.CollisionCategory = Category.Cat10;
 
-            PhysicWorld.AddJoint(dummyRightLeg, dummyRightBottomLeg, new Vector2(102 + offX, 167 + offY), true, -MathHelper.Pi / 16.0f, MathHelper.Pi / 16.0f, 0.0f, float.MaxValue); // +- 5.625 grados
-            PhysicWorld.AddJoint(dummyRightLeg, dummyBody, new Vector2(102 + offX, 116 + offY), true, -MathHelper.Pi / 8.0f, MathHelper.Pi / 8.0f, 0.0f, float.MaxValue);  //+- 22.5 grados
+            PhysicWorld.AddJoint(dummyRightLeg, dummyRightBottomLeg, new Vector2(102 + offX, 167 + offY), true, -MathHelper.Pi / 16.0f, MathHelper.Pi / 16.0f, 0.0f, float.MaxValue); // +- 5.625 degrees
+            PhysicWorld.AddJoint(dummyRightLeg, dummyBody, new Vector2(102 + offX, 116 + offY), true, -MathHelper.Pi / 8.0f, MathHelper.Pi / 8.0f, 0.0f, float.MaxValue);  //+- 22.5 degrees
         }
 
         public override void Update(GameTime gameTime)
