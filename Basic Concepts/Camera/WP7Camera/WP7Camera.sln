@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Camera", "WP7Camera\WP7Camera.csproj", "{4A60ABB0-264F-4B00-9351-3D3EAE30A2CC}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "WP7CameraContent", "WP7CameraContent\WP7CameraContent.contentproj", "{165DE0A4-C18E-4975-B47C-41E8C3074300}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A60ABB0-264F-4B00-9351-3D3EAE30A2CC}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{4A60ABB0-264F-4B00-9351-3D3EAE30A2CC}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{4A60ABB0-264F-4B00-9351-3D3EAE30A2CC}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{4A60ABB0-264F-4B00-9351-3D3EAE30A2CC}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{4A60ABB0-264F-4B00-9351-3D3EAE30A2CC}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{4A60ABB0-264F-4B00-9351-3D3EAE30A2CC}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{165DE0A4-C18E-4975-B47C-41E8C3074300}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{165DE0A4-C18E-4975-B47C-41E8C3074300}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
