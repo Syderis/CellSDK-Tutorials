@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSLayers", "IOSLayers\IOSLayers.csproj", "{FB37869B-64FA-441B-BE64-FFE0ED7F7790}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB37869B-64FA-441B-BE64-FFE0ED7F7790}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{FB37869B-64FA-441B-BE64-FFE0ED7F7790}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{FB37869B-64FA-441B-BE64-FFE0ED7F7790}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{FB37869B-64FA-441B-BE64-FFE0ED7F7790}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{FB37869B-64FA-441B-BE64-FFE0ED7F7790}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{FB37869B-64FA-441B-BE64-FFE0ED7F7790}.Debug|iPhone.Build.0 = Debug|iPhone
+		{FB37869B-64FA-441B-BE64-FFE0ED7F7790}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{FB37869B-64FA-441B-BE64-FFE0ED7F7790}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{FB37869B-64FA-441B-BE64-FFE0ED7F7790}.Release|iPhone.ActiveCfg = Release|iPhone
+		{FB37869B-64FA-441B-BE64-FFE0ED7F7790}.Release|iPhone.Build.0 = Release|iPhone
+		{FB37869B-64FA-441B-BE64-FFE0ED7F7790}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{FB37869B-64FA-441B-BE64-FFE0ED7F7790}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IOSLayers\IOSLayers.csproj
+	EndGlobalSection
+EndGlobal
