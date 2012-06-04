@@ -48,11 +48,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="bg_mobile.jpg">
-      <Name>bg_mobile</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Content Include="Skin\Skin.xml">
       <Name>Skin</Name>
       <Importer>XmlImporter</Importer>
