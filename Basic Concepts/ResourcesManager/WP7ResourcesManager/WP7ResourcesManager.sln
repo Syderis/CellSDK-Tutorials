@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7ResourcesManager", "WP7ResourcesManager\WP7ResourcesManager.csproj", "{CF83C6F3-DD9D-4DD1-9F86-9643C5E6E3D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7ResourcesManagerContent", "WP7ResourcesManagerContent\WP7ResourcesManagerContent.contentproj", "{9646B19E-DCF6-4D95-A6C9-D34451E50DB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF83C6F3-DD9D-4DD1-9F86-9643C5E6E3D1}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{CF83C6F3-DD9D-4DD1-9F86-9643C5E6E3D1}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{CF83C6F3-DD9D-4DD1-9F86-9643C5E6E3D1}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{CF83C6F3-DD9D-4DD1-9F86-9643C5E6E3D1}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{CF83C6F3-DD9D-4DD1-9F86-9643C5E6E3D1}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{CF83C6F3-DD9D-4DD1-9F86-9643C5E6E3D1}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{9646B19E-DCF6-4D95-A6C9-D34451E50DB1}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{9646B19E-DCF6-4D95-A6C9-D34451E50DB1}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
