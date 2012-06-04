@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSCamera", "IOSCamera\IOSCamera.csproj", "{CF889311-8E9C-4763-A8E7-626840860C96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF889311-8E9C-4763-A8E7-626840860C96}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{CF889311-8E9C-4763-A8E7-626840860C96}.Debug|iPhone.Build.0 = Debug|iPhone
+		{CF889311-8E9C-4763-A8E7-626840860C96}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{CF889311-8E9C-4763-A8E7-626840860C96}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{CF889311-8E9C-4763-A8E7-626840860C96}.Release|iPhone.ActiveCfg = Release|iPhone
+		{CF889311-8E9C-4763-A8E7-626840860C96}.Release|iPhone.Build.0 = Release|iPhone
+		{CF889311-8E9C-4763-A8E7-626840860C96}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{CF889311-8E9C-4763-A8E7-626840860C96}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IOSCamera\IOSCamera.csproj
+	EndGlobalSection
+EndGlobal
