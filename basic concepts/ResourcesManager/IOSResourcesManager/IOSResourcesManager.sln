@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSResourcesManager", "IOSResourcesManager\IOSResourcesManager.csproj", "{4140C98A-7F91-4406-83B6-0B942B2FD22A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4140C98A-7F91-4406-83B6-0B942B2FD22A}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{4140C98A-7F91-4406-83B6-0B942B2FD22A}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{4140C98A-7F91-4406-83B6-0B942B2FD22A}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{4140C98A-7F91-4406-83B6-0B942B2FD22A}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{4140C98A-7F91-4406-83B6-0B942B2FD22A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{4140C98A-7F91-4406-83B6-0B942B2FD22A}.Debug|iPhone.Build.0 = Debug|iPhone
+		{4140C98A-7F91-4406-83B6-0B942B2FD22A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{4140C98A-7F91-4406-83B6-0B942B2FD22A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{4140C98A-7F91-4406-83B6-0B942B2FD22A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{4140C98A-7F91-4406-83B6-0B942B2FD22A}.Release|iPhone.Build.0 = Release|iPhone
+		{4140C98A-7F91-4406-83B6-0B942B2FD22A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{4140C98A-7F91-4406-83B6-0B942B2FD22A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IOSResourcesManager\IOSResourcesManager.csproj
+	EndGlobalSection
+EndGlobal
